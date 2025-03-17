@@ -1,0 +1,12 @@
+{
+    "intelephense.environment.includePaths": [
+      "/Users/danielpincu/Local Sites/ckcookiescakes/app/public/wp-includes",
+      "/Users/danielpincu/Local Sites/ckcookiescakes/app/public/wp-admin",
+      "/Users/danielpincu/Local Sites/ckcookiescakes/app/public/wp-content/plugins/advanced-custom-fields",
+      
+    ]
+  }
+  
+        
+      
+  
