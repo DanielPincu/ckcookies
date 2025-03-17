@@ -6,3 +6,363 @@ Description: This is a custom theme for our webshop exam project.
 Version: 1.0
 License: GNU General Public License v2 or later
 */
+
+
+
+/* Pagination styles */
+.pagination {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.pagination a {
+    color: #333;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    margin: 0 2px;
+    display: inline-block;
+}
+
+.pagination a:hover {
+    background-color: #f4f4f4;
+}
+
+.pagination .current {
+    padding: 8px 16px;
+    margin: 0 2px;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #333;
+    display: inline-block;
+}
+
+
+/* Comments pagination styles */
+.comments-pagination {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.comments-pagination a {
+    color: #333;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    margin: 0 2px;
+    display: inline-block;
+}
+
+.comments-pagination a:hover {
+    background-color: #f4f4f4;
+}
+
+.comments-pagination .current {
+    padding: 8px 16px;
+    margin: 0 2px;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #333;
+    display: inline-block;
+}
+
+.comment-form {
+  margin-top: 10px;
+  background-color: #f7f7f7; /* Light grey background */
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.comment-form textarea {
+  width: 100%; /* Full width */
+  padding: 15px;
+  margin-bottom: 10px; /* Space below the textarea */
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Increase font size */
+  box-sizing: border-box;
+  height: 150px; /* Fixed height */
+}
+
+.comment-form input[type="submit"] {
+  background-color: #68D5C0; /* WordPress blue */
+  color: #fff; /* White text */
+  padding: 10px 20px;
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Increase font size */
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.comment-form input[type="submit"]:hover {
+  background-color: #005177; /* Darker blue on hover */
+}
+
+
+#reply-title {
+  font-size: 20px;
+}
+
+.comment-reply-link {
+  background-color: #68D5C0; /* WordPress blue */
+  color: #fff; /* White text */
+  padding: 1px 30px;
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Increase font size */
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+#cancel-comment-reply-link {
+  background-color: #68D5C0; /* WordPress blue */
+  color: #fff; /* White text */
+  padding: 1px 30px;
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Increase font size */
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+
+
+
+ p {
+  padding-bottom: 1.5em !important;
+  padding-top: .5em !important;
+  line-height: 1.6 !important;
+  color:  !important;
+  
+} 
+
+
+
+
+
+/* General Form Styling */
+.wpcf7-form {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #E3F2FD; /* Light blue for a clean, eco-friendly look */
+  border: 1px solid #A7C7E7; /* Soft blue border for a gentle touch */
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 128, 0, 0.1); /* Subtle green shadow */
+  font-family: 'Arial', sans-serif;
+}
+
+/* Form Field Styling */
+.wpcf7-form p {
+  padding: 0;
+}
+
+.wpcf7-form label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: block;
+  color: #0D3B66; /* Darker blue to add contrast and readability */
+}
+
+.wpcf7-form input[type="text"],
+.wpcf7-form input[type="email"],
+.wpcf7-form input[type="tel"],
+.wpcf7-form input[type="number"],
+.wpcf7-form select,
+.wpcf7-form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #4CAF50; /* Green border for eco touch */
+  border-radius: 8px;
+  box-sizing: border-box;
+  margin-top: 8px;
+  background-color: #F9FBFD; /* Light neutral background for input fields */
+}
+
+.wpcf7-form input[type="radio"],
+.wpcf7-form input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.wpcf7-form input::placeholder,
+.wpcf7-form textarea::placeholder {
+  color: #88B2B7; /* Soft muted color for placeholder text */
+}
+
+/* Button Styling */
+.wpcf7-form input[type="submit"] {
+  background-color: #37776E; /* Bright green to symbolize action and sustainability */
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 128, 0, 0.2); /* Soft green shadow for button */
+}
+
+.wpcf7-form input[type="submit"]:hover {
+  background-color: #14676c; /* Darker green for hover effect */
+}
+
+/* File Upload Styling */
+.wpcf7-form input[type="file"] {
+  border: none;
+  padding: 0;
+  font-size: 16px;
+  color: #4CAF50; /* Green color for the file upload text */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+  .wpcf7-form {
+      padding: 20px;
+  }
+
+  .wpcf7-form input[type="submit"] {
+      width: 100%;
+  }
+}
+
+/* Additional Styling for a Climate Action Theme */
+.wpcf7-form {
+  border-left: 10px solid #37776E; /* Green accent on the left side of the form */
+  background-image: url('path/to/environmental-pattern.png'); /* Optional background image for a nature feel */
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: lighten;
+}
+
+.wpcf7-form input[type="submit"] {
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.wpcf7-form label:before {
+  content: "📚 "; /* Add a book icon before labels */
+  font-size: 18px;
+}
+
+
+.wpcf7-form input[type="checkbox"] + label {
+  color: #2E7D32; /* Green for checkbox labels */
+}
+
+/* WOOCOMMERCE */
+/* WooCommerce Content Styling for All Pages */
+
+/* Checkout Form Styles */
+
+
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea {
+  width: 100%; /* Full width inputs */
+  padding: 12px; /* Padding inside inputs */
+  border: 1px solid #d1d5db; /* Light gray border */
+  border-radius: 0.375rem; /* Rounded corners */
+  transition: border-color 0.3s; /* Smooth transition */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+  border-color: #60a5fa; /* Blue border on focus */
+  outline: none; /* Remove outline */
+}
+
+
+.woocommerce a.button {
+  background-color: #68D5C0; /* Blue background color */
+  color: #fff;
+}
+
+
+ .woocommerce a.button:hover {
+  background-color: #37776E; /* Blue background color */
+  color: #fff; 
+}
+
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) button.button.alt {
+  background-color: #68D5C0; 
+  
+}
+
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) button.button.alt:hover {
+  background-color: #37776E; 
+  
+}
+
+.woocommerce div.product div.images img {
+  max-width: 50%;
+  height: auto;
+}
+
+:where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce a.button.alt {
+  background-color: #68D5C0; 
+  color: #fff;
+}
+
+:where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce a.button.alt:hover {
+  background-color: #37776E; 
+  color: #fff;
+}
+
+:where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce button.button {
+  background-color: #68D5C0; 
+  color: #fff;
+}
+
+:where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce button.button:hover {
+  background-color: #37776E; 
+  color: #fff;
+}
+
+#coupon_code {
+  width: 50%;
+  
+}
+
+.woocommerce-checkout #payment ul.payment_methods {
+  background-color: #EFF6FE; 
+  border: 1px solid #5AB9A6;
+  
+}
+
+.woocommerce-checkout #payment div.payment_box
+{
+  background-color: #DBEAFE; 
+  
+}
+
+:where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce button.button.alt {
+  background-color: #68D5C0; 
+  color: #fff;
+}
+
+:where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce button.button.alt:hover {
+  background-color: #37776E; 
+  color: #fff;
+}
+
+.woocommerce form .form-row {
+  background-color: #EFF6FE;
+}
+
+.onsale {
+    display: none;
+}
+
+#place_order {
+    display: none;
+}
