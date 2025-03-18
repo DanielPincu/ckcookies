@@ -366,3 +366,45 @@ textarea:focus {
 #place_order {
     display: none;
 }
+
+
+//NAV styles
+.cookie-bg {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="%23FFD1DC" opacity="0.3"/></svg>');
+  background-repeat: repeat;
+}
+.btn-hover:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+.cookie-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #D53F8C;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+.cookie-icon::before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #FFF5F5;
+  border-radius: 50%;
+  top: 25%;
+  left: 25%;
+}
+.cookie-icon::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: #FFF5F5;
+  border-radius: 50%;
+  bottom: 25%;
+  right: 25%;
+}
+.mobile-menu-open {
+  transform: translateX(0) !important;
+}
