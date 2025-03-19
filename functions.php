@@ -30,3 +30,5 @@ function enable_woocommerce() {
     add_theme_support('woocommerce');
 }
 add_action('after_setup_theme', 'enable_woocommerce');
+
+

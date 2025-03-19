@@ -18,11 +18,11 @@
         </a>
         <nav class="hidden md:flex md:flex-row">
           <ul class="flex space-x-4 sm:space-x-6">
-              <li><a href="<?php echo home_url(); ?>" class="hover:text-orange-500 text-amber-950 transition duration-300 active:text-orange-600">Home</a></li>
-              <li><a href="#featured" class="hover:text-orange-500 text-amber-950 transition duration-300 active:text-orange-600">Our Story</a></li>
+              <li><a href="<?php echo home_url(); ?>" class="hover:text-orange-500 text-amber-950 transition duration-300 active:text-orange-600">Hjem</a></li>
+              <li><a href="#featured" class="hover:text-orange-500 text-amber-950 transition duration-300 active:text-orange-600">Vores historie</a></li>
               <li><a href="<?php echo esc_url( get_permalink( wc_get_page_id( 'shop' ) ) ); ?>" class="hover:text-orange-500 text-amber-950 transition duration-300 active:text-orange-600">Shop</a></li>
               <li><a href="#order" class="hover:text-orange-500 text-amber-950 transition duration-300 active:text-orange-600">Blogs</a></li>
-              <li><a href="#order" class="hover:text-orange-500 text-amber-950 transition duration-300 active:text-orange-600">Contact Us</a></li>
+              <li><a href="#order" class="hover:text-orange-500 text-amber-950 transition duration-300 active:text-orange-600">Kontakt os</a></li>
           </ul>
 
         </nav>
@@ -31,7 +31,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6">
               <path fill-rule="evenodd" d="M7.5 6v.75H5.513c-.96 0-1.764.724-1.865 1.679l-1.263 12A1.875 1.875 0 004.25 22.5h15.5a1.875 1.875 0 001.865-2.071l-1.263-12a1.875 1.875 0 00-1.865-1.679H16.5V6a4.5 4.5 0 10-9 0zM12 3a3 3 0 00-3 3v.75h6V6a3 3 0 00-3-3zm-3 8.25a3 3 0 106 0v-.75a.75.75 0 011.5 0v.75a4.5 4.5 0 11-9 0v-.75a.75.75 0 011.5 0v.75z" clip-rule="evenodd"/>
             </svg>
-            <span class="text-xs">Cart</span>
+            <span class="text-xs">Kurv</span>
           </a>
 
           <a href="<?php echo esc_url( get_permalink( wc_get_page_id( 'myaccount' ) ) ); ?>" class="relative flex cursor-pointer flex-col items-center justify-center">
@@ -42,7 +42,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
               <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/>
             </svg>
-            <span class="text-xs">Account</span>
+            <span class="text-xs">Min konto</span>
           </a>
 
      </div>
@@ -60,11 +60,11 @@
                 <button id="close-menu" class="text-pink-600 text-3xl">&times;</button>
             </div>
             <ul class="space-y-6">
-                <li><a href="<?php echo home_url(); ?>" class="text-xl font-semibold hover:text-pink-500 transition duration-300">Home</a></li>
-                <li><a href="#featured" class="text-xl font-semibold hover:text-pink-500 transition duration-300">Our Story</a></li>
-                <li><a href="<?php echo esc_url( get_permalink( wc_get_page_id( 'shop' ) ) ); ?>" class="text-xl font-semibold hover:text-pink-500 transition duration-300">Shop</a></li>
+                <li><a href="<?php echo home_url(); ?>" class="text-xl font-semibold hover:text-pink-500 transition duration-300">Hjem</a></li>
+                <li><a href="#featured" class="text-xl font-semibold hover:text-pink-500 transition duration-300">Vores historie</a></li>
+                <li><a href="<?php echo esc_url( get_permalink( wc_get_page_id( 'shop' ) ) ); ?>" class="text-xl font-semibold hover:text-pink-500 transition duration-300">Butik</a></li>
                 <li><a href="#order" class="text-xl font-semibold hover:text-pink-500 transition duration-300">Blogs</a></li>
-                <li><a href="#order" class="text-xl font-semibold hover:text-pink-500 transition duration-300">Contact us</a></li>
+                <li><a href="#order" class="text-xl font-semibold hover:text-pink-500 transition duration-300">Kontakt os</a></li>
             </ul>
         </nav>
 

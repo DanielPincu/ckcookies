@@ -408,3 +408,21 @@ textarea:focus {
 .mobile-menu-open {
   transform: translateX(0) !important;
 }
+
+//Side cart buttons
+.xoo-wsc-ft-btn.xoo-wsc-btn.xoo-wsc-ft-btn-cart {
+  border-radius: 10px;
+}
+
+.xoo-wsc-ft-btn.xoo-wsc-btn.xoo-wsc-cart-close.xoo-wsc-ft-btn-continue {
+  border-radius: 10px;
+}
+
+.xoo-wsc-ft-btn.xoo-wsc-btn.xoo-wsc-ft-btn-checkout {
+  border-radius: 10px;
+}
+
+
+.xoo-wsc-btn {
+  border-radius: 10px;
+}
