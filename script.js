@@ -21,3 +21,61 @@ document.addEventListener('DOMContentLoaded', function() {
       overlay.classList.add('hidden');
   }
 });
+
+
+
+
+
+
+
+
+
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Signup accordion functionality
+            var registerForm = document.querySelector('.u-column2');
+            if (registerForm) {
+                // Create a container for the registration section
+                var container = document.createElement('div');
+                container.className = 'registration-section';
+
+                // Create H1 element
+                var heading = document.createElement('h1');
+                heading.textContent = 'Er du ikke medlem endnu?'; // Updated text
+                heading.className = 'register-heading';
+
+                // Create accordion button
+                var accordion = document.createElement('button');
+                accordion.className = 'register-accordion';
+                accordion.innerHTML = 'Opret en kundekonto';
+
+                // Add elements to the container
+                container.appendChild(heading);
+                container.appendChild(accordion);
+
+                // Insert the container after the u-columns div
+                var uColumns = document.querySelector('.u-columns');
+                if (uColumns && uColumns.parentNode) {
+                    uColumns.parentNode.insertBefore(container, uColumns.nextSibling);
+                } else {
+                    // Fallback: insert before the register form if u-columns not found
+                    registerForm.parentNode.insertBefore(container, registerForm);
+                }
+
+                registerForm.classList.add('register-panel');
+
+                accordion.addEventListener('click', function() {
+                    // Hide the entire registration section
+                    container.style.display = 'none';
+                    
+                    // Show the registration form
+                    registerForm.style.display = 'block';
+                    
+                    // Optional: Remove the active class if needed
+                    this.classList.remove('active');
+                });
+            }
+
+            
+        });
+    

@@ -428,3 +428,228 @@ textarea:focus {
 .xoo-wsc-btn {
   border-radius: 10px;
 }
+
+
+
+
+
+
+
+/* Custom-login */
+/* Style the custom login page */
+.custom-login-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.custom-login-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.custom-login-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.custom-login-container input[type="text"],
+.custom-login-container input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.custom-login-container input[type="submit"] {
+  background-color: #0073e6;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.custom-login-container input[type="submit"]:hover {
+  background-color: #005bb5;
+}
+
+
+/* General Form Styling */
+.woocommerce form {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.woocommerce h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Input Fields */
+.woocommerce form .woocommerce-form-row input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  background: #f9f9f9;
+  transition: all 0.3s ease;
+}
+
+.woocommerce form .woocommerce-form-row input:focus {
+  border-color: #0073e6;
+  background: #ffffff;
+  box-shadow: 0px 0px 5px rgba(0, 115, 230, 0.3);
+}
+
+/* Remember Me Checkbox */
+.woocommerce-form__label-for-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+/* Buttons */
+.woocommerce-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background: #0073e6;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.woocommerce-button:hover {
+  background: #005bb5;
+}
+
+/* Lost Password */
+.woocommerce-LostPassword a {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #0073e6;
+  text-decoration: none;
+}
+
+.woocommerce-LostPassword a:hover {
+  text-decoration: underline;
+}
+
+/* Registration Section */
+.u-columns {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.u-column1,
+.u-column2 {
+  flex: 1;
+  min-width: 320px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .u-columns {
+      flex-direction: column;
+  }
+}
+
+
+
+
+
+.register-accordion {
+  cursor: pointer;  
+  width: 100%;
+  text-align: center;
+  border: none;
+  outline: none;
+  transition: background-color 0.3s;
+  background-color: #0073e6;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.register-accordion:hover {
+  background-color: #2980b9;
+}
+
+.register-panel {
+  display: none;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.u-column2 {
+  display: none;
+}
+
+/* New styles for login form */
+.login .password-input {
+  display: block;
+}
+
+/* Style for the new H1 tag */
+.register-heading {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: center;
+}
+
+/* Container for registration section */
+.registration-section {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  margin: 0px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+@media (max-width: 600px) {
+  .registration-section {
+      max-width: 90%;
+      padding: 20px;
+  }
+
+  .register-heading {
+      font-size: 24px;
+  }
+
+  .register-accordion {
+      font-size: 14px;
+      padding: 10px 20px;
+  }
+}
