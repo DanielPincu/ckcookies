@@ -7,7 +7,9 @@ Version: 1.0
 License: GNU General Public License v2 or later
 */
 
-
+body {
+  background-color: #f7f7f7;
+}
 
 /* Pagination styles */
 .pagination {
@@ -228,7 +230,7 @@ License: GNU General Public License v2 or later
   }
 }
 
-/* Additional Styling for a Climate Action Theme */
+
 .wpcf7-form {
   border-left: 10px solid #37776E; /* Green accent on the left side of the form */
   background-image: url('path/to/environmental-pattern.png'); /* Optional background image for a nature feel */
@@ -252,13 +254,13 @@ License: GNU General Public License v2 or later
   color: #2E7D32; /* Green for checkbox labels */
 }
 
+
+
+
 /* WOOCOMMERCE */
 /* WooCommerce Content Styling for All Pages */
 
 /* Checkout Form Styles */
-
-
-
 
 input[type="text"],
 input[type="email"],
@@ -334,8 +336,8 @@ textarea:focus {
 }
 
 .woocommerce-checkout #payment ul.payment_methods {
-  background-color: #EFF6FE; 
-  border: 1px solid #5AB9A6;
+  /* background-color: #EFF6FE;  */
+  /* border: 1px solid #5AB9A6; */
   
 }
 
@@ -356,7 +358,7 @@ textarea:focus {
 }
 
 .woocommerce form .form-row {
-  background-color: #EFF6FE;
+ //form row bg color here
 }
 
 .onsale {

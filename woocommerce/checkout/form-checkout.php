@@ -21,7 +21,7 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 }
 ?>
 
-<form name="checkout" method="post" class="checkout woocommerce-checkout md:mx-32  p-6 bg-blue-50 border-[1px] border-teal-500 shadow-lg rounded-lg" action="<?php echo esc_url( wc_get_checkout_url() ); ?>" enctype="multipart/form-data">
+<form name="checkout" method="post" class="checkout woocommerce-checkout md:mx-32  p-6 bg-red-100 border-[1px] border-teal-500 shadow-lg rounded-lg" action="<?php echo esc_url( wc_get_checkout_url() ); ?>" enctype="multipart/form-data">
 
     <?php if ( $checkout->get_checkout_fields() ) : ?>
 
@@ -47,15 +47,15 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 
     <?php do_action( 'woocommerce_checkout_before_order_review' ); ?>
 
-    <div id="order_review" class="woocommerce-checkout-review-order bg-blue-50 border-[1px] border-teal-500 p-4 rounded-lg shadow-md mb-6">
+    <div id="order_review" class="woocommerce-checkout-review-order bg-red-100 border-[1px] border-teal-500 p-4 rounded-lg shadow-md mb-6">
         <?php do_action( 'woocommerce_checkout_order_review' ); ?>
     </div>
 
     <?php do_action( 'woocommerce_checkout_after_order_review' ); ?>
 
     <div class="mt-6">
-        <button type="submit" class="w-full bg-teal-400 text-white font-semibold py-3 rounded-lg hover:bg-teal-700 transition duration-200">
-            <?php esc_html_e( 'Place Order', 'woocommerce' ); ?>
+        <button type="submit" class="w-full bg-teal-400 text-white font-semibold py-3 rounded-lg hover:bg-teal-600 transition duration-200">
+            <?php esc_html_e( 'Afgiv ordre', 'woocommerce' ); ?>
         </button>
     </div>
 

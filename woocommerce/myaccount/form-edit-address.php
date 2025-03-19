@@ -25,7 +25,7 @@ do_action( 'woocommerce_before_edit_account_address_form' ); ?>
 	<?php wc_get_template( 'myaccount/my-address.php' ); ?>
 <?php else : ?>
 
-	<form class="bg-blue-50 p-10 border-[1px] border-teal-500" method="post">
+	<form class="bg-red-100 p-10 border-[1px] border-teal-500" method="post">
 
 		<h2><?php echo apply_filters( 'woocommerce_my_account_edit_address_title', $page_title, $load_address ); ?></h2><?php // @codingStandardsIgnoreLine ?>
 
