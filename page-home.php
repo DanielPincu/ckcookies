@@ -5,7 +5,7 @@
     <div class="orange h-60 md:h-80 lg:h-[500px] relative lg:pt-10">
     
     <div class="grid grid-cols-1 lg:grid-cols-2">
-        <div class="flex flex-col items-center justify-center h-full">
+        <div class="flex flex-col mx-auto lg:items-start items-center  h-full">
             <h1 class="z-10 text-3xl md:text-5xl text-center lg:text-left text-white">Skabt Til At Forsøde Dine
                 <span class="z-10 block">Særlige øjeblikke</span>
             </h1>
@@ -25,10 +25,10 @@
         </div>
 
         <div class="z-10">
-            <div class="absolute bottom-20" href="<?php echo home_url(); ?>">
+            <div class="absolute bottom-32" href="<?php echo home_url(); ?>">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/heart.png" alt="" class="lg:w-[90%] w-10">
             </div>
-            <div class="absolute top-32 right-0" href="<?php echo home_url(); ?>">
+            <div class="absolute rotate-180 top-32 right-0" href="<?php echo home_url(); ?>">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/heart.png" alt="" class="lg:w-[90%] w-10">
             </div>
         </div>

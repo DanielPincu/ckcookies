@@ -706,3 +706,28 @@ textarea:focus {
       padding: 10px 20px;
   }
 }
+
+
+.hamburger-menu {
+  background: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px; /* Adjust the width of the hamburger */
+  height: 25px; /* Adjust the height of the hamburger */
+  padding: 0;
+  cursor: pointer;
+}
+
+.bar {
+  background-color: #333; /* Color of the bars */
+  height: 4px; /* Thickness of the bars */
+  width: 100%; /* Make the bars take up the full width */
+  border-radius: 4px; /* Optional: rounded edges for the bars */
+}
+
+/* Optional: Change the color on hover or click */
+.hamburger-menu:hover .bar {
+  background-color: #555; /* Example hover color */
+}

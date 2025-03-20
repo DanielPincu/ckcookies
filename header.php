@@ -54,10 +54,13 @@
       </div>
 
       <!-- Mobile Navigation Button -->
-      <div class="md:hidden z-50">
-        <button id="cookie-menu" class="cookie-icon focus:outline-none">
-          
-        </button>
+      <div class="md:hidden z-10 pl-5">
+      <button id="cookie-menu" class="hamburger-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
       </div>
     </div>
 
