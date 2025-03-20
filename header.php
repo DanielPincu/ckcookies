@@ -12,7 +12,7 @@
 
 <!-- Navigation -->
 <header class="orange py-10">
-  <div class="cream container mx-auto rounded-3xl px-4 lg:px-20">
+  <div class="cream container mx-auto rounded-3xl px-4 lg:px-20 z-50 relative">
     <div class="container mx-auto flex justify-around items-center px-4">
     
       <!-- Desktop Navigation -->

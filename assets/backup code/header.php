@@ -26,6 +26,8 @@
           </ul>
 
         </nav>
+
+
     <div class="flex space-x-4 sm:space-x-6">
           <a href="<?php echo esc_url( get_permalink( wc_get_page_id( 'cart' ) ) ); ?>" class="flex cursor-pointer flex-col items-center justify-center">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6">
