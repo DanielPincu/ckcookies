@@ -14,9 +14,16 @@ License: GNU General Public License v2 or later
   background-color: #FDF7EC;
 }
 
+.light {
+  background-color: #F9F9F9;
+}
+
+.pink {
+  background-color: #E84C77;
+}
 
 body {
-  background-color: #f7f7f7;
+  background-color: #FDF7EC;
   font-family: 'Rowdies';
 }
 
@@ -731,4 +738,28 @@ textarea:focus {
 /* Optional: Change the color on hover or click */
 .hamburger-menu:hover .bar {
   background-color: #555; /* Example hover color */
+}
+
+
+
+
+
+.light::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  border: 4px dashed white;
+  border-radius: 1rem;
+  opacity: 0; 
+  background-color: #E84C77; 
+  transition: opacity 0.3s ease, background-color 0.3s ease; 
+}
+
+
+.light:hover::after {
+  opacity: 1; 
+  background-color: #E84C77; 
 }

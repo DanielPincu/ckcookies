@@ -42,9 +42,43 @@
 
 
     <!-- About us section -->
-    <section>
-        <div class="pt-32 pb-10 text-center">
-            <h2 class="text-5xl text-red-950">Om Vores Cookiebutik</h2>
+    <section class="container mx-auto">
+        <div class="container mx-auto pt-32">
+            <h2 class="text-xl md:text-4xl text-red-950 text-center">Om Vores Cookiebutik</h2>
+            <div class="w-3/4 mx-auto mt-10">
+                <p class="text-red-950">Ingen anledning er for lille eller for stor til at blive gjort sødere med en personlig cookie eller kage. Uanset om du fejrer en fødselsdag, et bryllup eller bare et hyggeligt øjeblik med dem, du holder af, vil vores speciallavede lækkerier bringe smil og glæde til enhver begivenhed.</p>
+            </div>
+        </div>
+
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center justify-center container mx-auto md:px-10 pt-10 pb-32 gap-14">
+
+        <div class="relative light h-64 border-4 border-pink-600 rounded-3xl">
+            <div class="absolute z-50 -bottom-10 left-1/2 transform -translate-x-1/2 border-2 border-slate-200 rounded-full w-32 h-32 bg-pink-500">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/icon1.png" alt="" class="w-full z-10">
+            </div>
+        </div>
+
+        <div class="relative light h-64 border-4 border-pink-600 rounded-3xl">
+            <div class="absolute z-50 -bottom-10 left-1/2 transform -translate-x-1/2 border-2 border-slate-200 rounded-full w-32 h-32 bg-pink-500">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/icon2.png" alt="" class="w-full z-10">
+            </div>
+        </div>
+
+        <div class="relative light h-64 border-4 border-pink-600 rounded-3xl">
+            <div class="absolute z-50 -bottom-10 left-1/2 transform -translate-x-1/2 border-2 border-slate-200 rounded-full w-32 h-32 bg-pink-500">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/icon3.png" alt="" class="w-full z-10">
+            </div>
+        </div>
+
+        <div class="relative light h-64 border-4 border-pink-600 rounded-3xl">
+            <div class="absolute z-50 -bottom-10 left-1/2 transform -translate-x-1/2 border-2 border-slate-200 rounded-full w-32 h-32 bg-pink-500">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/icon4.png" alt="" class="w-full z-10">
+            </div>
+        </div>
+
+
+    
         </div>
     </section>
 
