@@ -13,10 +13,10 @@
 <!-- Navigation -->
 <header class="orange py-10">
   <div class="cream container mx-auto rounded-3xl px-4 lg:px-20 z-50 relative">
-    <div class="container mx-auto flex justify-around items-center px-4">
+    <div class="container mx-auto flex justify-between items-center px-4">
     
       <!-- Desktop Navigation -->
-      <nav class="hidden md:flex md:flex-row">
+      <nav class="hidden lg:flex md:flex-row">
         <ul class="flex lg:space-x-14 md:space-x-6">
             <li><a href="<?php echo home_url(); ?>" class="hover:text-orange-500 text-amber-950 transition duration-300 active:text-orange-600 font-bold">Hjem</a></li>
             <li><a href="#featured" class="hover:text-orange-500 text-amber-950 transition duration-300 active:text-orange-600 font-bold">Om os</a></li>
@@ -26,9 +26,9 @@
       </nav>
 
       <!-- Logo Section -->
-      <div class="">
+      <div class="lg:pr-44 md:pr-0 py-2">
         <a class="" href="<?php echo home_url(); ?>">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/cklogo.png" alt="Site Logo" class="w-32 sm:w-40 md:w-52">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/cklogo.png" alt="Site Logo" class="w-10 sm:w-20 md:w-24">
         </a>
       </div>
 
@@ -54,7 +54,7 @@
       </div>
 
       <!-- Mobile Navigation Button -->
-      <div class="md:hidden z-10 pl-5">
+      <div class="lg:hidden z-10 pl-5">
       <button id="cookie-menu" class="hamburger-menu">
         <span class="bar"></span>
         <span class="bar"></span>
