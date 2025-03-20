@@ -51,27 +51,35 @@
         </div>
 
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center justify-center container mx-auto md:px-10 pt-10 pb-32 gap-14">
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 items-center justify-center container mx-auto md:px-10 pt-10 pb-32 gap-14">
 
-        <div class="relative light h-64 border-4 border-pink-600 rounded-3xl">
+        <div class="relative light h-72 border-4 border-pink-600 rounded-3xl hover:text-[#FDF7EC] duration-300">
+        <h3 class="relative text-center text-2xl pt-10 z-10">Fødselsdagscookies</h3>
+        <p class="relative z-10 px-5 text-sm">Suspendisse consequat bibendum dui at finibus. Nullam turpis purus, interdum in odio eget.</p>
             <div class="absolute z-50 -bottom-10 left-1/2 transform -translate-x-1/2 border-2 border-slate-200 rounded-full w-32 h-32 bg-pink-500">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/icon1.png" alt="" class="w-full z-10">
             </div>
         </div>
 
-        <div class="relative light h-64 border-4 border-pink-600 rounded-3xl">
+        <div class="relative light h-72 border-4 border-pink-600 rounded-3xl hover:text-[#FDF7EC] duration-300">
+        <h3 class="relative text-center text-2xl pt-10 z-10">Bryllupscookies</h3>
+        <p class="relative z-10 px-5 text-sm">Suspendisse consequat bibendum dui at finibus. Nullam turpis purus, interdum in odio eget.</p>
             <div class="absolute z-50 -bottom-10 left-1/2 transform -translate-x-1/2 border-2 border-slate-200 rounded-full w-32 h-32 bg-pink-500">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/icon2.png" alt="" class="w-full z-10">
             </div>
         </div>
 
-        <div class="relative light h-64 border-4 border-pink-600 rounded-3xl">
+        <div class="relative light h-72 border-4 border-pink-600 rounded-3xl hover:text-[#FDF7EC] duration-300">
+        <h3 class="relative text-center text-2xl pt-10 z-10">Kage</h3>
+        <p class="relative z-10 px-5 text-sm">Suspendisse consequat bibendum dui at finibus. Nullam turpis purus, interdum in odio eget.</p>
             <div class="absolute z-50 -bottom-10 left-1/2 transform -translate-x-1/2 border-2 border-slate-200 rounded-full w-32 h-32 bg-pink-500">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/icon3.png" alt="" class="w-full z-10">
             </div>
         </div>
 
-        <div class="relative light h-64 border-4 border-pink-600 rounded-3xl">
+        <div class="relative light h-72 border-4 border-pink-600 rounded-3xl hover:text-[#FDF7EC] duration-300">
+        <h3 class="relative text-center text-2xl pt-10 z-10">Fejring</h3>
+        <p class="relative z-10 px-5 text-sm">Suspendisse consequat bibendum dui at finibus. Nullam turpis purus, interdum in odio eget.</p>
             <div class="absolute z-50 -bottom-10 left-1/2 transform -translate-x-1/2 border-2 border-slate-200 rounded-full w-32 h-32 bg-pink-500">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/icon4.png" alt="" class="w-full z-10">
             </div>
