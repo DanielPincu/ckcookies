@@ -9,6 +9,12 @@ function tailwind_styles() {
 }
 add_action("wp_enqueue_scripts", "tailwind_styles");
 
+function custom_enqueue_styles() {
+    wp_enqueue_style('rowdies-font', 'https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap', array(), null);
+}
+add_action('wp_enqueue_scripts', 'custom_enqueue_styles');
+
+
 
 // Enqueue JS
 function custom_script() {

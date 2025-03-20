@@ -3,7 +3,7 @@
     <?php while (have_posts()) : the_post() ?>
     
     <!-- Hero Section -->
-    <div class="orange h-60 md:h-80 lg:h-[500px] relative lg:pt-10">
+    <section class="orange h-60 md:h-80 lg:h-[500px] relative lg:pt-10">
         <div class="grid grid-cols-1 lg:grid-cols-2">
             <div class="flex flex-col mx-auto lg:items-start items-center h-full">
                 
@@ -37,12 +37,16 @@
         </div>
         
         <img src="<?php echo get_template_directory_uri(); ?>/assets/wave.png" alt="" class="absolute -bottom-12">
-    </div>
+    </section>
     <!-- Hero section end -->
 
 
-
-
+    <!-- About us section -->
+    <section>
+        <div class="pt-32 pb-10 text-center">
+            <h2 class="text-5xl text-red-950">Om Vores Cookiebutik</h2>
+        </div>
+    </section>
 
 
 
