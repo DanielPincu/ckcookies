@@ -1,0 +1,73 @@
+<?php wp_head() ?>
+
+<html class="scroll-smooth" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><?php bloginfo('name') ?></title>
+</head>
+
+<body <?php body_class() ?> >
+
+<!-- Navigation -->
+<header class="bg-amber-50 py-4">
+        <div class="container mx-auto flex justify-between items-center px-4 border-b-2 border-dashed border-purple-300">
+        <a href="<?php echo home_url(); ?>">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/cklogo.png" alt="Site Logo" class="w-52">
+        </a>
+        <nav class="hidden md:flex md:flex-row">
+          <ul class="flex space-x-4 sm:space-x-6">
+              <li><a href="<?php echo home_url(); ?>" class="hover:text-orange-500 text-amber-950 transition duration-300 active:text-orange-600">Hjem</a></li>
+              <li><a href="#featured" class="hover:text-orange-500 text-amber-950 transition duration-300 active:text-orange-600">Vores historie</a></li>
+              <li><a href="<?php echo esc_url( get_permalink( wc_get_page_id( 'shop' ) ) ); ?>" class="hover:text-orange-500 text-amber-950 transition duration-300 active:text-orange-600">Shop</a></li>
+              <li><a href="#order" class="hover:text-orange-500 text-amber-950 transition duration-300 active:text-orange-600">Blogs</a></li>
+              <li><a href="#order" class="hover:text-orange-500 text-amber-950 transition duration-300 active:text-orange-600">Kontakt os</a></li>
+          </ul>
+
+        </nav>
+    <div class="flex space-x-4 sm:space-x-6">
+          <a href="<?php echo esc_url( get_permalink( wc_get_page_id( 'cart' ) ) ); ?>" class="flex cursor-pointer flex-col items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6">
+              <path fill-rule="evenodd" d="M7.5 6v.75H5.513c-.96 0-1.764.724-1.865 1.679l-1.263 12A1.875 1.875 0 004.25 22.5h15.5a1.875 1.875 0 001.865-2.071l-1.263-12a1.875 1.875 0 00-1.865-1.679H16.5V6a4.5 4.5 0 10-9 0zM12 3a3 3 0 00-3 3v.75h6V6a3 3 0 00-3-3zm-3 8.25a3 3 0 106 0v-.75a.75.75 0 011.5 0v.75a4.5 4.5 0 11-9 0v-.75a.75.75 0 011.5 0v.75z" clip-rule="evenodd"/>
+            </svg>
+            <span class="text-xs">Kurv</span>
+          </a>
+
+          <a href="<?php echo esc_url( get_permalink( wc_get_page_id( 'myaccount' ) ) ); ?>" class="relative flex cursor-pointer flex-col items-center justify-center">
+            <span class="absolute bottom-[33px] right-1 flex h-2 w-2">
+              <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-400 opacity-75"></span>
+              <span class="relative inline-flex h-2 w-2 rounded-full bg-red-500"></span>
+            </span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/>
+            </svg>
+            <span class="text-xs">Min konto</span>
+          </a>
+
+     </div>
+
+            <!-- Mobile Navigation -->
+            <div class="md:hidden z-50">
+                <!-- Cookie Icon -->
+                <button id="cookie-menu" class="cookie-icon focus:outline-none"></button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <nav id="mobile-menu" class="fixed top-0 right-0 bg-amber-50 w-64 h-full p-6 flex flex-col space-y-4 text-pink-800 transform translate-x-full transition-transform duration-300 ease-in-out z-40 shadow-lg rounded-l-lg">
+            <div class="flex justify-start">
+                <button id="close-menu" class="text-pink-600 text-3xl">&times;</button>
+            </div>
+            <ul class="space-y-6">
+                <li><a href="<?php echo home_url(); ?>" class="text-xl font-semibold hover:text-pink-500 transition duration-300">Hjem</a></li>
+                <li><a href="#featured" class="text-xl font-semibold hover:text-pink-500 transition duration-300">Vores historie</a></li>
+                <li><a href="<?php echo esc_url( get_permalink( wc_get_page_id( 'shop' ) ) ); ?>" class="text-xl font-semibold hover:text-pink-500 transition duration-300">Butik</a></li>
+                <li><a href="#order" class="text-xl font-semibold hover:text-pink-500 transition duration-300">Blogs</a></li>
+                <li><a href="#order" class="text-xl font-semibold hover:text-pink-500 transition duration-300">Kontakt os</a></li>
+            </ul>
+        </nav>
+
+        <!-- Overlay to close menu when clicking outside -->
+        <div id="overlay" class="fixed inset-0 bg-black opacity-50 hidden z-30"></div>
+    </header>
