@@ -20,16 +20,16 @@
             </div>
 
             <div>
-                <div class="lg:z-10 z-9 hidden lg:block absolute bottom-20" href="<?php echo home_url(); ?>">
+                <div class="lg:z-10 z-9 hidden lg:block absolute bottom-20">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/cookies1.png" alt="" class="w-[90%]">
                 </div>
             </div>
 
             <div class="z-10">
-                <div class="absolute bottom-32" href="<?php echo home_url(); ?>">
+                <div class="absolute bottom-32">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/heart.png" alt="" class="lg:w-[90%] w-10">
                 </div>
-                <div class="absolute rotate-180 top-32 right-0" href="<?php echo home_url(); ?>">
+                <div class="absolute rotate-180 top-32 right-0">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/heart.png" alt="" class="lg:w-[90%] w-10">
                 </div>
             </div>
@@ -38,7 +38,7 @@
         
         <img src="<?php echo get_template_directory_uri(); ?>/assets/wave.png" alt="" class="absolute -bottom-12">
     </section>
-    <!-- Hero section end -->
+    <!-- Hero section ends -->
 
 
     <!-- About us section -->
@@ -84,13 +84,18 @@
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/icon4.png" alt="" class="w-full z-10">
             </div>
         </div>
-
-
-    
         </div>
     </section>
 
+    <!-- About us section ends -->
 
+
+
+    <!-- Categories section -->
+
+    <section class="orange h-full relative">
+
+    </section>
 
 
 
