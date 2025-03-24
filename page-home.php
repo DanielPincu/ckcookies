@@ -7,15 +7,15 @@
         <div class="grid grid-cols-1 lg:grid-cols-2">
             <div class="flex flex-col mx-auto lg:items-start items-center h-full">
                 
-                <h1 class="z-10 text-3xl md:text-5xl text-center lg:text-left text-white">Skabt Til At Forsøde Dine
+                <h1 class="z-10 text-3xl md:text-5xl text-center lg:text-left text-slate-100">Skabt Til At Forsøde Dine
                     <span class="z-10 block">Særlige øjeblikke</span>
                 </h1>
 
                 <div class="z-10 w-[500px] hidden lg:block">
-                    <p class="z-10 text-white">Vi tror på, at det rette søde touch kan forvandle et almindeligt øjeblik til noget helt ekstraordinært. Lad os hjælpe dig med at skabe minder – én lækker bid ad gangen!</p>
+                    <p class="z-10 text-slate-100">Vi tror på, at det rette søde touch kan forvandle et almindeligt øjeblik til noget helt ekstraordinært. Lad os hjælpe dig med at skabe minder – én lækker bid ad gangen!</p>
                 </div>
                 
-                <button class="z-10 h-10 mt-10 bg-[4CA397] rounded-full w-64 text-center text-white">Shop Nu</button>
+                <button class="z-10 h-10 mt-10 bg-[4CA397] rounded-full w-64 text-center text-slate-100">Shop Nu</button>
 
             </div>
 
@@ -36,14 +36,14 @@
             
         </div>
         
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/wave.png" alt="" class="absolute -bottom-12">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/wave.png" alt="" class="absolute -bottom-5 lg:-bottom-14">
     </section>
     <!-- Hero section ends -->
 
 
     <!-- About us section -->
-    <section class="container mx-auto">
-        <div class="container mx-auto pt-32">
+    <section class="container mx-auto pt-32 pb-20">
+        <div class="container mx-auto">
             <h2 class="text-xl md:text-4xl text-red-950 text-center">Om Vores Cookiebutik</h2>
             <div class="w-3/4 mx-auto mt-10">
                 <p class="text-red-950">Ingen anledning er for lille eller for stor til at blive gjort sødere med en personlig cookie eller kage. Uanset om du fejrer en fødselsdag, et bryllup eller bare et hyggeligt øjeblik med dem, du holder af, vil vores speciallavede lækkerier bringe smil og glæde til enhver begivenhed.</p>
@@ -91,12 +91,73 @@
 
 
 
-    <!-- Categories section -->
+    <!-- Delicious flavorous items -->
 
-    <section class="orange h-full relative">
+    <section class="orange relative">
+        <div class="lg:z-10 z-9 absolute -top-5 lg:-top-14 rotate-180">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/wave.png" alt="" class="">
+        </div>
 
+        <div class="relative z-10 container mx-auto py-20">
+            <h3 class="text-center lg:text-4xl text-2xl text-slate-100">Delicious Flavorous Items</h3>
+            
+            <div class="col-span-2">
+                <div class="grid xl:grid-cols-3 lg:grid-cols-2 gap-5 py-10 ">
+
+                    <div class="flex flex-col">
+                        <div class="border-teal-400 border-[8px] bg-slate-100 h-96 rounded-3xl">
+                            <button class="pink block mx-auto px-5 py-2 mt-72 rounded-full text-slate-100">Se Produkt</button>
+                        </div>
+                        <span class="text-center text-slate-100 text-xl pt-8">Hobby & Interesser Kager</span>
+                        <span class="text-center text-slate-100 pb-20">$65.00</span>
+                    </div>
+
+                    <div class="flex flex-col">
+                        <div class="border-teal-400 border-[8px] bg-slate-100 h-96 rounded-3xl">
+                            <button class="pink block mx-auto px-5 py-2 mt-72 rounded-full text-slate-100">Se Produkt</button>
+                        </div>
+                        <span class="text-center text-slate-100 text-xl pt-8">Hobby & Interesser Kager</span>
+                        <span class="text-center text-slate-100 pb-20">$65.00</span>
+                    </div>
+
+                    <div class="flex flex-col">
+                        <div class="border-teal-400 border-[8px] bg-slate-100 h-96 rounded-3xl">
+                            <button class="pink block mx-auto px-5 py-2 mt-72 rounded-full text-slate-100">Se produkt</button>
+                        </div>
+                        <span class="text-center text-slate-100 text-xl pt-8">Hobby & Interesser Kager</span>
+                        <span class="text-center text-slate-100 pb-20">$65.00</span>
+                    </div>
+
+                    <div class="flex flex-col">
+                        <div class="border-teal-400 border-[8px] bg-slate-100 h-96 rounded-3xl">
+                            <button class="pink block mx-auto px-5 py-2 mt-72 rounded-full text-slate-100">Se Produkt</button>
+                        </div>
+                        <span class="text-center text-slate-100 text-xl pt-8">Hobby & Interesser Kager</span>
+                        <span class="text-center text-slate-100 pb-20">$65.00</span>
+                    </div>
+
+                    <div class="flex flex-col">
+                        <div class="border-teal-400 border-[8px] bg-slate-100 h-96 rounded-3xl">
+                            <button class="pink block mx-auto px-5 py-2 mt-72 rounded-full text-slate-100">Se Produkt</button>
+                        </div>
+                        <span class="text-center text-slate-100 text-xl pt-8">Hobby & Interesser Kager</span>
+                        <span class="text-center text-slate-100 pb-20">$65.00</span>
+                    </div>
+
+                    <div class="flex flex-col">
+                        <div class="border-teal-400 border-[8px] bg-slate-100 h-96 rounded-3xl">
+                            <button class="pink block mx-auto px-5 py-2 mt-72 rounded-full text-slate-100">Se produkt</button>
+                        </div>
+                        <span class="text-center text-slate-100 text-xl pt-8">Hobby & Interesser Kager</span>
+                        <span class="text-center text-slate-100 pb-20">$65.00</span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
     </section>
 
+    <!-- Delicious flavorous items ends  -->
 
 
 

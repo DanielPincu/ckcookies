@@ -22,6 +22,10 @@ License: GNU General Public License v2 or later
   background-color: #E84C77;
 }
 
+.teal {
+  background-color: #73C8BD;
+}
+
 body {
   background-color: #FDF7EC;
   font-family: 'Rowdies';
