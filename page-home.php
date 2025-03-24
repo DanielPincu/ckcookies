@@ -102,7 +102,7 @@
             <h3 class="text-center lg:text-4xl text-2xl text-slate-100">Delicious Flavorous Items</h3>
             
             <div class="col-span-2">
-                <div class="grid xl:grid-cols-3 lg:grid-cols-2 gap-5 py-10 ">
+                <div class="grid xl:grid-cols-3 lg:grid-cols-2 gap-5 py-10 px-0 md:px-10">
 
                     <div class="flex flex-col">
                         <div class="border-teal-400 border-[8px] bg-slate-100 h-96 rounded-3xl">
@@ -166,15 +166,15 @@
 
     <!-- Trust indicator -->
      
-     <section class="hidden container mx-auto lg:grid xl:grid-cols-3 py-52">
+     <section class="hidden container mx-auto lg:grid xl:grid-cols-3 py-52 gap-10 px-10">
         
-     <div class="col-span-2">
+       <div class="col-span-2">
         <div class="">
             <h4 class="text-2xl">Hver Bid Fyldt med Sødme</h4>
             <p class="font-light">Hver cookie og kage er lavet med kærlighed og kreativitet, designet til at gøre dine særlige øjeblikke endnu sødere. Uanset om det er en fødselsdag, bryllup eller en anden fejring, laver vi skræddersyede lækkerier, der bringer glæde i hver bid.</p>
         </div> 
 
-        <div class="flex flex-row">
+        <div class="flex flex-row gap-10">
             <div class="flex flex-row gap-5">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/trustico1.png" alt="" class="w-20 h-20">
                <div>
@@ -193,7 +193,7 @@
 
         <br>
 
-        <div class="flex flex-row justify-center">
+        <div class="flex flex-row gap-10">
             <div class="flex flex-row gap-5">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/trustico3.png" alt="" class="w-20 h-20">
                <div>
@@ -214,9 +214,6 @@
         <div class="hidden xl:flex justify-end ">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/trust.png" alt="" class="">
         </div>
-        
-       
-
 
      </section>
 
