@@ -94,7 +94,7 @@
     <!-- Delicious flavorous items -->
 
     <section class="orange relative">
-        <div class="lg:z-10 z-9 absolute -top-5 lg:-top-14 rotate-180">
+        <div class="z-10 absolute -top-5 lg:-top-14 rotate-180">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/wave.png" alt="" class="">
         </div>
 
@@ -155,12 +155,67 @@
             </div>
             
         </div>
+
+        <div class="z-10 absolute -bottom-5 lg:-bottom-14">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/wave.png" alt="" class="">
+        </div>
     </section>
 
     <!-- Delicious flavorous items ends  -->
 
 
+    <!-- Trust indicator -->
+     
+     <section class="hidden container mx-auto lg:grid xl:grid-cols-3 grid-cols-2 items-start pt-32 h-1/2 ">
+        <div class="col-span-3 w-1/2 pl-7">
+            <h4 class="text-2xl">Hver Bid Fyldt med Sødme</h4>
+            <p class="font-light">Hver cookie og kage er lavet med kærlighed og kreativitet, designet til at gøre dine særlige øjeblikke endnu sødere. Uanset om det er en fødselsdag, bryllup eller en anden fejring, laver vi skræddersyede lækkerier, der bringer glæde i hver bid.</p>
+        </div>
+        <div class="flex flex-col justify-center">
 
+            <div class="flex flex-row">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/trustico1.png" alt="" class="w-32 h-32">
+               <div>
+                    <span class="block pt-6 text-pink-500">Søde Kreationer til Alle Anledninger</span>
+                    <span class="font-light">Fra fødselsdage til bryllupper, vores cookies og kager er skabt til at passe til enhver fejring.</span>
+               </div>
+            </div>
+            <div class="flex flex-row">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/trustico2.png" alt="" class="w-32 h-32">
+               <div>
+                    <span class="block pt-6 text-pink-500">Lavet med Kærlighed og Friske Ingredienser</span>
+                    <span class="font-light">Hver lækkerbit er håndlavet med omhu og kun de fineste ingredienser for en lækker oplevelse.</span>
+               </div>
+            </div>
+        </div>
+
+
+        <div class="flex flex-col justify-center">
+            <div class="flex flex-row">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/trustico3.png" alt="" class="w-32 h-32">
+               <div>
+                    <span class="block pt-6 text-pink-500">Skræddersyede Designs, Bare for Dig</span>
+                    <span class="font-light">Vi bringer dine idéer til live med personlige cookies og kager, der matcher din unikke stil.</span>
+               </div>
+            </div>
+            <div class="flex flex-row">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/trustico4.png" alt="" class="w-32 h-32">
+               <div>
+                    <span class="block pt-6 text-pink-500">En Bid af Lykke i Hvert Design</span>
+                    <span class="font-light">Vores skræddersyede kreationer bringer glæde og en smule sødme til hvert særligt øjeblik.</span>
+               </div>
+            </div>
+        </div>
+        
+        
+        <div class="hidden xl:flex justify-end items-start">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/trust.png" alt="" class="">
+        </div>
+        
+       
+
+
+     </section>
 
 
 
