@@ -166,7 +166,7 @@
 
     <!-- Trust indicator -->
      
-     <section class="hidden container mx-auto lg:grid xl:grid-cols-3 py-52 gap-10 px-10">
+     <section class="hidden container mx-auto lg:grid xl:grid-cols-3 pt-52 pb gap-10 px-10">
         
        <div class="col-span-2">
         <div class="">
@@ -229,7 +229,7 @@
         </div>
 
         <div class="relative z-10 container mx-auto py-20 px-10">
-            <h3 class="text-start lg:text-3xl text-2xl text-slate-100">Delicious Flavorous Items</h3>
+            <h3 class="text-start lg:text-3xl text-2xl text-slate-100">Featured products</h3>
         </div>
 
         <div class="z-10 absolute -bottom-5 lg:-bottom-14">
@@ -242,10 +242,10 @@
 
     <!-- Our shop gallery -->
 
-    <section class="container mx-auto h-[600px] mb-96">
+    <section class="container mx-auto">
         <h3 class="hidden md:block text-center text-red-950 lg:pt-44 pt-20 pb-10 lg:text-4xl text-2xl">Vores butiksgalleri</h3>
 
-        <div class="hidden md:grid grid-cols-11 h-3/4 gap-2 mt-10 px-10 xl:px-0">
+        <div class="hidden md:grid xl:grid-cols-11 h-[600px] gap-2 mt-10 px-10 xl:px-0">
 
             <div class="col-span-4">
                 <div class="grid h-full gap-2">
@@ -254,7 +254,7 @@
                     <div class="bg-red-500 col-span-1"></div>
                 </div>
             </div>
-            <div class="bg-blue-400 col-span-3"></div>
+            <div class="hidden xl:block bg-blue-400 col-span-3"></div>
             <div class="col-span-4">
             <div class="grid h-full gap-2">
                     <div class="bg-yellow-500 col-span-1"></div>
@@ -269,8 +269,41 @@
 
     </section>
 
+    <!-- Our shop gallery ends   -->
 
 
+    <!-- Contact section -->
+
+    <section class="orange relative mt-72 mb-20">
+        <div class="z-10 absolute -top-5 lg:-top-14 rotate-180">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/wave.png" alt="" class="">
+        </div>
+
+        <div class="grid grid-cols-2 container mx-auto pt-32 items-center justify-center">
+
+            <div class="">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/discount.png" alt="" class="w-[70%]">
+               
+
+            </div>
+
+            <div>
+                <h4 class="text-xl">echo do_shortcode here</h4>
+            </div>
+
+        </div>
+
+        <div class="py-20 container mx-auto">
+
+            <iframe class="rounded-3xl" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2565.7827423812083!2d8.453031299999999!3d55.46951029999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c4c44c4678f0d%3A0x9efc215c254bfc43!2sEsbjerg%20Hovedbibliotek!5e0!3m2!1sen!2sdk!4v1633100121299!5m2!1sen!2sdk" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        </div>
+
+        <div class="z-10 absolute -bottom-5 lg:-bottom-14">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/wave.png" alt="" class="">
+        </div>
+        
+    </section>
 
 
     <?php endwhile ?>
