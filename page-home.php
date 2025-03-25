@@ -219,8 +219,9 @@
 
     <!-- Trust indicator ends  -->
 
-    <!-- Featured Products -->
 
+
+    <!-- Featured Products -->
 
     <section class="orange relative h-96 mt-44">
         <div class="z-10 absolute -top-5 lg:-top-14 rotate-180">
@@ -229,9 +230,6 @@
 
         <div class="relative z-10 container mx-auto py-20 px-10">
             <h3 class="text-start lg:text-3xl text-2xl text-slate-100">Delicious Flavorous Items</h3>
-            
-            
-            
         </div>
 
         <div class="z-10 absolute -bottom-5 lg:-bottom-14">
@@ -239,9 +237,37 @@
         </div>
     </section>
 
+    <!-- Featured Products ends  -->
 
 
+    <!-- Our shop gallery -->
 
+    <section class="container mx-auto h-[600px] mb-96">
+        <h3 class="hidden md:block text-center text-red-950 lg:pt-44 pt-20 pb-10 lg:text-4xl text-2xl">Vores butiksgalleri</h3>
+
+        <div class="hidden md:grid grid-cols-11 h-3/4 gap-2 mt-10 px-10 xl:px-0">
+
+            <div class="col-span-4">
+                <div class="grid h-full gap-2">
+                    <div class="bg-green-500 col-span-2"></div>
+                    <div class="bg-yellow-500 col-span-1"></div>
+                    <div class="bg-red-500 col-span-1"></div>
+                </div>
+            </div>
+            <div class="bg-blue-400 col-span-3"></div>
+            <div class="col-span-4">
+            <div class="grid h-full gap-2">
+                    <div class="bg-yellow-500 col-span-1"></div>
+                    <div class="bg-red-500 col-span-1"></div>
+                    <div class="bg-green-500 col-span-2"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <h3 class="text-center text-red-950 lg:pt-44 pt-20 pb-10 lg:text-4xl text-2xl">Here goes testimonials</h3>
+
+    </section>
 
 
 
