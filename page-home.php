@@ -5,7 +5,7 @@
     <!-- Hero Section -->
     <section class="orange h-60 md:h-80 lg:h-[500px] relative lg:pt-10">
         <div class="grid grid-cols-1 lg:grid-cols-2">
-            <div class="flex flex-col mx-auto lg:items-start items-center h-full">
+            <div class="flex flex-col mx-auto lg:items-start items-center h-full px-10 xl:px-0">
                 
                 <h1 class="z-10 text-3xl md:text-5xl text-center lg:text-left text-slate-100">Skabt Til At Forsøde Dine
                     <span class="z-10 block">Særlige øjeblikke</span>
@@ -15,7 +15,7 @@
                     <p class="z-10 text-slate-100">Vi tror på, at det rette søde touch kan forvandle et almindeligt øjeblik til noget helt ekstraordinært. Lad os hjælpe dig med at skabe minder – én lækker bid ad gangen!</p>
                 </div>
                 
-                <button class="z-10 h-10 mt-10 bg-[4CA397] rounded-full w-64 text-center text-slate-100">Shop Nu</button>
+                <button class="z-20 h-10 mt-10 bg-[4CA397] rounded-full w-64 text-center text-slate-100">Shop Nu</button>
 
             </div>
 
