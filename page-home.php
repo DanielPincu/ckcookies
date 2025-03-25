@@ -279,15 +279,13 @@
             <img src="<?php echo get_template_directory_uri(); ?>/assets/wave.png" alt="" class="">
         </div>
 
-        <div class="grid grid-cols-2 container mx-auto pt-32 items-center justify-center">
+        <div class="grid grid-cols-1 xl:grid-cols-2 container mx-auto pt-20 items-center justify-center">
 
-            <div class="">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/discount.png" alt="" class="w-[70%]">
-               
-
+            <div class="flex items-center justify-center">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/discount.png" alt="" class="w-[50%]">
             </div>
 
-            <div>
+            <div class="flex items-center justify-center">
                 <h4 class="text-xl">echo do_shortcode here</h4>
             </div>
 
