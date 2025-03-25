@@ -2,6 +2,17 @@
 
 get_header(); ?>
 
+<section class="orange relative h-96">
+        
+
+        <div class="relative z-10 container mx-auto py-20 px-10">
+            <h3 class="text-start lg:text-3xl text-2xl text-slate-100">Featured products</h3>
+        </div>
+
+        <div class="z-10 absolute -bottom-5 lg:-bottom-14">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/wave.png" alt="" class="">
+        </div>
+    </section>
 <div class="container mx-auto p-4">
     
     <!-- Display category name or Shop -->

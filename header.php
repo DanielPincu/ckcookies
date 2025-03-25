@@ -11,24 +11,24 @@
 <body <?php body_class(); ?> >
 
 <!-- Navigation -->
-<header class="orange py-10">
-  <div class="cream container mx-auto rounded-3xl px-4 lg:px-20 z-50 relative">
+<header id="header" class="orange sticky top-0 z-50">
+  <div class="bg-slate-200 container mx-auto rounded-3xl px-4 lg:px-20 z-50 relative">
     <div class="container mx-auto flex justify-between items-center px-4">
     
       <!-- Desktop Navigation -->
       <nav class="hidden lg:flex md:flex-row">
         <ul class="flex lg:space-x-14 md:space-x-6">
             <li><a href="<?php echo home_url(); ?>" class="hover:text-orange-500 text-amber-950 transition duration-300 active:text-orange-600 font-bold">Hjem</a></li>
-            <li><a href="#featured" class="hover:text-orange-500 text-amber-950 transition duration-300 active:text-orange-600 font-bold">Om os</a></li>
+            <li><a href="#om_os" class="hover:text-orange-500 text-amber-950 transition duration-300 active:text-orange-600 font-bold">Om os</a></li>
             <li><a href="<?php echo esc_url( get_permalink( wc_get_page_id( 'shop' ) ) ); ?>" class="hover:text-orange-500 text-amber-950 transition duration-300 active:text-orange-600 font-bold">Shop</a></li>
-            <li><a href="#order" class="hover:text-orange-500 text-amber-950 transition duration-300 active:text-orange-600 font-bold">Kontakt os</a></li>
+            <li><a href="#kontakt_os" class="hover:text-orange-500 text-amber-950 transition duration-300 active:text-orange-600 font-bold">Kontakt os</a></li>
         </ul>
       </nav>
 
       <!-- Logo Section -->
       <div class="lg:pr-44 md:pr-0 py-2">
         <a class="" href="<?php echo home_url(); ?>">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/cklogo.png" alt="Site Logo" class="w-10 sm:w-20 md:w-24">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/cklogo.webp" alt="hjemmesidens logo" class="w-10 sm:w-20 md:w-24">
         </a>
       </div>
 
@@ -65,15 +65,15 @@
     </div>
 
     <!-- Mobile Menu -->
-    <nav id="mobile-menu" class="fixed top-0 right-0 bg-amber-50 w-64 h-full p-6 flex flex-col space-y-4 text-pink-800 transform translate-x-full transition-transform duration-300 ease-in-out z-40 shadow-lg rounded-l-lg">
+    <nav id="mobile-menu" class="fixed top-0 right-0 bg-amber-50 w-64 h-full p-6 flex flex-col space-y-4 text-pink-800 transform translate-x-full transition-transform duration-300 ease-in-out z-50 shadow-lg rounded-l-lg">
       <div class="flex justify-start">
         <button id="close-menu" class="text-pink-600 text-3xl">&times;</button>
       </div>
       <ul class="space-y-6">
         <li><a href="<?php echo home_url(); ?>" class="text-xl font-semibold hover:text-pink-500 transition duration-300">Hjem</a></li>
-        <li><a href="#featured" class="text-xl font-semibold hover:text-pink-500 transition duration-300">Om os</a></li>
+        <li><a href="#om_os" class="text-xl font-semibold hover:text-pink-500 transition duration-300">Om os</a></li>
         <li><a href="<?php echo esc_url( get_permalink( wc_get_page_id( 'shop' ) ) ); ?>" class="text-xl font-semibold hover:text-pink-500 transition duration-300">Shop</a></li>
-        <li><a href="#order" class="text-xl font-semibold hover:text-pink-500 transition duration-300">Kontakt os</a></li>
+        <li><a href="#kontakt_os" class="text-xl font-semibold hover:text-pink-500 transition duration-300">Kontakt os</a></li>
       </ul>
     </nav>
 

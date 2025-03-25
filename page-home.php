@@ -7,12 +7,12 @@
         <div class="grid grid-cols-1 lg:grid-cols-2">
             <div class="flex flex-col mx-auto lg:items-start items-center h-full px-10 xl:px-0">
                 
-                <h1 class="z-10 text-3xl md:text-5xl text-center lg:text-left text-slate-100">Skabt Til At Forsøde Dine
-                    <span class="z-10 block">Særlige øjeblikke</span>
-                </h1>
+            <h1 class="z-10 text-3xl md:text-4xl text-center lg:text-left text-slate-100">
+                <?php echo get_field("intro") ?>
+            </h1>
 
                 <div class="z-10 w-[500px] hidden lg:block">
-                    <p class="z-10 text-slate-100">Vi tror på, at det rette søde touch kan forvandle et almindeligt øjeblik til noget helt ekstraordinært. Lad os hjælpe dig med at skabe minder – én lækker bid ad gangen!</p>
+                    <p class="z-10 text-slate-100"><?php echo get_field("core_narrative") ?></p>
                 </div>
                 
                 <button class="z-20 h-10 mt-10 bg-[4CA397] rounded-full w-64 text-center text-slate-100">Shop Nu</button>
@@ -21,7 +21,7 @@
 
             <div>
                 <div class="lg:z-10 z-9 hidden lg:block absolute bottom-20">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/cookies1.png" alt="" class="w-[90%]">
+                    <img src="<?php echo get_field('hero_image')['sizes']['large']; ?>" alt="<?php echo get_field('hero_image')['alt'] ?>" class="w-[80%]">
                 </div>
             </div>
 
@@ -42,7 +42,7 @@
 
 
     <!-- About us section -->
-    <section class="container mx-auto pt-32 pb-20">
+    <section id="om_os" class="container mx-auto pt-32 pb-20">
         <div class="container mx-auto">
             <h2 class="text-xl md:text-4xl text-red-950 text-center">Om Vores Cookiebutik</h2>
             <div class="w-3/4 mx-auto mt-10">
@@ -56,7 +56,7 @@
         <div class="relative light h-72 border-4 border-pink-600 rounded-3xl hover:text-[#FDF7EC] duration-300">
         <h3 class="relative text-center text-2xl pt-10 z-10">Fødselsdagscookies</h3>
         <p class="relative z-10 px-5 text-sm">Suspendisse consequat bibendum dui at finibus. Nullam turpis purus, interdum in odio eget.</p>
-            <div class="absolute z-50 -bottom-10 left-1/2 transform -translate-x-1/2 border-2 border-slate-200 rounded-full w-32 h-32 bg-pink-500">
+            <div class="absolute z-40 -bottom-10 left-1/2 transform -translate-x-1/2 border-2 border-slate-200 rounded-full w-32 h-32 bg-pink-500">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/icon1.png" alt="" class="w-full z-10">
             </div>
         </div>
@@ -64,7 +64,7 @@
         <div class="relative light h-72 border-4 border-pink-600 rounded-3xl hover:text-[#FDF7EC] duration-300">
         <h3 class="relative text-center text-2xl pt-10 z-10">Bryllupscookies</h3>
         <p class="relative z-10 px-5 text-sm">Suspendisse consequat bibendum dui at finibus. Nullam turpis purus, interdum in odio eget.</p>
-            <div class="absolute z-50 -bottom-10 left-1/2 transform -translate-x-1/2 border-2 border-slate-200 rounded-full w-32 h-32 bg-pink-500">
+            <div class="absolute z-40 -bottom-10 left-1/2 transform -translate-x-1/2 border-2 border-slate-200 rounded-full w-32 h-32 bg-pink-500">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/icon2.png" alt="" class="w-full z-10">
             </div>
         </div>
@@ -72,7 +72,7 @@
         <div class="relative light h-72 border-4 border-pink-600 rounded-3xl hover:text-[#FDF7EC] duration-300">
         <h3 class="relative text-center text-2xl pt-10 z-10">Kage</h3>
         <p class="relative z-10 px-5 text-sm">Suspendisse consequat bibendum dui at finibus. Nullam turpis purus, interdum in odio eget.</p>
-            <div class="absolute z-50 -bottom-10 left-1/2 transform -translate-x-1/2 border-2 border-slate-200 rounded-full w-32 h-32 bg-pink-500">
+            <div class="absolute z-40 -bottom-10 left-1/2 transform -translate-x-1/2 border-2 border-slate-200 rounded-full w-32 h-32 bg-pink-500">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/icon3.png" alt="" class="w-full z-10">
             </div>
         </div>
@@ -80,7 +80,7 @@
         <div class="relative light h-72 border-4 border-pink-600 rounded-3xl hover:text-[#FDF7EC] duration-300">
         <h3 class="relative text-center text-2xl pt-10 z-10">Fejring</h3>
         <p class="relative z-10 px-5 text-sm">Suspendisse consequat bibendum dui at finibus. Nullam turpis purus, interdum in odio eget.</p>
-            <div class="absolute z-50 -bottom-10 left-1/2 transform -translate-x-1/2 border-2 border-slate-200 rounded-full w-32 h-32 bg-pink-500">
+            <div class="absolute z-40 -bottom-10 left-1/2 transform -translate-x-1/2 border-2 border-slate-200 rounded-full w-32 h-32 bg-pink-500">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/icon4.png" alt="" class="w-full z-10">
             </div>
         </div>
@@ -274,7 +274,7 @@
 
     <!-- Contact section -->
 
-    <section class="orange relative mt-72 mb-20">
+    <section id="kontakt_os" class="orange relative mt-72 mb-20">
         <div class="z-10 absolute -top-5 lg:-top-14 rotate-180">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/wave.png" alt="" class="">
         </div>

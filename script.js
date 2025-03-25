@@ -1,29 +1,59 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const cookieMenu = document.getElementById('cookie-menu');
-  const mobileMenu = document.getElementById('mobile-menu');
-  const overlay = document.getElementById('overlay');
-  const closeMenu = document.getElementById('close-menu');
+    const cookieMenu = document.getElementById('cookie-menu');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const overlay = document.getElementById('overlay');
+    const closeMenu = document.getElementById('close-menu');
+    const menuLinks = document.querySelectorAll('#mobile-menu ul li a'); // Select all menu links
+    
+    // Check if the elements exist before adding event listeners
+    if (cookieMenu && mobileMenu && overlay && closeMenu) {
+        cookieMenu.addEventListener('click', toggleMenu);
+        overlay.addEventListener('click', closeMenuFunction);
+        closeMenu.addEventListener('click', closeMenuFunction);
   
-  // Check if the elements exist before adding event listeners
-  if (cookieMenu && mobileMenu && overlay && closeMenu) {
-      cookieMenu.addEventListener('click', toggleMenu);
-      overlay.addEventListener('click', closeMenuFunction);
-      closeMenu.addEventListener('click', closeMenuFunction);
-  }
+        // Add event listener to each menu link
+        menuLinks.forEach(link => {
+            link.addEventListener('click', closeMenuFunction);
+        });
+    }
+  
+    function toggleMenu() {
+        mobileMenu.classList.toggle('mobile-menu-open');
+        overlay.classList.toggle('hidden');
+    }
+  
+    function closeMenuFunction() {
+        mobileMenu.classList.remove('mobile-menu-open');
+        overlay.classList.add('hidden');
+    }
+  });
+  
 
-  function toggleMenu() {
-      mobileMenu.classList.toggle('mobile-menu-open');
-      overlay.classList.toggle('hidden');
-  }
 
-  function closeMenuFunction() {
-      mobileMenu.classList.remove('mobile-menu-open');
-      overlay.classList.add('hidden');
-  }
+  document.addEventListener('DOMContentLoaded', function() {
+    const header = document.getElementById('header');
+    let isThrottling = false;
+    const thresholdPixels = 100; // Scroll threshold in pixels
+    const bufferPixels = 80; // Buffer zone in pixels (adjust as needed)
+
+    window.addEventListener('scroll', function() {
+        if (isThrottling) return;
+
+        isThrottling = true;
+
+        requestAnimationFrame(function() {
+            const currentScroll = window.scrollY;
+
+            if (currentScroll > thresholdPixels + bufferPixels) {
+                header.classList.remove('orange');
+            } else if (currentScroll < thresholdPixels - bufferPixels) {
+                header.classList.add('orange');
+            }
+
+            isThrottling = false;
+        });
+    });
 });
-
-
-
 
 
 

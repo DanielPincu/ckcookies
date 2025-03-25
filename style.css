@@ -9,6 +9,14 @@ License: GNU General Public License v2 or later
 .orange {
   background-color: #F4A259;
 }
+/* Add smooth transition to header properties like background color, padding, etc. */
+#header {
+  transition: background-color 0.5s ease, padding 0.5s ease;
+}
+
+#header.orange {
+  padding-top: 50px; /* Adjust padding if needed */
+}
 
 .cream {
   background-color: #FDF7EC;
