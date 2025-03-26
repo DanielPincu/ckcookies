@@ -11,7 +11,7 @@ $shop = get_option('woocommerce_shop_page_id');
     </div>
 
     <div class="z-10 absolute -bottom-5 lg:-bottom-14">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/wave.png" alt="" class="">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/wave.webp" alt="bølge">
     </div>
 </section>
 

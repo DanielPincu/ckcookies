@@ -28,18 +28,18 @@
         <div class="z-10">
 
             <div class="absolute bottom-32">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/heart.png" alt="" class="lg:w-[90%] w-10">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/heart.png" alt="hjerte" class="lg:w-[90%] w-10">
             </div>
             
             <div class="absolute rotate-180 top-32 right-0">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/heart.png" alt="" class="lg:w-[90%] w-10">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/heart.png" alt="hjerte" class="lg:w-[90%] w-10">
             </div>
 
         </div>
             
     </div>
         
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/wave.png" alt="" class="absolute -bottom-5 lg:-bottom-14">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/wave.webp" alt="bølger" class="absolute -bottom-5 lg:-bottom-14">
 </section>
     <!-- Hero section ends -->
 
@@ -65,7 +65,7 @@
     <!-- Delicious flavorous items -->
 <section class="orange relative">
     <div class="z-10 absolute -top-5 lg:-top-14 rotate-180">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/wave.png" alt="" class="">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/wave.webp" alt="bølge">
     </div>
 
     <div class="relative z-10 container mx-auto pt-20">
@@ -84,7 +84,7 @@
 
 
     <div class="z-10 absolute -bottom-5 lg:-bottom-14">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/wave.png" alt="" class="">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/wave.webp" alt="bølge">
     </div>
 </section>
 
@@ -152,7 +152,7 @@
 
     <section class="orange relative h-96 mt-44">
         <div class="z-10 absolute -top-5 lg:-top-14 rotate-180">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/wave.png" alt="" class="">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/wave.webp" alt="bølge">
         </div>
 
         <div class="relative z-10 container mx-auto py-20 px-10">
@@ -160,7 +160,7 @@
         </div>
 
         <div class="z-10 absolute -bottom-5 lg:-bottom-14">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/wave.png" alt="" class="">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/wave.webp" alt="bølge">
         </div>
     </section>
 
@@ -203,7 +203,7 @@
 
     <section id="kontakt_os" class="orange relative mt-72 mb-20">
         <div class="z-10 absolute -top-5 lg:-top-14 rotate-180">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/wave.png" alt="" class="">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/wave.webp" alt="bølge">
         </div>
 
         <div class="grid grid-cols-1 xl:grid-cols-2 container mx-auto pt-20 items-center justify-center">
@@ -225,7 +225,7 @@
         </div>
 
         <div class="z-10 absolute -bottom-5 lg:-bottom-14">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/wave.png" alt="" class="">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/wave.webp" alt="bølge">
         </div>
         
     </section>
