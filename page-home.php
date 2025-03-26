@@ -3,89 +3,62 @@
     <?php while (have_posts()) : the_post() ?>
     
     <!-- Hero Section -->
-    <section class="orange h-60 md:h-80 lg:h-[500px] relative lg:pt-32">
-        <div class="grid grid-cols-1 lg:grid-cols-2">
-            <div class="flex flex-col mx-auto lg:items-start items-center h-full px-10 xl:px-0">
+<section class="orange h-60 md:h-80 lg:h-[500px] relative lg:pt-32">
+    <div class="grid grid-cols-1 lg:grid-cols-2">
+        <div class="flex flex-col mx-auto lg:items-start items-center h-full px-10 xl:px-0">
                 
-            <h1 class="z-10 text-3xl md:text-4xl text-center lg:text-left text-slate-100">
+        <h1 class="z-10 text-3xl md:text-4xl text-center lg:text-left text-slate-100">
                 <?php echo get_field("intro") ?>
-            </h1>
+        </h1>
 
-                <div class="z-10 w-[500px] hidden lg:block">
+        <div class="z-10 w-[500px] hidden lg:block">
                     <p class="z-10 text-slate-100"><?php echo get_field("core_narrative") ?></p>
-                </div>
+        </div>
                 
-                <button class="z-20 h-10 mt-10 bg-[4CA397] rounded-full w-64 text-center text-slate-100">Shop Nu</button>
+        <button class="z-20 h-10 mt-10 bg-[4CA397] rounded-full w-64 text-center text-slate-100">Shop Nu</button>
 
-            </div>
+        </div>
 
-            <div>
+        <div>
                 <div class="lg:z-10 z-9 hidden lg:block absolute bottom-10">
                     <img src="<?php echo get_field('hero_image')['sizes']['large']; ?>" alt="<?php echo get_field('hero_image')['alt'] ?>" class="w-[80%]">
                 </div>
-            </div>
+        </div>
 
-            <div class="z-10">
-                <div class="absolute bottom-32">
+        <div class="z-10">
+
+            <div class="absolute bottom-32">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/heart.png" alt="" class="lg:w-[90%] w-10">
-                </div>
-                <div class="absolute rotate-180 top-32 right-0">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/heart.png" alt="" class="lg:w-[90%] w-10">
-                </div>
+            </div>
+            
+            <div class="absolute rotate-180 top-32 right-0">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/heart.png" alt="" class="lg:w-[90%] w-10">
             </div>
             
         </div>
+            
+    </div>
         
         <img src="<?php echo get_template_directory_uri(); ?>/assets/wave.png" alt="" class="absolute -bottom-5 lg:-bottom-14">
-    </section>
+</section>
     <!-- Hero section ends -->
 
 
     <!-- About us section -->
-    <section id="om_os" class="container mx-auto pt-32 pb-20">
+<section id="om_os" class="container mx-auto pt-32 pb-20">
         <div class="container mx-auto">
             <h2 class="text-xl md:text-4xl text-red-950 text-center">Om Vores Cookiebutik</h2>
             <div class="w-3/4 mx-auto mt-10">
-                <p class="text-red-950">Ingen anledning er for lille eller for stor til at blive gjort sødere med en personlig cookie eller kage. Uanset om du fejrer en fødselsdag, et bryllup eller bare et hyggeligt øjeblik med dem, du holder af, vil vores speciallavede lækkerier bringe smil og glæde til enhver begivenhed.</p>
+                <p class="text-red-950">
+                    <?php echo get_field("about_us") ?>
+                </p>
             </div>
         </div>
 
+                    <!-- Inject services here -->
+    <?php get_template_part('template-parts/services-section'); ?>
+</section>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 items-center justify-center container mx-auto md:px-10 pt-10 pb-32 gap-14">
-
-        <div class="relative light h-72 border-4 border-pink-600 rounded-3xl hover:text-[#FDF7EC] duration-300">
-        <h3 class="relative text-center text-2xl pt-10 z-10">Fødselsdagscookies</h3>
-        <p class="relative z-10 px-5 text-sm">Suspendisse consequat bibendum dui at finibus. Nullam turpis purus, interdum in odio eget.</p>
-            <div class="absolute z-40 -bottom-10 left-1/2 transform -translate-x-1/2 border-2 border-slate-200 rounded-full w-32 h-32 bg-pink-500">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/icon1.png" alt="" class="w-full z-10">
-            </div>
-        </div>
-
-        <div class="relative light h-72 border-4 border-pink-600 rounded-3xl hover:text-[#FDF7EC] duration-300">
-        <h3 class="relative text-center text-2xl pt-10 z-10">Bryllupscookies</h3>
-        <p class="relative z-10 px-5 text-sm">Suspendisse consequat bibendum dui at finibus. Nullam turpis purus, interdum in odio eget.</p>
-            <div class="absolute z-40 -bottom-10 left-1/2 transform -translate-x-1/2 border-2 border-slate-200 rounded-full w-32 h-32 bg-pink-500">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/icon2.png" alt="" class="w-full z-10">
-            </div>
-        </div>
-
-        <div class="relative light h-72 border-4 border-pink-600 rounded-3xl hover:text-[#FDF7EC] duration-300">
-        <h3 class="relative text-center text-2xl pt-10 z-10">Kage</h3>
-        <p class="relative z-10 px-5 text-sm">Suspendisse consequat bibendum dui at finibus. Nullam turpis purus, interdum in odio eget.</p>
-            <div class="absolute z-40 -bottom-10 left-1/2 transform -translate-x-1/2 border-2 border-slate-200 rounded-full w-32 h-32 bg-pink-500">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/icon3.png" alt="" class="w-full z-10">
-            </div>
-        </div>
-
-        <div class="relative light h-72 border-4 border-pink-600 rounded-3xl hover:text-[#FDF7EC] duration-300">
-        <h3 class="relative text-center text-2xl pt-10 z-10">Fejring</h3>
-        <p class="relative z-10 px-5 text-sm">Suspendisse consequat bibendum dui at finibus. Nullam turpis purus, interdum in odio eget.</p>
-            <div class="absolute z-40 -bottom-10 left-1/2 transform -translate-x-1/2 border-2 border-slate-200 rounded-full w-32 h-32 bg-pink-500">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/icon4.png" alt="" class="w-full z-10">
-            </div>
-        </div>
-        </div>
-    </section>
 
     <!-- About us section ends -->
 
