@@ -442,6 +442,12 @@ textarea:focus {
     display: none;
 }
 
+.woocommerce-info {
+    display: none;
+}
+
+
+
 
 //NAV styles
 .cookie-bg {
