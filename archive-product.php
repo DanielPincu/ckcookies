@@ -29,7 +29,6 @@ $shop = get_option('woocommerce_shop_page_id');
                     </a>
                     <div class="p-4">
                         <h2 class="text-lg font-bold"><?php the_title(); ?></h2>
-                        <span class="text-lg italic">by: <?php echo get_field('author'); ?></span><br>
                         <span class="text-lg italic"><?php echo get_field('type'); ?></span>
                         <div class="mt-2 font-semibold text-center"><?php woocommerce_template_loop_price(); ?></div>
                         <div class="mt-4 text-center"><?php woocommerce_template_loop_add_to_cart(); ?></div>
