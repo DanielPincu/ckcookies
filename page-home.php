@@ -3,7 +3,7 @@
     <?php while (have_posts()) : the_post() ?>
     
     <!-- Hero Section -->
-    <section class="orange h-60 md:h-80 lg:h-[500px] relative lg:pt-10">
+    <section class="orange h-60 md:h-80 lg:h-[500px] relative lg:pt-32">
         <div class="grid grid-cols-1 lg:grid-cols-2">
             <div class="flex flex-col mx-auto lg:items-start items-center h-full px-10 xl:px-0">
                 
@@ -20,7 +20,7 @@
             </div>
 
             <div>
-                <div class="lg:z-10 z-9 hidden lg:block absolute bottom-20">
+                <div class="lg:z-10 z-9 hidden lg:block absolute bottom-10">
                     <img src="<?php echo get_field('hero_image')['sizes']['large']; ?>" alt="<?php echo get_field('hero_image')['alt'] ?>" class="w-[80%]">
                 </div>
             </div>

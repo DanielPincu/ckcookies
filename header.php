@@ -28,7 +28,7 @@
       <!-- Logo Section -->
       <div class="lg:pr-44 md:pr-0 py-2">
         <a class="" href="<?php echo home_url(); ?>">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/cklogo.webp" alt="hjemmesidens logo" class="w-10 sm:w-20 md:w-24">
+          <img id="logo" src="<?php echo get_template_directory_uri(); ?>/assets/cklogo.webp" alt="hjemmesidens logo" class="w-10 md:w-24">
         </a>
       </div>
 

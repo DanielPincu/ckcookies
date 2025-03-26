@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   document.addEventListener('DOMContentLoaded', function() {
     const header = document.getElementById('header');
+    const logo = document.getElementById('logo');
     let isThrottling = false;
     const thresholdPixels = 100; // Scroll threshold in pixels
     const bufferPixels = 80; // Buffer zone in pixels (adjust as needed)
@@ -46,8 +47,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
             if (currentScroll > thresholdPixels + bufferPixels) {
                 header.classList.remove('orange');
+                logo.classList.remove('md:w-24');
             } else if (currentScroll < thresholdPixels - bufferPixels) {
                 header.classList.add('orange');
+                logo.classList.add('md:w-24');
             }
 
             isThrottling = false;
