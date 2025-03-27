@@ -201,35 +201,7 @@
 
     <!-- Contact section -->
 
-    <section id="kontakt_os" class="orange relative mt-72 mb-20">
-        <div class="z-10 absolute -top-5 lg:-top-14 rotate-180">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/wave.webp" alt="bølge">
-        </div>
-
-        <div class="grid grid-cols-1 xl:grid-cols-2 container mx-auto pt-20 items-center justify-center">
-
-            <div class="flex items-center justify-center">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/discount.png" alt="" class="w-[50%]">
-            </div>
-
-            <div class="flex items-center justify-center">
-                <h4 class="text-xl">echo do_shortcode here</h4>
-            </div>
-
-        </div>
-
-        <div class="py-20 container mx-auto">
-
-            <iframe class="rounded-3xl" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2565.7827423812083!2d8.453031299999999!3d55.46951029999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c4c44c4678f0d%3A0x9efc215c254bfc43!2sEsbjerg%20Hovedbibliotek!5e0!3m2!1sen!2sdk!4v1633100121299!5m2!1sen!2sdk" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
-        </div>
-
-        <div class="z-10 absolute -bottom-5 lg:-bottom-14">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/wave.webp" alt="bølge">
-        </div>
-        
-    </section>
-
+  
 
     <?php endwhile ?>
 <?php endif ?>
