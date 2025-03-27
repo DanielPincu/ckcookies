@@ -214,7 +214,31 @@
 
     <h3 class="text-center text-red-950 lg:pt-44 pt-20 pb-10 lg:text-4xl text-2xl">Here goes testimonials</h3>
 
-  
+  <!-- Contact section -->
+
+  <section class="orange h-3/4 relative mt-72 mb-20">
+        <div class="z-10 absolute -top-5 lg:-top-14 rotate-180">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/wave.webp" alt="bølge">
+        </div>
+        <h3 class="text-center text-slate-100 pt-20 pb-10 lg:text-4xl text-2xl">Skriv os en anmeldelse</h3>
+        <div class="grid grid-cols-1 xl:grid-cols-2 container mx-auto pt-20 items-center justify-center">
+
+            <div class="flex items-center justify-center">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/discount.png" alt="" class="w-[50%]">
+            </div>
+
+            <div class="flex items-center justify-center">
+                <h4 class="text-xl">echo do_shortcode here</h4>
+            </div>
+
+        </div>
+
+        <div class="z-10 absolute -bottom-5 lg:-bottom-14">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/wave.webp" alt="bølge">
+        </div>
+        
+    </section>
+
 
     <?php endwhile ?>
 <?php endif ?>
