@@ -1,8 +1,5 @@
 <?php
-
-
 defined( 'ABSPATH' ) || exit;
-
 get_header();
 ?>
 
@@ -22,6 +19,4 @@ get_header();
     <?php echo do_shortcode('[woocommerce_checkout]'); // WooCommerce checkout shortcode ?>
 </div>
 
-<?php
-get_footer(); // Include the footer
-?>
+<?php get_footer(); ?>

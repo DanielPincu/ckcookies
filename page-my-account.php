@@ -1,6 +1,4 @@
-<?php 
-
-get_header(); ?>
+<?php get_header(); ?>
 
 <section class="orange relative h-64 mb-20 ">
     <div class="relative z-10 container mx-auto pt-20 xl:py-32 px-10">
