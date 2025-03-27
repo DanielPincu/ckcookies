@@ -64,10 +64,6 @@ if ( $related_products ) : ?>
 							/>
 							<div class='text-center'>
 								<span class="mt-2 font-bold text-lg line-clamp-2"><?php echo $related_product->get_name(); ?></span>
-								<br>
-								<span class="mb-3 font-semibold text-md">
-									by: <?php echo get_field('author', $related_product->get_id()); ?>
-								</span>
 								<span class="font-semibold text-slate-950">
 									<br>
 									<?php echo wc_price($related_product->get_price()); ?>

@@ -23,7 +23,7 @@
                     $product = wc_get_product(get_the_ID()); // Get the WooCommerce product object.
                     ?>
                     <li class="splide__slide mx-2 flex flex-col h-full">
-                        <div class="md:h-96 h-40 overflow-hidden flex justify-center items-center">
+                        <div class="h-96 overflow-hidden flex justify-center items-center">
                             <img
                                 class=""
                                 src="<?php echo wp_get_attachment_url($product->get_image_id()); ?>" 
