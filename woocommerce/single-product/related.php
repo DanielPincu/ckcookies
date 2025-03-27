@@ -21,7 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 if ( $related_products ) : ?>
 
-	<section class="related products py-5">
+	<section class="hidden xl:block related products py-5">
 		<?php
 		$heading = apply_filters( 'woocommerce_product_related_products_heading', __( 'Related products', 'woocommerce' ) );
 
@@ -58,7 +58,7 @@ if ( $related_products ) : ?>
 						</div>
 						<div class="hidden md:flex flex-col items-center p-2">
 						<img
-								class="object-cover w-1/2"
+								class="object-cover w-[70%]"
 								src="<?php echo wp_get_attachment_url($related_product->get_image_id()); ?>" 
 								alt="<?php echo esc_attr($related_product->get_name()); ?>"
 							/>
@@ -74,7 +74,7 @@ if ( $related_products ) : ?>
 							<div>
 							<a href="<?php echo esc_url(get_permalink($related_product->get_id())); ?>" 
 								   class="my-5 h-10 md:w-36 w-20 flex items-center bg-teal-400 text-slate-950 justify-center">
-									View<span class="hidden md:block px-1">Product</span>
+									Se produkt</span>
 							</a>
 							</div>
 						</div>
