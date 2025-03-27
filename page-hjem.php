@@ -7,7 +7,7 @@
     <div class="grid grid-cols-1 lg:grid-cols-2">
         <div class="flex flex-col mx-auto lg:items-start items-center h-full px-10 xl:px-0">
                 
-        <h1 class="z-10 text-3xl md:text-4xl text-center lg:text-left text-slate-100">
+        <h1 class="z-10 pt-10 text-3xl md:text-4xl text-center lg:text-left text-slate-100">
             <?php echo get_field("intro") ?>
         </h1>
 
@@ -45,7 +45,7 @@
 
 
     <!-- About us section -->
-<section id="om_os" class="container mx-auto pt-32 pb-20">
+<section class="container mx-auto pt-32 pb-20">
         <div class="container mx-auto">
             <h2 class="text-xl md:text-4xl text-red-950 text-center">Om Vores Cookiebutik</h2>
             <div class="w-3/4 mx-auto mt-10">
@@ -56,7 +56,7 @@
         </div>
 
                     <!-- Inject services here -->
-    <?php get_template_part('template-parts/services-section'); ?>
+    <?php get_template_part('template-parts/services-loop'); ?>
 </section>
     <!-- About us section ends -->
 
@@ -68,7 +68,7 @@
         <img src="<?php echo get_template_directory_uri(); ?>/assets/wave.webp" alt="bølge">
     </div>
 
-    <div class="relative z-10 container mx-auto pt-20">
+<div class="hidden lg:block relative z-10 container mx-auto pt-20 px-5">
     <div class="flex items-center justify-between"> <!-- Changed 'justify-stretch' to 'justify-between' -->
         <h3 class="lg:text-4xl text-2xl text-slate-100 md:px-10 lg:px-0">Vores lækre smagfulde varer</h3>
         <a href="<?php echo get_permalink( wc_get_page_id( 'shop' ) ); ?>">
@@ -82,6 +82,10 @@
     </div>
 </div>
 
+    <div class="block lg:hidden">
+        <h3 class="lg:text-4xl text-xl text-center text-slate-100 md:px-10 lg:px-0 py-10">Vores lækre smagfulde varer</h3>
+        <?php get_template_part('template-parts/delicious-loop'); ?>
+    </div>
 
     <div class="z-10 absolute -bottom-5 lg:-bottom-14">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/wave.webp" alt="bølge">
@@ -150,26 +154,37 @@
 
     <!-- Featured Products -->
 
-    <section class="orange relative h-96 mt-44">
-        <div class="z-10 absolute -top-5 lg:-top-14 rotate-180">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/wave.webp" alt="bølge">
+<section class="hidden lg:block orange relative mt-44">
+
+    <div class="z-10 absolute -top-5 lg:-top-14 rotate-180">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/wave.webp" alt="bølge">
+    </div>
+
+    <div class="relative z-10 container mx-auto py-20 px-10">
+        <h3 class="text-center lg:text-3xl text-2xl text-slate-100">Udvalgte produkter</h3>
+    </div>
+
+
+        <!-- Inject carousel here -->
+        <div class="pb-20">
+            <?php get_template_part('template-parts/featured-loop'); ?>
         </div>
 
-        <div class="relative z-10 container mx-auto py-20 px-10">
-            <h3 class="text-start lg:text-3xl text-2xl text-slate-100">Featured products</h3>
-        </div>
 
-        <div class="z-10 absolute -bottom-5 lg:-bottom-14">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/wave.webp" alt="bølge">
-        </div>
-    </section>
+
+
+    <div class="z-10 absolute -bottom-5 lg:-bottom-14">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/wave.webp" alt="bølge">
+    </div>
+
+</section>
 
     <!-- Featured Products ends  -->
 
 
     <!-- Our shop gallery -->
 
-    <section class="container mx-auto">
+<section class="hidden xl:block container mx-auto">
         <h3 class="hidden md:block text-center text-red-950 lg:pt-44 pt-20 pb-10 lg:text-4xl text-2xl">Vores butiksgalleri</h3>
 
         <div class="hidden md:grid xl:grid-cols-11 h-[600px] gap-2 mt-10 px-10 xl:px-0">
@@ -192,14 +207,12 @@
 
         </div>
 
-        <h3 class="text-center text-red-950 lg:pt-44 pt-20 pb-10 lg:text-4xl text-2xl">Here goes testimonials</h3>
-
-    </section>
+</section>
 
     <!-- Our shop gallery ends   -->
 
 
-    <!-- Contact section -->
+    <h3 class="text-center text-red-950 lg:pt-44 pt-20 pb-10 lg:text-4xl text-2xl">Here goes testimonials</h3>
 
   
 

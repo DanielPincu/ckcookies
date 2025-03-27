@@ -112,3 +112,34 @@ document.addEventListener('DOMContentLoaded', function() {
             
         });
     
+
+        document.addEventListener('DOMContentLoaded', function () {
+            new Splide('.splide-carousel-1', {
+                type: 'loop',
+                perPage: 3,  // Default 
+                breakpoints: {
+                    600: {
+                        perPage: 1,  // 1 items per page when the screen width is 600px or more
+                    },
+                    1024: {
+                        perPage: 2,  // 2 items per page when the screen width is 1024px or more
+                    },
+                },
+            }).mount();
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            new Splide('.splide-carousel-2', {
+                type: 'loop',
+                perPage: 3,  // Default 
+                breakpoints: {
+                    600: {
+                        perPage: 1,  // 1 items per page when the screen width is 600px or more
+                    },
+                    1024: {
+                        perPage: 2,  // 2 items per page when the screen width is 1024px or more
+                    },
+                },
+            }).mount();
+        });
+        
