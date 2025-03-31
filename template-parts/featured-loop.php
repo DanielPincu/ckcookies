@@ -25,7 +25,7 @@
                     <li class="splide__slide mx-2 flex flex-col h-full">
                         <div class="md:h-96 h-40 overflow-hidden flex justify-center items-center">
                             <img
-                                class=""
+                                class="border-teal-400 border-2 rounded-2xl"
                                 src="<?php echo wp_get_attachment_url($product->get_image_id()); ?>" 
                                 alt="<?php echo esc_attr($product->get_name()); ?>"
                             />
@@ -44,7 +44,7 @@
                             </div>
                             <div>
                                 <a href="<?php echo esc_url(get_permalink($product->get_id())); ?>" 
-                                   class="my-5 h-10 w-64 flex items-center rounded-3xl bg-teal-500 font-bold text-slate-50 hover:bg-teal-700 justify-center">
+                                   class="my-5 h-10 w-64 flex items-center rounded-3xl bg-[4CA397] font-bold text-slate-50 hover:bg-teal-700 border-2 border-teal-500 duration-300 justify-center">
                                     Se produkt</span>
                                 </a>
                             </div>

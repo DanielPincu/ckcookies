@@ -45,7 +45,7 @@
                             </div>
                             <div>
                                 <a href="<?php echo esc_url(get_permalink($product->get_id())); ?>" 
-                                   class="my-5 h-10 w-64 flex items-center rounded-3xl bg-teal-500 font-bold text-slate-50 hover:bg-teal-700 justify-center">
+                                   class="my-5 h-10 w-64 flex items-center rounded-3xl bg-teal-500 font-bold text-slate-50 hover:bg-teal-700 justify-center border-2 border-teal-600">
                                     Se produkt</span>
                                 </a>
                             </div>
