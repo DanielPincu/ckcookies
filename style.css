@@ -825,3 +825,62 @@ textarea:focus {
   transform: translateY(-50%);
   z-index: 10;
 }
+
+
+
+
+
+/* Gallery container */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+/* Gallery item style */
+.gallery-item {
+  cursor: pointer;
+}
+
+/* Modal background */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 9999; /* Ensure the modal is on top of everything else */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+  overflow: hidden; /* Enable scroll if needed */
+  padding-top: 60px;
+  cursor:pointer; 
+}
+
+/* Modal content (the image) */
+.modal-content {
+  display: block;
+  margin: auto;
+  width: 70%; /* You can adjust the width */
+  max-width: 500px; /* Maximum size */
+  cursor: default; 
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}

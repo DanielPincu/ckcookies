@@ -25,7 +25,7 @@ if (count($gallery_posts) === 7) :
                         $image_url = esc_url($image['sizes']['large']);
                         $alt_text = esc_attr($image['alt']);
                     ?>
-                        <img class="h-full w-full object-cover absolute inset-0" src="<?php echo $image_url; ?>" alt="<?php echo $alt_text; ?>">
+                        <img class="gallery-image h-full w-full object-cover absolute inset-0" src="<?php echo $image_url; ?>" alt="<?php echo $alt_text; ?>">
                     <?php endif; ?>
                 </div>
                 <div class="col-span-1 h-full relative">
@@ -36,7 +36,7 @@ if (count($gallery_posts) === 7) :
                         $image_url = esc_url($image['sizes']['large']);
                         $alt_text = esc_attr($image['alt']);
                     ?>
-                        <img class="h-full w-full object-cover absolute inset-0" src="<?php echo $image_url; ?>" alt="<?php echo $alt_text; ?>">
+                        <img class="gallery-image h-full w-full object-cover absolute inset-0" src="<?php echo $image_url; ?>" alt="<?php echo $alt_text; ?>">
                     <?php endif; ?>
                 </div>
                 <div class="col-span-1 h-full relative">
@@ -47,7 +47,7 @@ if (count($gallery_posts) === 7) :
                         $image_url = esc_url($image['sizes']['large']);
                         $alt_text = esc_attr($image['alt']);
                     ?>
-                        <img class="h-full w-full object-cover absolute inset-0" src="<?php echo $image_url; ?>" alt="<?php echo $alt_text; ?>">
+                        <img class="gallery-image h-full w-full object-cover absolute inset-0" src="<?php echo $image_url; ?>" alt="<?php echo $alt_text; ?>">
                     <?php endif; ?>
                 </div>
             </div>
@@ -62,7 +62,7 @@ if (count($gallery_posts) === 7) :
                 $image_url = esc_url($image['sizes']['large']);
                 $alt_text = esc_attr($image['alt']);
             ?>
-                <img class="h-full w-full object-cover absolute inset-0" src="<?php echo $image_url; ?>" alt="<?php echo $alt_text; ?>">
+                <img class="gallery-image h-full w-full object-cover absolute inset-0" src="<?php echo $image_url; ?>" alt="<?php echo $alt_text; ?>">
             <?php endif; ?>
         </div>
 
@@ -77,7 +77,7 @@ if (count($gallery_posts) === 7) :
                         $image_url = esc_url($image['sizes']['large']);
                         $alt_text = esc_attr($image['alt']);
                     ?>
-                        <img class="h-full w-full object-cover absolute inset-0" src="<?php echo $image_url; ?>" alt="<?php echo $alt_text; ?>">
+                        <img class="gallery-image h-full w-full object-cover absolute inset-0" src="<?php echo $image_url; ?>" alt="<?php echo $alt_text; ?>">
                     <?php endif; ?>
                 </div>
                 <div class="col-span-1 h-full relative">
@@ -88,7 +88,7 @@ if (count($gallery_posts) === 7) :
                         $image_url = esc_url($image['sizes']['large']);
                         $alt_text = esc_attr($image['alt']);
                     ?>
-                        <img class="h-full w-full object-cover absolute inset-0" src="<?php echo $image_url; ?>" alt="<?php echo $alt_text; ?>">
+                        <img class="gallery-image h-full w-full object-cover absolute inset-0" src="<?php echo $image_url; ?>" alt="<?php echo $alt_text; ?>">
                     <?php endif; ?>
                 </div>
                 <div class="col-span-2 h-full relative">
@@ -99,16 +99,25 @@ if (count($gallery_posts) === 7) :
                         $image_url = esc_url($image['sizes']['large']);
                         $alt_text = esc_attr($image['alt']);
                     ?>
-                        <img class="h-full w-full object-cover absolute inset-0" src="<?php echo $image_url; ?>" alt="<?php echo $alt_text; ?>">
+                        <img class="gallery-image h-full w-full object-cover absolute inset-0" src="<?php echo $image_url; ?>" alt="<?php echo $alt_text; ?>">
                     <?php endif; ?>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<!-- Modal for enlarging images -->
+<div id="imageModal" class="modal">
+    <span id="closeModal" class="close">&times;</span>
+    <img id="modalImage" class="modal-content" alt="">
+</div>
+
 <?php 
 else : 
     // Optional: Show a message if you don't have exactly 7 images
     echo '<p class="text-center my-20">Galleri kræver mindst 7 billeder</p>';
 endif; 
+wp_reset_postdata();
 ?>
+
