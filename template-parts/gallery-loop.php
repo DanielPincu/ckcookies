@@ -24,7 +24,7 @@ if (count($gallery_posts) === 7) : ?>
             <!-- Column 1 -->
             <div class="col-span-4">
                 <div class="grid h-full gap-2">
-                    <div class="col-span-2 h-full w-full relative gallery-image">
+                    <div class="col-span-2 h-full w-full relative gallery-image hover:scale-[101%] duration-300 cursor-pointer" data-modal="imageModal">
                         <?php
                         $image = get_field('gallery_image', $gallery_posts[0]->ID);
                         if ($image) :
@@ -34,7 +34,7 @@ if (count($gallery_posts) === 7) : ?>
                             <img class="h-full w-full object-cover absolute inset-0" src="<?php echo $image_url; ?>" alt="<?php echo $alt_text; ?>" />
                         <?php endif; ?>
                     </div>
-                    <div class="col-span-1 h-full relative gallery-image">
+                    <div class="col-span-1 h-full relative gallery-image hover:scale-[101%] duration-300 cursor-pointer">
                         <?php
                         $image = get_field('gallery_image', $gallery_posts[1]->ID);
                         if ($image) :
@@ -44,7 +44,7 @@ if (count($gallery_posts) === 7) : ?>
                             <img class="h-full w-full object-cover absolute inset-0" src="<?php echo $image_url; ?>" alt="<?php echo $alt_text; ?>" />
                         <?php endif; ?>
                     </div>
-                    <div class="col-span-1 h-full relative gallery-image">
+                    <div class="col-span-1 h-full relative gallery-image hover:scale-[101%] duration-300 cursor-pointer">
                         <?php
                         $image = get_field('gallery_image', $gallery_posts[2]->ID);
                         if ($image) :
@@ -58,7 +58,7 @@ if (count($gallery_posts) === 7) : ?>
             </div>
 
             <!-- Column 2 -->
-            <div class="hidden xl:block col-span-3 h-full relative gallery-image">
+            <div class="hidden xl:block col-span-3 h-full relative gallery-image hover:scale-[101%] duration-300 cursor-pointer">
                 <?php
                 $image = get_field('gallery_image', $gallery_posts[3]->ID);
                 if ($image) :
@@ -72,7 +72,7 @@ if (count($gallery_posts) === 7) : ?>
             <!-- Column 3 -->
             <div class="col-span-4">
                 <div class="grid h-full gap-2">
-                    <div class="col-span-1 h-full relative gallery-image">
+                    <div class="col-span-1 h-full relative gallery-image hover:scale-[101%] duration-300 cursor-pointer">
                         <?php
                         $image = get_field('gallery_image', $gallery_posts[4]->ID);
                         if ($image) :
@@ -82,7 +82,7 @@ if (count($gallery_posts) === 7) : ?>
                             <img class="h-full w-full object-cover absolute inset-0" src="<?php echo $image_url; ?>" alt="<?php echo $alt_text; ?>" />
                         <?php endif; ?>
                     </div>
-                    <div class="col-span-1 h-full relative gallery-image">
+                    <div class="col-span-1 h-full relative gallery-image hover:scale-[101%] duration-300 cursor-pointer">
                         <?php
                         $image = get_field('gallery_image', $gallery_posts[5]->ID);
                         if ($image) :
@@ -92,7 +92,7 @@ if (count($gallery_posts) === 7) : ?>
                             <img class="h-full w-full object-cover absolute inset-0" src="<?php echo $image_url; ?>" alt="<?php echo $alt_text; ?>" />
                         <?php endif; ?>
                     </div>
-                    <div class="col-span-2 h-full relative gallery-image">
+                    <div class="col-span-2 h-full relative gallery-image hover:scale-[101%] duration-300 cursor-pointer">
                         <?php
                         $image = get_field('gallery_image', $gallery_posts[6]->ID);
                         if ($image) :
