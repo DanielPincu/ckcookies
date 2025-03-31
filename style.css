@@ -830,57 +830,66 @@ textarea:focus {
 
 
 
-/* Gallery container */
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  justify-content: center;
-}
 
-/* Gallery item style */
-.gallery-item {
-  cursor: pointer;
-}
 
-/* Modal background */
+
+
+
+
+
+
+
+/* Modal styles */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 9999; /* Ensure the modal is on top of everything else */
-  left: 0;
+  display: none;
+  position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
-  overflow: hidden; /* Enable scroll if needed */
-  padding-top: 60px;
-  cursor:pointer; 
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
 }
 
-/* Modal content (the image) */
+.modal .splide__arrow {
+  display: flex;
+  position: absolute; /* Position arrows without affecting layout */
+  top: 50%; /* Center arrows vertically */
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+/* Modal content */
 .modal-content {
-  display: block;
-  margin: auto;
-  width: 70%; /* You can adjust the width */
-  max-width: 500px; /* Maximum size */
-  cursor: default; 
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 80%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  overflow: hidden;
 }
 
-/* Close button */
+/* Only apply to Splide carousel inside the modal */
+.modal-splide .splide__slide img {
+  width: 100%;
+  height: auto; /* Adjust to maintain aspect ratio */
+  max-height: 600px; /* Ensure the images fit within the modal */
+  object-fit: contain;
+}
+
+/* Close button inside the white modal content */
 .close {
   position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
+  top: 0px;
+  right: 20px;
+  color: black;
   font-size: 40px;
   font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
   cursor: pointer;
+  z-index: 10000; /* Ensure it's above other elements */
 }

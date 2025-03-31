@@ -147,36 +147,41 @@ document.addEventListener('DOMContentLoaded', function() {
 
         
 
+
         
+        document.addEventListener('DOMContentLoaded', function () {
+            // Initialize the Splide carousel
+            var splide = new Splide('#modalCarousel', {
+                type       : 'fade',        // 'fade' transition between images
+                heightRatio: 1,           // Adjust the height ratio (optional)
+                pagination: false,          // Disable pagination (optional)
+                arrows    : true,           // Enable navigation arrows
+                autoplay  : false,          // Disable autoplay (optional)
+            });
+            splide.mount();
         
-        document.addEventListener('DOMContentLoaded', function() {
-            // Get all gallery images
-            const galleryImages = document.querySelectorAll('.gallery-image');
-            
-            // Get the modal and modal content
-            const modal = document.getElementById('imageModal');
-            const modalImage = document.getElementById('modalImage');
-            const closeModal = document.getElementById('closeModal');
+            // Get the modal and close button
+            var modal = document.getElementById('imageModal');
+            var closeBtn = document.querySelector('.close');
         
-            // Add click event to each gallery image
-            galleryImages.forEach(image => {
+            // Open modal on image click
+            var images = document.querySelectorAll('.gallery-image'); // Assume images have the class `gallery-image`
+            images.forEach(function(image, index) {
                 image.addEventListener('click', function() {
-                    // Set the src of the modal image to the clicked image's src
-                    modalImage.src = image.src;
-                    // Display the modal
-                    modal.style.display = "block";
+                    modal.style.display = 'block';
+                    splide.go(index);  // Go to the clicked image in the carousel
                 });
             });
         
-            // When the user clicks on the close button, close the modal
-            closeModal.addEventListener('click', function() {
-                modal.style.display = "none";
+            // Close modal when clicking the close button
+            closeBtn.addEventListener('click', function() {
+                modal.style.display = 'none';
             });
         
-            // When the user clicks anywhere outside the modal, close it
+            // Close modal when clicking outside the content
             window.addEventListener('click', function(event) {
                 if (event.target === modal) {
-                    modal.style.display = "none";
+                    modal.style.display = 'none';
                 }
             });
         });
