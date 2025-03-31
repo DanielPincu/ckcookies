@@ -1,3 +1,4 @@
+<!-- Appears only on mobile -->
 <section class="splide splide-carousel-1 mx-auto w-[90vw] md:px-10 py-2">
     <div class="splide__track">
         <ul class="splide__list mx-auto max-w-[1200px]">

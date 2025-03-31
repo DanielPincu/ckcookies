@@ -15,7 +15,12 @@
                 <p class="z-10 text-slate-100"><?php echo esc_html(get_field("core_narrative")); ?></p>
             </div>
                 
-            <button class="z-20 h-10 mt-10 bg-[4CA397] rounded-full w-64 text-center text-slate-100">Shop Nu</button>
+            <a href="<?php echo get_permalink( wc_get_page_id( 'shop' ) ); ?>" class="z-20">
+                <button class="h-10 mt-10 bg-[4CA397] hover:bg-teal-700 rounded-full w-64 text-center text-slate-100">
+                    Shop Nu
+                </button>
+            </a>
+
 
             </div>
 
@@ -94,6 +99,7 @@
         </div>
     </div>
 
+    <!-- Appears only on mobile -->
     <div class="block lg:hidden">
         <h3 class="lg:text-4xl text-xl text-center text-slate-100 md:px-10 lg:px-0 py-10">Vores lækre smagfulde varer</h3>
         <?php get_template_part('template-parts/delicious-loop'); ?>
@@ -193,34 +199,24 @@
     <!-- Featured Products ends -->
 
 
-    <!-- Our shop gallery -->
-    <section class="hidden xl:block container mx-auto">
-        <h3 class="hidden md:block text-center text-red-950 lg:pt-44 pt-20 pb-10 lg:text-4xl text-2xl">Vores butiksgalleri</h3>
 
-        <div class="hidden md:grid xl:grid-cols-11 h-[600px] gap-2 mt-10 px-10 xl:px-0">
 
-            <div class="col-span-4">
-                <div class="grid h-full gap-2">
-                    <div class="bg-green-500 col-span-2"></div>
-                    <div class="bg-yellow-500 col-span-1"></div>
-                    <div class="bg-red-500 col-span-1"></div>
-                </div>
-            </div>
-            <div class="hidden xl:block bg-blue-400 col-span-3"></div>
-            <div class="col-span-4">
-                <div class="grid h-full gap-2">
-                    <div class="bg-yellow-500 col-span-1"></div>
-                    <div class="bg-red-500 col-span-1"></div>
-                    <div class="bg-green-500 col-span-2"></div>
-                </div>
-            </div>
+<!-- Our shop gallery -->
 
-        </div>
+    <?php
+    // Inject here the gallery template part
+    get_template_part('template-parts/gallery-loop');
+    ?>
 
-    </section>
-    <!-- Our shop gallery ends -->
+<!-- Our shop gallery ends -->
+
+
+
+<!-- Testimonial section -->
 
     <h3 class="text-center text-red-950 lg:pt-44 pt-20 pb-10 lg:text-4xl text-2xl">Here goes testimonials</h3>
+
+<!-- Testimonial section ends  -->
 
     <!-- Contact section -->
     <section class="orange h-3/4 relative mt-72 mb-20">
@@ -228,7 +224,7 @@
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/wave.webp" 
                  alt="bølge">
         </div>
-        <h3 class="text-center text-slate-100 pt-20 pb-10 lg:text-4xl text-2xl">Kom i Kontakt</h3>
+        <h3 class="text-center text-slate-100 pt-20 pb-10 lg:text-4xl text-2xl">Efterlad os en anmeldelse</h3>
         <div class="relative z-10 container mx-auto px-10 pb-10">
             <div class="flex flex-col gap-6 items-center">
                 
