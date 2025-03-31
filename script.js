@@ -157,6 +157,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 pagination: false,          // Disable pagination (optional)
                 arrows    : true,           // Enable navigation arrows
                 autoplay  : false,          // Disable autoplay (optional)
+                speed: 1000,
+                easing     : 'ease',
+
             });
             splide.mount();
         

@@ -1,5 +1,5 @@
 <?php
-// Get exactly 7 gallery posts (no more, no less)
+// Get exactly 7 gallery posts for frontpage display (no more, no less)
 $gallery_posts = get_posts(array(
     'post_type' => 'gallery',
     'posts_per_page' => 7,
@@ -7,10 +7,18 @@ $gallery_posts = get_posts(array(
     'order' => 'ASC'
 ));
 
+// Get ALL gallery posts (for modal)
+$all_gallery_posts = get_posts(array(
+    'post_type'      => 'gallery',
+    'posts_per_page' => -1, // Get all images
+    'orderby'        => 'date',
+    'order'          => 'ASC'
+));
+
 // Only show the gallery if we have exactly 7 images
 if (count($gallery_posts) === 7) : ?>
-    <section class="hidden xl:block container mx-auto">
-        <h3 class="hidden md:block text-center text-red-950 lg:pt-44 pt-20 pb-10 lg:text-4xl text-2xl">Vores butiksgalleri</h3>
+    <section class="container mx-auto">
+        <h3 class="text-center text-red-950 lg:pt-44 pt-20 pb-10 lg:text-4xl text-2xl">Vores butiksgalleri</h3>
 
         <div class="hidden md:grid xl:grid-cols-11 h-[600px] gap-2 mt-10 px-10 xl:px-0">
             <!-- Column 1 -->
@@ -99,16 +107,17 @@ if (count($gallery_posts) === 7) : ?>
         </div>
     </section>
 
-    <!-- Modal for Carousel -->
-   <!-- Modal for Carousel -->
-<div class="modal" id="imageModal">
+    
+<!-- Modal for Carousel -->
+<div class="modal splide__track" id="imageModal">
     <div class="modal-content">
         <!-- Splide Carousel -->
         <div class="splide modal-splide" id="modalCarousel">
             <div class="splide__track">
                 <ul class="splide__list">
                     <?php
-                    foreach ($gallery_posts as $post) :
+                    // Now using all gallery images, not just 7
+                    foreach ($all_gallery_posts as $post) :
                         $image = get_field('gallery_image', $post->ID);
                         if ($image) :
                             $image_url = esc_url($image['sizes']['large']);
@@ -128,6 +137,7 @@ if (count($gallery_posts) === 7) : ?>
         <span class="close">&times;</span>
     </div>
 </div>
+
 
 
 <?php else : ?>

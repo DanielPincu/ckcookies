@@ -786,7 +786,7 @@ textarea:focus {
 .splide__track {
   height: 550px; /* Adjust the height to your preference */
   overflow: hidden; /* Ensures content doesn't overflow */
-  margin-right: 40px; /* Add some space to the right */
+  /* margin-right: 40px;  */
 }
 
 @media only screen and (max-width: 768px) {
@@ -880,6 +880,11 @@ textarea:focus {
   height: auto; /* Adjust to maintain aspect ratio */
   max-height: 600px; /* Ensure the images fit within the modal */
   object-fit: contain;
+}
+
+.modal .splide__track {
+  height: 550px; /* Adjust the height to your preference */
+  overflow: hidden; /* Ensures content doesn't overflow */
 }
 
 /* Close button inside the white modal content */
