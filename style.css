@@ -781,6 +781,27 @@ textarea:focus {
 
 
 
+.light2::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  border: 4px dashed white;
+  border-radius: 1rem;
+  opacity: 1;  /* Always visible */
+  background-color: #E84C77; 
+  transition: background-color 0.2s ease; /* Keep transition only for bg */
+}
+
+.light2 {
+  background-color: #E84C77;
+}
+
+
+
+
 
 /* Set a specific height for the Splide track */
 .splide__track {

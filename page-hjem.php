@@ -214,22 +214,33 @@
 
 <!-- Testimonial section -->
 
-    <h3 class="text-center text-red-950 lg:pt-44 pt-20 pb-10 lg:text-4xl text-2xl">Here goes testimonials</h3>
+   
+
+
+<div class="pt-20">
+    <?php    // Inject here the testimonials template part
+        get_template_part('template-parts/testimonials-loop');
+    ?>
+</div>
+
+
+
+
+
+
 
 <!-- Testimonial section ends  -->
 
     <!-- Contact section -->
-    <section class="orange h-3/4 relative mt-72 mb-20">
+    <section class="orange h-full relative mt-72 mb-20">
         <div class="z-10 absolute -top-5 lg:-top-14 rotate-180">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/wave.webp" 
                  alt="bølge">
         </div>
         <h3 class="text-center text-slate-100 pt-20 pb-10 lg:text-4xl text-2xl">Efterlad os en anmeldelse</h3>
-        <div class="relative z-10 container mx-auto px-10 pb-10">
-            <div class="flex flex-col gap-6 items-center">
-                
-            </div>
-        </div>
+        
+        <?php echo do_shortcode('[contact-form-7 id="5d554b3" title="Testimonial"]') ?>
+
         <div class="z-10 absolute -bottom-5 lg:-bottom-14">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/wave.webp" 
                  alt="bølge">

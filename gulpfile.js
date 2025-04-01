@@ -15,9 +15,32 @@ function serve(done) {
     injectChanges: true, // Inject CSS changes without full reload
     notify: false, // Disable notifications
     port: 3001, // Use a different port if 3000 is in use
+    snippetOptions: {
+      rule: {
+        match: /<\/body>/i,
+        fn: function (snippet, match) {
+          return `<script>
+            (function() {
+              let scrollPos = sessionStorage.getItem("scrollPosition");
+              if (scrollPos) {
+                setTimeout(() => window.scrollTo({ top: scrollPos, behavior: "instant" }), 10);
+              }
+              
+              document.addEventListener("DOMContentLoaded", function() {
+                window.addEventListener("scroll", function() {
+                  sessionStorage.setItem("scrollPosition", window.scrollY);
+                }, { passive: true });
+              });
+            })();
+          </script>` + snippet + match;
+        }
+      }
+    }
   });
   done();
 }
+
+
 
 // Watch files for changes
 function watchFiles() {

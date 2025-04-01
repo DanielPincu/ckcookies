@@ -10,7 +10,7 @@
 </section>
 
 
-<?php echo do_shortcode('[contact-form-7 id="e16c273" title="Kontakt"]'); ?>
+<?php echo do_shortcode('[contact-form-7 id="b55075a" title="Contact"]'); ?>
 
 
 
