@@ -804,28 +804,28 @@ textarea:focus {
 
 
 /* Set a specific height for the Splide track */
-.splide__track {
+.featured .splide__track {
   height: 550px; /* Adjust the height to your preference */
   overflow: hidden; /* Ensures content doesn't overflow */
   /* margin-right: 40px;  */
 }
 
 @media only screen and (max-width: 768px) {
-  .splide__track {
+  .featured .splide__track {
     height: 400px; /* Adjust height for mobile screens */
     margin-right: 0px; /* Remove right margin */
   }
 }
 
 /* Control the height of the list */
-.splide__list {
+.featured .splide__list {
   height: 100%; /* Make sure it fills the track */
   display: flex; /* Ensures slides are aligned horizontally */
   align-items: center; /* Vertically center items if necessary */
 }
 
 /* Control the height of individual slides */
-.splide__slide {
+.featured .splide__slide {
   height: 100%; /* Make the slide fill the available height */
   display: flex; /* Flexbox to center content */
   justify-content: center; /* Center horizontally */
@@ -833,13 +833,13 @@ textarea:focus {
 }
 
 /* If you want to control the image size within slides */
-.splide__slide img {
+.featured .splide__slide img {
   max-height: 100%; /* Ensure images don't exceed the slide height */
   object-fit: cover; /* Ensure images cover the area without distortion */
 }
 
 /* Optional: Make sure the arrow buttons don't affect height */
-.splide__arrow {
+.featured .splide__arrow {
   display:flex;
   position: absolute; /* Position arrows without affecting layout */
   top: 40%; /* Center arrows vertically */
@@ -918,4 +918,104 @@ textarea:focus {
   font-weight: bold;
   cursor: pointer;
   z-index: 10000; /* Ensure it's above other elements */
+}
+
+
+
+
+
+
+
+
+/* Set a specific height for the Splide track */
+.delicious .splide__track {
+  height: 550px; /* Adjust the height to your preference */
+  overflow: hidden; /* Ensures content doesn't overflow */
+  /* margin-right: 40px;  */
+}
+
+@media only screen and (max-width: 768px) {
+  .delicious .splide__track {
+    height: 400px; /* Adjust height for mobile screens */
+    margin-right: 0px; /* Remove right margin */
+  }
+}
+
+/* Control the height of the list */
+.delicious .splide__list {
+  height: 100%; /* Make sure it fills the track */
+  display: flex; /* Ensures slides are aligned horizontally */
+  align-items: center; /* Vertically center items if necessary */
+}
+
+/* Control the height of individual slides */
+.delicious .splide__slide {
+  height: 100%; /* Make the slide fill the available height */
+  display: flex; /* Flexbox to center content */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+/* If you want to control the image size within slides */
+.delicious .splide__slide img {
+  max-height: 100%; /* Ensure images don't exceed the slide height */
+  object-fit: cover; /* Ensure images cover the area without distortion */
+}
+
+/* Optional: Make sure the arrow buttons don't affect height */
+.delicious .splide__arrow {
+  display: flex;
+  position: absolute; /* Position arrows without affecting layout */
+  top: 30%; /* Center arrows vertically */
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+
+
+
+
+
+
+
+/* Set a specific height for the Splide track */
+.testimonial .splide__track {
+  height: 550px; /* Adjust the height to your preference */
+  overflow: hidden; /* Ensures content doesn't overflow */
+  /* margin-right: 40px;  */
+}
+
+@media only screen and (max-width: 768px) {
+  .testimonial .splide__track {
+    height: 400px; /* Adjust height for mobile screens */
+    margin-right: 0px; /* Remove right margin */
+  }
+}
+
+/* Control the height of the list */
+.testimonial .splide__list {
+  height: 100%; /* Make sure it fills the track */
+  display: flex; /* Ensures slides are aligned horizontally */
+  align-items: center; /* Vertically center items if necessary */
+}
+
+/* Control the height of individual slides */
+.testimonial .splide__slide {
+  height: 100%; /* Make the slide fill the available height */
+  display: flex; /* Flexbox to center content */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+
+
+
+
+/* Optional: Adjust for specific carousel if needed */
+.splide__arrow--next {
+  right: 0px; /* Position "next" arrow to the right */
+}
+
+.splide__arrow--prev {
+  left: 0; /* Position "prev" arrow to the left */
 }

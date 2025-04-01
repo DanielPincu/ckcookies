@@ -217,7 +217,7 @@
    
 
 
-<div class="pt-20">
+<div class="pt-32">
     <?php    // Inject here the testimonials template part
         get_template_part('template-parts/testimonials-loop');
     ?>
@@ -232,14 +232,16 @@
 <!-- Testimonial section ends  -->
 
     <!-- Contact section -->
-    <section class="orange h-full relative mt-72 mb-20">
+    <section class="orange  relative mt-72 mb-20">
         <div class="z-10 absolute -top-5 lg:-top-14 rotate-180">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/wave.webp" 
                  alt="bølge">
         </div>
-        <h3 class="text-center text-slate-100 pt-20 pb-10 lg:text-4xl text-2xl">Efterlad os en anmeldelse</h3>
+        <h3 class="text-center text-slate-100 pt-20 lg:text-4xl text-2xl">Efterlad os en anmeldelse</h3>
         
+       <div class="py-20 container mx-auto px-2">
         <?php echo do_shortcode('[contact-form-7 id="5d554b3" title="Testimonial"]') ?>
+       </div>
 
         <div class="z-10 absolute -bottom-5 lg:-bottom-14">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/wave.webp" 

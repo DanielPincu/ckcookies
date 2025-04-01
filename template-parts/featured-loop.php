@@ -1,6 +1,6 @@
-<section class="splide splide-carousel-2 mx-auto w-[90vw] md:px-10 py-2">
+<section class="featured container splide splide-carousel-2 mx-auto md:px-10 py-2">
     <div class="splide__track">
-        <ul class="splide__list mx-auto max-w-[1200px]">
+        <ul class="splide__list mx-auto">
             <?php
             // Initialize the WooCommerce Product Query.
             $loop = new WP_Query(array(
@@ -22,7 +22,7 @@
                 while ($loop->have_posts()) : $loop->the_post();
                     $product = wc_get_product(get_the_ID()); // Get the WooCommerce product object.
                     ?>
-                    <li class="splide__slide mx-2 flex flex-col h-full">
+                    <li class="splide__slide flex flex-col h-full">
                         <div class="md:h-96 h-40 overflow-hidden flex justify-center items-center">
                             <img
                                 class="border-teal-400 border-2 rounded-2xl"

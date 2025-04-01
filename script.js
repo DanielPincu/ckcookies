@@ -1,3 +1,4 @@
+// Hamburger menu functionality
 document.addEventListener('DOMContentLoaded', function() {
     const cookieMenu = document.getElementById('cookie-menu');
     const mobileMenu = document.getElementById('mobile-menu');
@@ -29,41 +30,40 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   
 
+//Nagivation bar color change on scroll
+  document.addEventListener('DOMContentLoaded', function() {
+    const header = document.getElementById('header');
+    const logo = document.getElementById('logo');
+    let isThrottling = false;
+    const thresholdPixels = 100; // Scroll threshold in pixels
+    const bufferPixels = 80; // Buffer zone in pixels (adjust as needed)
 
-//   document.addEventListener('DOMContentLoaded', function() {
-//     const header = document.getElementById('header');
-//     const logo = document.getElementById('logo');
-//     let isThrottling = false;
-//     const thresholdPixels = 100; // Scroll threshold in pixels
-//     const bufferPixels = 80; // Buffer zone in pixels (adjust as needed)
+    window.addEventListener('scroll', function() {
+        if (isThrottling) return;
 
-//     window.addEventListener('scroll', function() {
-//         if (isThrottling) return;
+        isThrottling = true;
 
-//         isThrottling = true;
+        requestAnimationFrame(function() {
+            const currentScroll = window.scrollY;
 
-//         requestAnimationFrame(function() {
-//             const currentScroll = window.scrollY;
+            if (currentScroll > thresholdPixels + bufferPixels) {
+                header.classList.remove('orange');
+                logo.classList.remove('md:w-24');
+            } else if (currentScroll < thresholdPixels - bufferPixels) {
+                header.classList.add('orange');
+                logo.classList.add('md:w-24');
+            }
 
-//             if (currentScroll > thresholdPixels + bufferPixels) {
-//                 header.classList.remove('orange');
-//                 logo.classList.remove('md:w-24');
-//             } else if (currentScroll < thresholdPixels - bufferPixels) {
-//                 header.classList.add('orange');
-//                 logo.classList.add('md:w-24');
-//             }
-
-//             isThrottling = false;
-//         });
-//     });
-// });
-
-
+            isThrottling = false;
+        });
+    });
+});
 
 
 
 
 
+// Login and Registration Accordion
         document.addEventListener('DOMContentLoaded', function() {
             // Signup accordion functionality
             var registerForm = document.querySelector('.u-column2');
@@ -113,6 +113,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     
 
+
+
+        // Initialize Splide carousels
         document.addEventListener('DOMContentLoaded', function () {
             new Splide('.splide-carousel-1', {
                 type: 'loop',
@@ -131,18 +134,21 @@ document.addEventListener('DOMContentLoaded', function() {
         document.addEventListener('DOMContentLoaded', function () {
             new Splide('.splide-carousel-2', {
                 type: 'loop',
-                perPage: 3,  // Default 
+                perPage: 4,  // Default
                 breakpoints: {
                     600: {
-                        perPage: 1,  // 1 items per page when the screen width is 600px or more
+                        perPage: 1,  // 1 item per page when the screen width is 600px or less
                     },
-                    1024: {
-                        perPage: 2,  // 2 items per page when the screen width is 1024px or more
+                    768: {
+                        perPage: 2,  // 2 items per page when the screen width is 768px or less
+                    },
+                    1400: {
+                        perPage: 3,  // 3 items per page when the screen width is 1024px or less
                     },
                 },
             }).mount();
         });
-
+        
 
 
         
@@ -189,3 +195,23 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
         
+
+
+        // Testimonial carousel
+        document.addEventListener('DOMContentLoaded', function () {
+            new Splide('.splide-carousel-testimonial', {
+              type       : 'loop',
+              perPage: 4,  // Default 
+              gap        : '1rem',  // Adjust space between slides
+              autoplay   : true,
+              pagination: true,
+              arrows     : true,
+              breakpoints: {
+                1200: {
+                  perPage: 1,  // 1 item per page on screens 600px or smaller
+                },
+                
+              },
+            }).mount();
+          });
+          
