@@ -306,7 +306,6 @@ body {
 
 .wpcf7-form {
   border-left: 10px solid #37776E; /* Green accent on the left side of the form */
-  background-image: url('path/to/environmental-pattern.png'); /* Optional background image for a nature feel */
   background-size: cover;
   background-position: center;
   background-blend-mode: lighten;

@@ -1,17 +1,11 @@
 <?php
 
-function my_theme_enqueue_scripts() {
-    // Enqueue Alpine.js
-    wp_enqueue_script('alpinejs', 'https://cdn.jsdelivr.net/npm/alpinejs@3.2/dist/cdn.min.js', array(), null, true);
-}
-add_action('wp_enqueue_scripts', 'my_theme_enqueue_scripts');
-
 function enqueue_splide_assets() {
     // Enqueue Splide CSS
-    wp_enqueue_style( 'splide-css', 'https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css', array(), '1.0.0' );
+    wp_enqueue_style( 'splide-css', get_template_directory_uri() . "/splide/splide.min.css" );
 
     // Enqueue Splide JS
-    wp_enqueue_script( 'splide-js', 'https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js', array(), '1.0.0', true );
+    wp_enqueue_script( 'splide-js', get_template_directory_uri() . "/splide/splide.min.js" );
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_splide_assets' );
 
