@@ -232,7 +232,7 @@
 <!-- Testimonial section ends  -->
 
     <!-- Contact section -->
-    <section class="orange  relative mt-72 mb-20">
+    <section class="orange  relative mt-44 mb-20">
         <div class="z-10 absolute -top-5 lg:-top-14 rotate-180">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/wave.webp" 
                  alt="bølge">

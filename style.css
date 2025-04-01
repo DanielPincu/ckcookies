@@ -222,10 +222,10 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 30px;
-  background-color: #E3F2FD; /* Light blue for a clean, eco-friendly look */
-  border: 1px solid #A7C7E7; /* Soft blue border for a gentle touch */
+  background-color: #FDF7EC; 
+  border: 1px solid #A7C7E7; 
   border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 128, 0, 0.1); /* Subtle green shadow */
+  box-shadow: 0 4px 15px rgba(0, 128, 0, 0.1); 
   font-family: 'Arial', sans-serif;
 }
 
@@ -269,7 +269,7 @@ body {
 
 /* Button Styling */
 .wpcf7-form input[type="submit"] {
-  background-color: #37776E; /* Bright green to symbolize action and sustainability */
+  background-color: #14B8A6; /* Bright green to symbolize action and sustainability */
   color: #fff;
   padding: 10px 15px;
   font-size: 18px;
@@ -305,7 +305,7 @@ body {
 
 
 .wpcf7-form {
-  border-left: 10px solid #37776E; /* Green accent on the left side of the form */
+  border-left: 3px solid #37776E; /* Green accent on the left side of the form */
   background-size: cover;
   background-position: center;
   background-blend-mode: lighten;
@@ -324,6 +324,10 @@ body {
 
 .wpcf7-form input[type="checkbox"] + label {
   color: #2E7D32; /* Green for checkbox labels */
+}
+/* Set height for the textarea */
+.wpcf7 textarea {
+  height: 150px; /* Adjust the height of the textarea */
 }
 
 

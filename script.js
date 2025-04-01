@@ -201,14 +201,14 @@ document.addEventListener('DOMContentLoaded', function() {
         document.addEventListener('DOMContentLoaded', function () {
             new Splide('.splide-carousel-testimonial', {
               type       : 'loop',
-              perPage: 4,  // Default 
+              perPage: 3,  // Default 
               gap        : '1rem',  // Adjust space between slides
               autoplay   : true,
               pagination: true,
               arrows     : true,
               breakpoints: {
                 1200: {
-                  perPage: 1,  // 1 item per page on screens 600px or smaller
+                  perPage: 1,
                 },
                 
               },

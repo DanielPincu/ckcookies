@@ -12,7 +12,7 @@
 
 <!-- Navigation -->
 <header id="header" class="orange sticky top-0 z-50">
-  <div class="bg-slate-200 container mx-auto rounded-3xl px-4 lg:px-20 z-50 relative">
+  <div class="bg-[#FDF7EC] container mx-auto rounded-3xl px-4 lg:px-20 z-50 relative">
     <div class="container mx-auto flex justify-between items-center px-4">
     
       <!-- Desktop Navigation -->
