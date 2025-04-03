@@ -215,3 +215,31 @@ document.addEventListener('DOMContentLoaded', function() {
             }).mount();
           });
           
+
+         
+
+
+          
+
+
+
+      
+          document.addEventListener('DOMContentLoaded', function() {
+            const filterToggle = document.getElementById('filter-toggle');
+            const categoryFilterOptions = document.getElementById('category-filter-options');
+        
+            // Toggle the dropdown when the filter button is clicked (mobile only)
+            filterToggle.addEventListener('click', function() {
+                categoryFilterOptions.classList.toggle('hidden');
+            });
+        
+            // Close the dropdown when a category is selected
+            const categoryButtons = categoryFilterOptions.getElementsByClassName('category-button');
+            for (let button of categoryButtons) {
+                button.addEventListener('click', function() {
+                    categoryFilterOptions.classList.add('hidden');
+                });
+            }
+        });
+        
+        

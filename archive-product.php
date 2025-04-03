@@ -17,6 +17,55 @@ $shop = get_option('woocommerce_shop_page_id');
 
 
 <div class="container mx-auto p-4">
+
+<form method="get" id="category-filter-form">
+    <div class="category-filter">
+        <!-- Filter button for mobile -->
+        <button type="button" id="filter-toggle" class="category-button bg-blue-500 text-white p-2 rounded-md w-full lg:hidden">
+            Filter by Category
+        </button>
+
+        <!-- Category buttons dropdown -->
+        <div id="category-filter-options" class="category-buttons flex flex-col gap-2 mt-2 hidden lg:flex lg:flex-row md:gap-4">
+            <!-- Button for showing all categories -->
+            <button type="submit" name="product_cat" value="" class="category-button w-48 p-2 bg-gray-200 border border-gray-300 rounded-md hover:bg-gray-300 focus:outline-none <?php echo empty($_GET['product_cat']) ? 'bg-blue-500 text-black' : ''; ?>">All Categories</button>
+
+            <?php
+            // Get the IDs of the categories to exclude
+            $exclude_categories = array(
+                get_term_by('slug', 'uncategorized', 'product_cat')->term_id, // "Uncategorized"
+                get_term_by('slug', 'anbefalet', 'product_cat')->term_id,   // "Anbefalet"
+                get_term_by('slug', 'udvalgt', 'product_cat')->term_id,     // "Udvalgt"
+            );
+
+            // Get all product categories excluding the specified ones
+            $terms = get_terms(array(
+                'taxonomy'   => 'product_cat',
+                'orderby'    => 'name',
+                'hide_empty' => false,
+                'exclude'    => $exclude_categories, // Exclude these categories
+            ));
+
+            // Loop through categories and create a button for each
+            foreach ($terms as $term) {
+                // Check if category is selected
+                $selected = (isset($_GET['product_cat']) && $_GET['product_cat'] == $term->slug) ? 'bg-blue-500 text-white' : 'bg-gray-200 hover:bg-gray-300';
+                echo '<button type="submit" name="product_cat" value="' . esc_attr($term->slug) . '" class="category-button w-48 p-2 border border-gray-300 rounded-md ' . $selected . '">' . esc_html($term->name) . '</button>';
+            }
+            ?>
+        </div>
+    </div>
+</form>
+
+
+
+
+
+
+
+
+
+
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         <?php if ( have_posts() ) : ?>
             <?php while ( have_posts() ) : the_post(); ?>
