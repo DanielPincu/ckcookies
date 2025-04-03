@@ -27,11 +27,10 @@ document.addEventListener('DOMContentLoaded', function() {
         mobileMenu.classList.remove('mobile-menu-open');
         overlay.classList.add('hidden');
     }
-  });
-  
+});
 
-//Nagivation bar color change on scroll
-  document.addEventListener('DOMContentLoaded', function() {
+// Navigation bar color change on scroll
+document.addEventListener('DOMContentLoaded', function() {
     const header = document.getElementById('header');
     const logo = document.getElementById('logo');
     let isThrottling = false;
@@ -59,187 +58,146 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-
-
-
-
 // Login and Registration Accordion
-        document.addEventListener('DOMContentLoaded', function() {
-            // Signup accordion functionality
-            var registerForm = document.querySelector('.u-column2');
-            if (registerForm) {
-                // Create a container for the registration section
-                var container = document.createElement('div');
-                container.className = 'registration-section';
+document.addEventListener('DOMContentLoaded', function() {
+    var registerForm = document.querySelector('.u-column2');
+    if (registerForm) {
+        var container = document.createElement('div');
+        container.className = 'registration-section';
 
-                // Create H1 element
-                var heading = document.createElement('h1');
-                heading.textContent = 'Er du ikke medlem endnu?'; // Updated text
-                heading.className = 'register-heading';
+        var heading = document.createElement('h1');
+        heading.textContent = 'Er du ikke medlem endnu?'; // Updated text
+        heading.className = 'register-heading';
 
-                // Create accordion button
-                var accordion = document.createElement('button');
-                accordion.className = 'register-accordion';
-                accordion.innerHTML = 'Opret en kundekonto';
+        var accordion = document.createElement('button');
+        accordion.className = 'register-accordion';
+        accordion.innerHTML = 'Opret en kundekonto';
 
-                // Add elements to the container
-                container.appendChild(heading);
-                container.appendChild(accordion);
+        container.appendChild(heading);
+        container.appendChild(accordion);
 
-                // Insert the container after the u-columns div
-                var uColumns = document.querySelector('.u-columns');
-                if (uColumns && uColumns.parentNode) {
-                    uColumns.parentNode.insertBefore(container, uColumns.nextSibling);
-                } else {
-                    // Fallback: insert before the register form if u-columns not found
-                    registerForm.parentNode.insertBefore(container, registerForm);
-                }
+        var uColumns = document.querySelector('.u-columns');
+        if (uColumns && uColumns.parentNode) {
+            uColumns.parentNode.insertBefore(container, uColumns.nextSibling);
+        } else {
+            registerForm.parentNode.insertBefore(container, registerForm);
+        }
 
-                registerForm.classList.add('register-panel');
+        registerForm.classList.add('register-panel');
 
-                accordion.addEventListener('click', function() {
-                    // Hide the entire registration section
-                    container.style.display = 'none';
-                    
-                    // Show the registration form
-                    registerForm.style.display = 'block';
-                    
-                    // Optional: Remove the active class if needed
-                    this.classList.remove('active');
-                });
-            }
-
-            
+        accordion.addEventListener('click', function() {
+            container.style.display = 'none';
+            registerForm.style.display = 'block';
+            this.classList.remove('active');
         });
-    
+    }
+});
 
-
-
-        // Initialize Splide carousels
-        document.addEventListener('DOMContentLoaded', function () {
-            new Splide('.splide-carousel-1', {
-                type: 'loop',
-                perPage: 3,  // Default 
-                breakpoints: {
-                    600: {
-                        perPage: 1,  // 1 items per page when the screen width is 600px or more
-                    },
-                    1024: {
-                        perPage: 2,  // 2 items per page when the screen width is 1024px or more
-                    },
+// Initialize Splide carousels (only if the elements exist)
+document.addEventListener('DOMContentLoaded', function () {
+    const splide1 = document.querySelector('.splide-carousel-1');
+    if (splide1) {
+        new Splide('.splide-carousel-1', {
+            type: 'loop',
+            perPage: 3,  // Default 
+            breakpoints: {
+                600: {
+                    perPage: 1,  // 1 items per page when the screen width is 600px or more
                 },
-            }).mount();
-        });
-
-        document.addEventListener('DOMContentLoaded', function () {
-            new Splide('.splide-carousel-2', {
-                type: 'loop',
-                perPage: 4,  // Default
-                breakpoints: {
-                    600: {
-                        perPage: 1,  // 1 item per page when the screen width is 600px or less
-                    },
-                    768: {
-                        perPage: 2,  // 2 items per page when the screen width is 768px or less
-                    },
-                    1400: {
-                        perPage: 3,  // 3 items per page when the screen width is 1024px or less
-                    },
+                1024: {
+                    perPage: 2,  // 2 items per page when the screen width is 1024px or more
                 },
-            }).mount();
+            },
+        }).mount();
+    }
+
+    const splide2 = document.querySelector('.splide-carousel-2');
+    if (splide2) {
+        new Splide('.splide-carousel-2', {
+            type: 'loop',
+            perPage: 4,  // Default
+            breakpoints: {
+                600: {
+                    perPage: 1,  // 1 item per page when the screen width is 600px or less
+                },
+                768: {
+                    perPage: 2,  // 2 items per page when the screen width is 768px or less
+                },
+                1400: {
+                    perPage: 3,  // 3 items per page when the screen width is 1024px or less
+                },
+            },
+        }).mount();
+    }
+
+    const modalCarousel = document.getElementById('modalCarousel');
+    if (modalCarousel) {
+        var splide = new Splide('#modalCarousel', {
+            type: 'fade',        // 'fade' transition between images
+            heightRatio: 1,      // Adjust the height ratio (optional)
+            pagination: false,   // Disable pagination (optional)
+            arrows: true,        // Enable navigation arrows
+            autoplay: false,     // Disable autoplay (optional)
+            speed: 1000,
+            easing: 'ease',
         });
-        
+        splide.mount();
 
-
-        
-
-
-        
-        document.addEventListener('DOMContentLoaded', function () {
-            // Initialize the Splide carousel
-            var splide = new Splide('#modalCarousel', {
-                type       : 'fade',        // 'fade' transition between images
-                heightRatio: 1,           // Adjust the height ratio (optional)
-                pagination: false,          // Disable pagination (optional)
-                arrows    : true,           // Enable navigation arrows
-                autoplay  : false,          // Disable autoplay (optional)
-                speed: 1000,
-                easing     : 'ease',
-
+        var modal = document.getElementById('imageModal');
+        var closeBtn = document.querySelector('.close');
+        var images = document.querySelectorAll('.gallery-image');
+        images.forEach(function(image, index) {
+            image.addEventListener('click', function() {
+                modal.style.display = 'block';
+                splide.go(index);
             });
-            splide.mount();
-        
-            // Get the modal and close button
-            var modal = document.getElementById('imageModal');
-            var closeBtn = document.querySelector('.close');
-        
-            // Open modal on image click
-            var images = document.querySelectorAll('.gallery-image'); // Assume images have the class `gallery-image`
-            images.forEach(function(image, index) {
-                image.addEventListener('click', function() {
-                    modal.style.display = 'block';
-                    splide.go(index);  // Go to the clicked image in the carousel
-                });
-            });
-        
-            // Close modal when clicking the close button
-            closeBtn.addEventListener('click', function() {
+        });
+
+        closeBtn.addEventListener('click', function() {
+            modal.style.display = 'none';
+        });
+
+        window.addEventListener('click', function(event) {
+            if (event.target === modal) {
                 modal.style.display = 'none';
-            });
-        
-            // Close modal when clicking outside the content
-            window.addEventListener('click', function(event) {
-                if (event.target === modal) {
-                    modal.style.display = 'none';
-                }
-            });
-        });
-        
-
-
-        // Testimonial carousel
-        document.addEventListener('DOMContentLoaded', function () {
-            new Splide('.splide-carousel-testimonial', {
-              type       : 'loop',
-              perPage: 3,  // Default 
-              gap        : '1rem',  // Adjust space between slides
-              autoplay   : true,
-              pagination: true,
-              arrows     : true,
-              breakpoints: {
-                1200: {
-                  perPage: 1,
-                },
-                
-              },
-            }).mount();
-          });
-          
-
-         
-
-
-          
-
-
-
-      
-          document.addEventListener('DOMContentLoaded', function() {
-            const filterToggle = document.getElementById('filter-toggle');
-            const categoryFilterOptions = document.getElementById('category-filter-options');
-        
-            // Toggle the dropdown when the filter button is clicked (mobile only)
-            filterToggle.addEventListener('click', function() {
-                categoryFilterOptions.classList.toggle('hidden');
-            });
-        
-            // Close the dropdown when a category is selected
-            const categoryButtons = categoryFilterOptions.getElementsByClassName('category-button');
-            for (let button of categoryButtons) {
-                button.addEventListener('click', function() {
-                    categoryFilterOptions.classList.add('hidden');
-                });
             }
         });
-        
-        
+    }
+
+    // Testimonial carousel
+    const testimonialCarousel = document.querySelector('.splide-carousel-testimonial');
+    if (testimonialCarousel) {
+        new Splide('.splide-carousel-testimonial', {
+            type: 'loop',
+            perPage: 3,  // Default 
+            gap: '1rem',  // Adjust space between slides
+            autoplay: true,
+            pagination: true,
+            arrows: true,
+            breakpoints: {
+                1200: {
+                    perPage: 1,
+                },
+            },
+        }).mount();
+    }
+});
+
+// Filter toggle functionality for category dropdown (only if elements exist)
+document.addEventListener('DOMContentLoaded', function() {
+    const filterToggle = document.getElementById('filter-toggle');
+    const categoryFilterOptions = document.getElementById('category-filter-options');
+
+    if (filterToggle && categoryFilterOptions) {
+        filterToggle.addEventListener('click', function() {
+            categoryFilterOptions.classList.toggle('hidden');
+        });
+
+        const categoryButtons = categoryFilterOptions.getElementsByClassName('category-button');
+        for (let button of categoryButtons) {
+            button.addEventListener('click', function() {
+                categoryFilterOptions.classList.add('hidden');
+            });
+        }
+    }
+});

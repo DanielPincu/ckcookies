@@ -22,13 +22,13 @@ $shop = get_option('woocommerce_shop_page_id');
     <div class="category-filter">
         <!-- Filter button for mobile -->
         <button type="button" id="filter-toggle" class="category-button bg-blue-500 text-white p-2 rounded-md w-full lg:hidden">
-            Filter by Category
+        Filtrer efter kategori
         </button>
 
         <!-- Category buttons dropdown -->
         <div id="category-filter-options" class="category-buttons flex flex-col gap-2 mt-2 hidden lg:flex lg:flex-row md:gap-4">
             <!-- Button for showing all categories -->
-            <button type="submit" name="product_cat" value="" class="category-button w-48 p-2 bg-gray-200 border border-gray-300 rounded-md hover:bg-gray-300 focus:outline-none <?php echo empty($_GET['product_cat']) ? 'bg-blue-500 text-black' : ''; ?>">All Categories</button>
+            <button type="submit" name="product_cat" value="" class="category-button w-48 p-2 bg-gray-200 border border-gray-300 rounded-md hover:bg-gray-300 focus:outline-none <?php echo empty($_GET['product_cat']) ? 'bg-blue-500 text-black' : ''; ?>">Alle kategorier</button>
 
             <?php
             // Get the IDs of the categories to exclude
