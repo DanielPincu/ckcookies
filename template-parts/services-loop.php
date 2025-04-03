@@ -13,7 +13,7 @@ $query = new WP_Query($args);
 
 ?>
 
-<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 items-center justify-center container mx-auto md:px-10 pt-10 pb-32 gap-14">
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 items-center justify-center container mx-auto md:px-10 pt-10 pb-32 gap-8">
     <?php 
     if ($query->have_posts()) :
         while ($query->have_posts()) : $query->the_post();

@@ -21,14 +21,14 @@ $shop = get_option('woocommerce_shop_page_id');
 <form method="get" id="category-filter-form">
     <div class="category-filter">
         <!-- Filter button for mobile -->
-        <button type="button" id="filter-toggle" class="category-button bg-blue-500 text-white p-2 rounded-md w-full lg:hidden">
+        <button type="button" id="filter-toggle" class="bg-teal-700 rounded-full text-white p-2 w-full lg:hidden">
         Filtrer efter kategori
         </button>
 
         <!-- Category buttons dropdown -->
-        <div id="category-filter-options" class="category-buttons flex flex-col gap-2 mt-2 hidden lg:flex lg:flex-row md:gap-4">
+        <div id="category-filter-options" class="flex flex-col gap-2 mt-2 hidden lg:flex lg:flex-row md:gap-4 justify-center">
             <!-- Button for showing all categories -->
-            <button type="submit" name="product_cat" value="" class="category-button w-48 p-2 bg-gray-200 border border-gray-300 rounded-md hover:bg-gray-300 focus:outline-none <?php echo empty($_GET['product_cat']) ? 'bg-blue-500 text-black' : ''; ?>">Alle kategorier</button>
+            <button type="submit" name="product_cat" value="" class="w-48 text-white p-2 border bg-[4CA397] border-gray-300 rounded-full hover:bg-gray-500 focus:outline-none <?php echo empty($_GET['product_cat']) ? 'bg-teal-700 text-white' : ''; ?>">Alle kategorier</button>
 
             <?php
             // Get the IDs of the categories to exclude
@@ -49,8 +49,8 @@ $shop = get_option('woocommerce_shop_page_id');
             // Loop through categories and create a button for each
             foreach ($terms as $term) {
                 // Check if category is selected
-                $selected = (isset($_GET['product_cat']) && $_GET['product_cat'] == $term->slug) ? 'bg-blue-500 text-white' : 'bg-gray-200 hover:bg-gray-300';
-                echo '<button type="submit" name="product_cat" value="' . esc_attr($term->slug) . '" class="category-button w-48 p-2 border border-gray-300 rounded-md ' . $selected . '">' . esc_html($term->name) . '</button>';
+                $selected = (isset($_GET['product_cat']) && $_GET['product_cat'] == $term->slug) ? 'bg-teal-700 border border-2 border-[4CA397] ' : 'bg-[4CA397] hover:bg-teal-700';
+                echo '<button type="submit" name="product_cat" value="' . esc_attr($term->slug) . '" class="w-48 text-white p-2 border border-gray-300 rounded-full ' . $selected . '">' . esc_html($term->name) . '</button>';
             }
             ?>
         </div>
