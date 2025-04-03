@@ -10,7 +10,7 @@
     </div>
 </section>
 
-<div class='py-10 h-full container mx-auto'>
+<div class='py-10 container mx-auto'>
     <?php echo do_shortcode('[woocommerce_my_account]'); ?>
 </div>
 
