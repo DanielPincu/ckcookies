@@ -9,7 +9,7 @@
             array(
                 'taxonomy' => 'product_cat',
                 'field'    => 'slug',
-                'terms'    => 'recommended', // Category slug
+                'terms'    => 'anbefalet', // Category slug
             ),
         ),
     );
@@ -25,7 +25,7 @@
                     <a href="<?php the_permalink(); ?>" class="block w-full h-full">
                         <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" class="w-full h-full object-cover rounded-2xl">
                     </a>
-                    <a class="absolute bottom-5 left-1/2 transform -translate-x-1/2" href="<?php the_permalink(); ?>"><button class="pink hover:bg-pink-700 border-2 border-pink-500
+                    <a class="absolute bottom-5 left-1/2 transform -translate-x-1/2" href="<?php the_permalink(); ?>"><button class="pink hover:bg-pink-700
                       duration-300 block mx-auto px-5 py-2 rounded-full text-slate-100">Se Produkt</button></a>
                 </div>
                 <span class="text-center text-slate-100 text-xl pt-8"><?php the_title(); ?></span>

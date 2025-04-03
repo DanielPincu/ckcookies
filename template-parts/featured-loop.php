@@ -11,7 +11,7 @@
                     array(
                         'taxonomy' => 'product_cat', // WooCommerce product category
                         'field'    => 'slug',         // Use the category slug
-                        'terms'    => 'recommended',  // Slug of the "recommended" category
+                        'terms'    => 'anbefalet',  // Slug of the "recommended" category
                         'operator' => 'IN',           // Include products from the "recommended" category
                     ),
                 ),
@@ -44,7 +44,7 @@
                             </div>
                             <div>
                                 <a href="<?php echo esc_url(get_permalink($product->get_id())); ?>" 
-                                   class="my-5 h-10 w-64 flex items-center rounded-3xl bg-[4CA397] font-bold text-slate-50 hover:bg-teal-700 border-2 border-teal-500 duration-300 justify-center">
+                                   class="my-5 h-10 w-64 flex items-center rounded-3xl bg-[4CA397] font-bold text-slate-50 hover:bg-teal-700 duration-300 justify-center">
                                     Se produkt</span>
                                 </a>
                             </div>

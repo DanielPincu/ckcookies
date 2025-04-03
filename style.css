@@ -161,7 +161,7 @@ body {
 }
 
 .comment-form input[type="submit"] {
-  background-color: #68D5C0; /* WordPress blue */
+  background-color: #4CA397; /* WordPress blue */
   color: #fff; /* White text */
   padding: 10px 20px;
   border: none; /* Remove default border */
@@ -181,7 +181,7 @@ body {
 }
 
 .comment-reply-link {
-  background-color: #68D5C0; /* WordPress blue */
+  background-color: #4CA397; /* WordPress blue */
   color: #fff; /* White text */
   padding: 1px 30px;
   border: none; /* Remove default border */
@@ -192,7 +192,7 @@ body {
 }
 
 #cancel-comment-reply-link {
-  background-color: #68D5C0; /* WordPress blue */
+  background-color: #4CA397; /* WordPress blue */
   color: #fff; /* White text */
   padding: 1px 30px;
   border: none; /* Remove default border */
@@ -361,7 +361,7 @@ textarea:focus {
 
 
 .woocommerce a.button {
-  background-color: #68D5C0; /* Blue background color */
+  background-color: #4CA397; /* Blue background color */
   color: #fff;
 }
 
@@ -372,12 +372,12 @@ textarea:focus {
 }
 
 .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) button.button.alt {
-  background-color: #68D5C0; 
+  background-color: #4CA397; 
   
 }
 
 .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) button.button.alt:hover {
-  background-color: #37776E; 
+  background-color: #4CA397; 
   
 }
 
@@ -387,7 +387,7 @@ textarea:focus {
 }
 
 :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce a.button.alt {
-  background-color: #68D5C0; 
+  background-color: #4CA397; 
   color: #fff;
 }
 
@@ -397,7 +397,7 @@ textarea:focus {
 }
 
 :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce button.button {
-  background-color: #68D5C0; 
+  background-color: #4CA397; 
   color: #fff;
 }
 
@@ -424,7 +424,7 @@ textarea:focus {
 }
 
 :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce button.button.alt {
-  background-color: #68D5C0; 
+  background-color: #4CA397; 
   color: #fff;
 }
 

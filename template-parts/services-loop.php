@@ -25,7 +25,7 @@ $query = new WP_Query($args);
             <div class="relative light h-72 border-4 border-pink-600 rounded-3xl hover:text-[#FDF7EC] duration-300">
                 <h3 class="relative text-center text-2xl pt-10 z-10"><?php echo esc_html($service_title); ?></h3>
                 <p class="relative z-10 px-5 text-sm"><?php echo esc_html($service_description); ?></p>
-                <div class="absolute z-40 -bottom-10 left-1/2 transform -translate-x-1/2 border-2 border-slate-200 rounded-full w-32 h-32 bg-pink-500">
+                <div class="absolute z-40 -bottom-10 left-1/2 transform -translate-x-1/2 border-2 border-[#FDF7EC] rounded-full w-32 h-32 bg-pink-500">
                     <?php if ($service_icon): ?>
                         <img src="<?php echo esc_url($service_icon['url']); ?>" alt="<?php echo esc_attr($service_title); ?>" class="w-full z-10">
                     <?php endif; ?>
