@@ -10,8 +10,8 @@
     </div>
 </section>
 
-<div class='py-10 h-full'>
-<?php echo do_shortcode('[woocommerce_my_account]'); ?>
+<div class='py-10 h-full container mx-auto'>
+    <?php echo do_shortcode('[woocommerce_my_account]'); ?>
 </div>
 
 <?php get_footer(); ?>
