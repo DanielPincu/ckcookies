@@ -361,13 +361,14 @@ textarea:focus {
 
 
 .woocommerce a.button {
-  background-color: #4CA397; /* Blue background color */
+  background-color: #E84C77; 
   color: #fff;
+  border-radius: 20px;
 }
 
 
  .woocommerce a.button:hover {
-  background-color: #37776E; /* Blue background color */
+  background-color: #D43F6A;
   color: #fff; 
 }
 
