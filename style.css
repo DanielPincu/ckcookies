@@ -161,7 +161,7 @@ body {
 }
 
 .comment-form input[type="submit"] {
-  background-color: #4CA397; /* WordPress blue */
+  background-color: #E84C77; /* WordPress blue */
   color: #fff; /* White text */
   padding: 10px 20px;
   border: none; /* Remove default border */
@@ -181,7 +181,7 @@ body {
 }
 
 .comment-reply-link {
-  background-color: #4CA397; /* WordPress blue */
+  background-color: #E84C77; /* WordPress blue */
   color: #fff; /* White text */
   padding: 1px 30px;
   border: none; /* Remove default border */
@@ -192,7 +192,7 @@ body {
 }
 
 #cancel-comment-reply-link {
-  background-color: #4CA397; /* WordPress blue */
+  background-color: #E84C77; /* WordPress blue */
   color: #fff; /* White text */
   padding: 1px 30px;
   border: none; /* Remove default border */
@@ -373,12 +373,12 @@ textarea:focus {
 }
 
 .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) button.button.alt {
-  background-color: #4CA397; 
+  background-color: #E84C77; 
   
 }
 
 .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) button.button.alt:hover {
-  background-color: #4CA397; 
+  background-color: #E84C77; 
   
 }
 
@@ -388,7 +388,7 @@ textarea:focus {
 }
 
 :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce a.button.alt {
-  background-color: #4CA397; 
+  background-color: #E84C77; 
   color: #fff;
 }
 
@@ -398,12 +398,12 @@ textarea:focus {
 }
 
 :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce button.button {
-  background-color: #4CA397; 
+  background-color: #E84C77; 
   color: #fff;
 }
 
 :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce button.button:hover {
-  background-color: #37776E; 
+  background-color: #D43F6A; 
   color: #fff;
 }
 
@@ -425,12 +425,13 @@ textarea:focus {
 }
 
 :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce button.button.alt {
-  background-color: #4CA397; 
+  background-color: #E84C77; 
   color: #fff;
+  border-radius: 20px;
 }
 
 :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce button.button.alt:hover {
-  background-color: #37776E; 
+  background-color: #D43F6A; 
   color: #fff;
 }
 
@@ -634,7 +635,7 @@ textarea:focus {
   text-align: center;
   margin-top: 10px;
   font-size: 14px;
-  color: #0073e6;
+  color: white;
   text-decoration: none;
 }
 
@@ -673,7 +674,7 @@ textarea:focus {
   border: none;
   outline: none;
   transition: background-color 0.3s;
-  background-color: #0073e6;
+  background-color: #E84C77;
   color: white;
   font-weight: bold;
   border-radius: 5px;
@@ -682,7 +683,7 @@ textarea:focus {
 }
 
 .register-accordion:hover {
-  background-color: #2980b9;
+  background-color: #D43F6A;
 }
 
 .register-panel {
@@ -704,17 +705,17 @@ textarea:focus {
 .register-heading {
   font-size: 28px;
   margin-bottom: 10px;
-  color: #333;
+  color: white;
   text-align: center;
 }
 
 /* Container for registration section */
 .registration-section {
-  background-color: #fff;
+  background-color: #F4A259;
   border-radius: 10px;
   padding: 30px;
   text-align: center;
-  max-width: 600px;
+  max-width: 50%;
   width: 100%;
   margin: 0px auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -736,6 +737,13 @@ textarea:focus {
       padding: 10px 20px;
   }
 }
+
+
+.woocommerce div.product div.images img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 20px; 
+
 
 
 .hamburger-menu {

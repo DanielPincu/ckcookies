@@ -11,7 +11,7 @@
                     array(
                         'taxonomy' => 'product_cat', // WooCommerce product category
                         'field'    => 'slug',         // Use the category slug
-                        'terms'    => 'anbefalet',  // Slug of the "recommended" category
+                        'terms'    => 'udvalgt',  // Slug of the "recommended" category
                         'operator' => 'IN',           // Include products from the "recommended" category
                     ),
                 ),
