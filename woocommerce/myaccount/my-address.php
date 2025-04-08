@@ -47,7 +47,7 @@ $col    = 1;
 </p>
 
 <?php if ( ! wc_ship_to_billing_address_only() && wc_shipping_enabled() ) : ?>
-	<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+	<div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
 <?php endif; ?>
 
 <?php foreach ( $get_addresses as $name => $address_title ) : ?>
@@ -57,10 +57,10 @@ $col    = 1;
 		$oldcol  = $oldcol * -1;
 	?>
 
-	<div class="p-4 border rounded-lg shadow-md bg-white">
-		<header class="flex justify-between items-center mb-2">
+	<div class="p-4 border rounded-lg shadow-md bg-[#F4A259]">
+		<header class="mb-2">
 			<h2 class="text-xl font-semibold"><?php echo esc_html( $address_title ); ?></h2>
-			<a href="<?php echo esc_url( wc_get_endpoint_url( 'edit-address', $name ) ); ?>" class="text-teal-500 hover:text-teal-700 transition">
+			<a href="<?php echo esc_url( wc_get_endpoint_url( 'edit-address', $name ) ); ?>" class="text-black hover:text-teal-700 transition">
 				<?php
 					printf(
 						/* translators: %s: Address title */

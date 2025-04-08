@@ -570,9 +570,9 @@ textarea:focus {
 
 /* General Form Styling */
 .woocommerce form {
-  background: #ffffff;
+  background: #F4A259;
   padding: 30px;
-  border-radius: 12px;
+  border-radius: 50px;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 }
 
@@ -1022,4 +1022,6 @@ textarea:focus {
 .splide__arrow--prev {
   left: 0; /* Position "prev" arrow to the left */
 }
+
+
 
