@@ -27,7 +27,7 @@ $shop = get_option('woocommerce_shop_page_id');
         </button>
 
         <!-- Category buttons dropdown -->
-        <div id="category-filter-options" class="flex flex-col gap-2 mt-2 hidden lg:flex lg:flex-row md:gap-4 justify-center">
+        <div id="category-filter-options" class="my-flex flex-col gap-2 mt-2 hidden lg:flex lg:flex-row md:gap-4 justify-center">
             <!-- Button for showing all categories -->
             <button type="submit" name="product_cat" value="" class="w-48 text-white p-2 bg-[#4CA397] rounded-full hover:bg-gray-500 focus:outline-none <?php echo empty($_GET['product_cat']) ? 'bg-teal-700 text-white' : ''; ?>">Alle kategorier</button>
 

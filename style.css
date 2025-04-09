@@ -1041,4 +1041,7 @@ textarea:focus {
   left: 0; /* Position "prev" arrow to the left */
 }
 
-
+/* For fixing Tailwind classes conflict in filter */
+.my-flex {
+  display:flex;
+}

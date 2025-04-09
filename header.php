@@ -20,7 +20,7 @@
       <nav class="hidden lg:flex md:flex-row">
         <ul class="flex lg:space-x-14 md:space-x-6">
             <li><a href="<?php echo home_url(); ?>" class="hover:text-orange-500 text-amber-950 transition duration-300 active:text-orange-600 font-bold">Hjem</a></li>
-            <li><a href="#om_os" class="hover:text-orange-500 text-amber-950 transition duration-300 active:text-orange-600 font-bold">Om os</a></li>
+            <li><a href="<?php echo esc_url( get_permalink( get_page_by_path( 'om-os' ) ) ); ?>" class="hover:text-orange-500 text-amber-950 transition duration-300 active:text-orange-600 font-bold">Om os</a></li>
             <li><a href="<?php echo esc_url( get_permalink( wc_get_page_id( 'shop' ) ) ); ?>" class="hover:text-orange-500 text-amber-950 transition duration-300 active:text-orange-600 font-bold">Shop</a></li>
             <li><a href="<?php echo esc_url( get_permalink( get_page_by_path( 'kontakt' ) ) ); ?>" class="hover:text-orange-500 text-amber-950 transition duration-300 active:text-orange-600 font-bold">Kontakt os</a></li>
 
@@ -73,7 +73,7 @@
       </div>
       <ul class="space-y-6">
         <li><a href="<?php echo home_url(); ?>" class="text-xl font-semibold hover:text-pink-500 transition duration-300">Hjem</a></li>
-        <li><a href="#om_os" class="text-xl font-semibold hover:text-pink-500 transition duration-300">Om os</a></li>
+        <li><a href="<?php echo esc_url( get_permalink( get_page_by_path( 'om-os' ) ) ); ?>" class="text-xl font-semibold hover:text-pink-500 transition duration-300">Om os</a></li>
         <li><a href="<?php echo esc_url( get_permalink( wc_get_page_id( 'shop' ) ) ); ?>" class="text-xl font-semibold hover:text-pink-500 transition duration-300">Shop</a></li>
         <li><a href="<?php echo esc_url( get_permalink( get_page_by_path( 'kontakt' ) ) ); ?>" class="text-xl font-semibold hover:text-pink-500 transition duration-300">Kontakt os</a></li>
       </ul>
