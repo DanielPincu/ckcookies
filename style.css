@@ -161,7 +161,7 @@ body {
 }
 
 .comment-form input[type="submit"] {
-  background-color: #4CA397; /* WordPress blue */
+  background-color: #E84C77; /* WordPress blue */
   color: #fff; /* White text */
   padding: 10px 20px;
   border: none; /* Remove default border */
@@ -181,7 +181,7 @@ body {
 }
 
 .comment-reply-link {
-  background-color: #4CA397; /* WordPress blue */
+  background-color: #E84C77; /* WordPress blue */
   color: #fff; /* White text */
   padding: 1px 30px;
   border: none; /* Remove default border */
@@ -192,7 +192,7 @@ body {
 }
 
 #cancel-comment-reply-link {
-  background-color: #4CA397; /* WordPress blue */
+  background-color: #E84C77; /* WordPress blue */
   color: #fff; /* White text */
   padding: 1px 30px;
   border: none; /* Remove default border */
@@ -373,12 +373,12 @@ textarea:focus {
 }
 
 .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) button.button.alt {
-  background-color: #4CA397; 
+  background-color: #E84C77; 
   
 }
 
 .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) button.button.alt:hover {
-  background-color: #4CA397; 
+  background-color: #E84C77; 
   
 }
 
@@ -388,7 +388,7 @@ textarea:focus {
 }
 
 :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce a.button.alt {
-  background-color: #4CA397; 
+  background-color: #E84C77; 
   color: #fff;
 }
 
@@ -398,7 +398,7 @@ textarea:focus {
 }
 
 :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce button.button {
-  background-color: #4CA397; 
+  background-color: #E84C77; 
   color: #fff;
 }
 
@@ -424,13 +424,16 @@ textarea:focus {
   
 }
 
+
+/* Add to cart button */
 :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce button.button.alt {
-  background-color: #4CA397; 
+  background-color: #E84C77; 
   color: #fff;
+  border-radius: 20px;
 }
 
 :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce button.button.alt:hover {
-  background-color: #37776E; 
+  background-color: #D43F6A; 
   color: #fff;
 }
 
@@ -570,6 +573,12 @@ textarea:focus {
 
 
 /* General Form Styling */
+.woocommerce div.product div.images img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 20px; }
+
+
 .woocommerce form {
   background: #F4A259;
   padding: 30px;
@@ -1023,6 +1032,5 @@ textarea:focus {
 .splide__arrow--prev {
   left: 0; /* Position "prev" arrow to the left */
 }
-
 
 

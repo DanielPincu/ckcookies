@@ -73,7 +73,7 @@ if ( $related_products ) : ?>
 							</div>
 							<div>
 							<a href="<?php echo esc_url(get_permalink($related_product->get_id())); ?>" 
-								   class="my-5 h-10 md:w-36 w-20 flex items-center bg-teal-400 text-slate-950 justify-center">
+							class="my-5 h-10 md:w-36 w-20 flex items-center bg-[#E84C77] hover:bg-[#D43F6A] text-slate-100 rounded-full justify-center">
 									Se produkt</span>
 							</a>
 							</div>

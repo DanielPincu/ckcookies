@@ -11,7 +11,7 @@
                     array(
                         'taxonomy' => 'product_cat', // WooCommerce product category
                         'field'    => 'slug',         // Use the category slug
-                        'terms'    => 'anbefalet',  // Slug of the "recommended" category
+                        'terms'    => 'udvalgt',  // Slug of the "recommended" category
                         'operator' => 'IN',           // Include products from the "recommended" category
                     ),
                 ),
@@ -25,7 +25,7 @@
                     <li class="splide__slide flex flex-col h-full">
                         <div class="md:h-96 h-40 overflow-hidden flex justify-center items-center">
                             <img
-                                class="border-teal-400 border-2 rounded-2xl"
+                                class="border-teal-400 border-2 rounded-2xl w-72"
                                 src="<?php echo wp_get_attachment_url($product->get_image_id()); ?>" 
                                 alt="<?php echo esc_attr($product->get_name()); ?>"
                             />
