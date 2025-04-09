@@ -29,7 +29,7 @@ $shop = get_option('woocommerce_shop_page_id');
         <!-- Category buttons dropdown -->
         <div id="category-filter-options" class="flex flex-col gap-2 mt-2 hidden lg:flex lg:flex-row md:gap-4 justify-center">
             <!-- Button for showing all categories -->
-            <button type="submit" name="product_cat" value="" class="w-48 text-white p-2 bg-[4CA397] rounded-full hover:bg-gray-500 focus:outline-none <?php echo empty($_GET['product_cat']) ? 'bg-teal-700 text-white' : ''; ?>">Alle kategorier</button>
+            <button type="submit" name="product_cat" value="" class="w-48 text-white p-2 bg-[#4CA397] rounded-full hover:bg-gray-500 focus:outline-none <?php echo empty($_GET['product_cat']) ? 'bg-teal-700 text-white' : ''; ?>">Alle kategorier</button>
 
             <?php
             // Get the IDs of the categories to exclude
@@ -50,7 +50,7 @@ $shop = get_option('woocommerce_shop_page_id');
             // Loop through categories and create a button for each
             foreach ($terms as $term) {
                 // Check if category is selected
-                $selected = (isset($_GET['product_cat']) && $_GET['product_cat'] == $term->slug) ? 'bg-teal-700' : 'bg-[4CA397] hover:bg-teal-700';
+                $selected = (isset($_GET['product_cat']) && $_GET['product_cat'] == $term->slug) ? 'bg-teal-700' : 'bg-[#4CA397] hover:bg-teal-700';
                 echo '<button type="submit" name="product_cat" value="' . esc_attr($term->slug) . '" class="w-48 text-white p-2 rounded-full ' . $selected . '">' . esc_html($term->name) . '</button>';
             }
             ?>
@@ -65,7 +65,7 @@ $shop = get_option('woocommerce_shop_page_id');
                 <div class="border-b-2 border-slate-700 overflow-hidden flex flex-col items-center">
                     <a href="<?php the_permalink(); ?>">
                         <?php woocommerce_show_product_sale_flash(); ?>
-                        <div class="border-[8px] border-[E84C77] rounded-3xl overflow-hidden">
+                        <div class="border-[8px] border-[#E84C77] rounded-3xl overflow-hidden">
                             <?php woocommerce_template_loop_product_thumbnail(); ?>
                         </div>
                     </a>

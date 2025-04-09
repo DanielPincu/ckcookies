@@ -1,4 +1,4 @@
-<?php wp_footer(); ?>
+
 
 <footer class="flex flex-col items-center justify-center">
     <div class="w-full py-20">
@@ -42,6 +42,6 @@
     </div>
     <div class="w-full h-20 bg-pink-500"></div>
 </footer>
-
+<?php wp_footer(); ?>
 </body>
 </html>

@@ -16,7 +16,7 @@
             </div>
                 
             <a href="<?php echo get_permalink( wc_get_page_id( 'shop' ) ); ?>" class="z-20">
-                <button class="h-10 shadow-lg duration-300 mt-10 bg-[4CA397] hover:bg-teal-700 rounded-full w-64 text-center text-slate-100">
+                <button class="h-10 shadow-lg duration-300 mt-10 bg-[#4CA397] hover:bg-teal-700 rounded-full w-64 text-center text-slate-100">
                     Shop Nu
                 </button>
             </a>
@@ -89,7 +89,7 @@
         <div class="flex items-center justify-between"> <!-- Changed 'justify-stretch' to 'justify-between' -->
             <h3 class="lg:text-4xl text-2xl text-slate-100 md:px-10 lg:px-0">Vores lækre smagfulde varer</h3>
             <a href="<?php echo esc_url(get_permalink( wc_get_page_id( 'shop' ) )); ?>">
-                <button class="bg-[4CA397] shadow-lg px-5 py-2 hover:scale-[103%] duration-300 rounded-full text-slate-100 ml-auto">Se alle vores produkter</button>
+                <button class="bg-[#4CA397] shadow-lg px-5 py-2 hover:scale-[103%] duration-300 rounded-full text-slate-100 ml-auto">Se alle vores produkter</button>
             </a>
         </div>
         

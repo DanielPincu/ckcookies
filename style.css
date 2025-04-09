@@ -855,7 +855,7 @@ textarea:focus {
 .featured .splide__arrow {
   display:flex;
   position: absolute; /* Position arrows without affecting layout */
-  top: 40%; /* Center arrows vertically */
+  top: 35%; /* Center arrows vertically */
   transform: translateY(-50%);
   z-index: 10;
 }
@@ -1018,6 +1018,14 @@ textarea:focus {
   display: flex; /* Flexbox to center content */
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
+}
+
+.testimonial .splide__arrow {
+  display:flex;
+  position: absolute; /* Position arrows without affecting layout */
+  top: 50%; /* Center arrows vertically */
+  transform: translateY(-50%);
+  z-index: 10;
 }
 
 
