@@ -114,7 +114,7 @@
     <!-- Delicious flavorous items ends -->
 
 
-    <!-- Trust indicator -->
+    <!-- About products -->
     <section class="hidden container mx-auto lg:grid xl:grid-cols-3 pt-52 pb gap-10 px-10">
         
        <div class="col-span-2">
@@ -125,16 +125,16 @@
 
         <div class="flex flex-row gap-10">
             <div class="flex flex-row gap-5">
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/trustico1.png" 
-                 alt="" class="w-20 h-20">
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/trustico1.webp" 
+                 alt="om produkter" class="w-20 h-20">
                <div>
                     <span class="block text-pink-500">Søde Kreationer til Alle Anledninger</span>
                     <span class="font-light">Fra fødselsdage til bryllupper, vores cookies og kager er skabt til at passe til enhver fejring.</span>
                </div>
             </div>
             <div class="flex flex-row gap-5">
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/trustico2.png" 
-                 alt="" class="w-20 h-20">
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/trustico2.webp" 
+                 alt="om produkter" class="w-20 h-20">
                <div>
                     <span class="block text-pink-500">Lavet med Kærlighed og Friske Ingredienser</span>
                     <span class="font-light">Hver lækkerbit er håndlavet med omhu og kun de fineste ingredienser for en lækker oplevelse.</span>
@@ -146,16 +146,16 @@
 
         <div class="flex flex-row gap-10">
             <div class="flex flex-row gap-5">
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/trustico3.png" 
-                 alt="" class="w-20 h-20">
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/trustico3.webp" 
+                 alt="om produkter" class="w-20 h-20">
                <div>
                     <span class="block text-pink-500">Skræddersyede Designs, Bare for Dig</span>
                     <span class="font-light">Vi bringer dine idéer til live med personlige cookies og kager, der matcher din unikke stil.</span>
                </div>
             </div>
             <div class="flex flex-row gap-5">
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/trustico4.png" 
-                 alt="" class="w-20 h-20">
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/trustico4.webp" 
+                 alt="om produkter" class="w-20 h-20">
                <div>
                     <span class="block text-pink-500">En Bid af Lykke i Hvert Design</span>
                     <span class="font-light">Vores skræddersyede kreationer bringer glæde og en smule sødme til hvert særligt øjeblik.</span>
@@ -165,12 +165,12 @@
       </div>
         
         <div class="hidden xl:flex justify-end ">
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/trust.png" alt="" class="">
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/trust.webp" alt="om produkter">
         </div>
 
      </section>
 
-    <!-- Trust indicator ends -->
+    <!-- About products ends -->
 
 
     <!-- Featured Products -->
@@ -181,7 +181,7 @@
                  alt="bølge">
         </div>
 
-        <div class="relative z-10 container mx-auto py-20 px-10">
+        <div class="relative z-10 container mx-auto py-10 px-10">
             <h3 class="text-center lg:text-3xl text-2xl text-slate-100">Udvalgte produkter</h3>
         </div>
 
@@ -202,7 +202,7 @@
 
 
 <!-- Our shop gallery -->
-
+    <h3 class="hidden md:block text-center text-red-950 lg:pt-44 pt-20 lg:text-4xl text-2xl">Vores butiksgalleri</h3>
     <?php
     // Inject here the gallery template part
     get_template_part('template-parts/gallery-loop');
@@ -218,6 +218,7 @@
 
 
 <div class="pt-32">
+<h3 class="text-center text-red-950 lg:text-4xl text-2xl">Hvad vores kunder synes om os</h3>
     <?php    // Inject here the testimonials template part
         get_template_part('template-parts/testimonials-loop');
     ?>
@@ -231,8 +232,7 @@
 
 <!-- Testimonial section ends  -->
 
-    <!-- Contact section -->
-    <section class="orange  relative mt-44 mb-20">
+    <section class="orange  relative mt-44 mb-20" id="anmeldelse">
         <div class="z-10 absolute -top-5 lg:-top-14 rotate-180">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/wave.webp" 
                  alt="bølge">
@@ -240,6 +240,7 @@
         <h3 class="text-center text-slate-100 pt-20 lg:text-4xl text-2xl">Efterlad os en anmeldelse</h3>
         
        <div class="py-20 container mx-auto px-2">
+           <p class="text-center text-slate-100">Vi elsker at høre fra vores kunder! Udfyld formularen nedenfor for at dele dine tanker og erfaringer med os. Din feedback betyder meget for os, og vi ser frem til at høre fra dig!</p>
         <?php echo do_shortcode('[contact-form-7 id="5d554b3" title="Testimonial"]') ?>
        </div>
 
@@ -248,7 +249,6 @@
                  alt="bølge">
         </div>
     </section>
-    <!-- Contact section ends -->
     
     <?php endwhile; ?>
 <?php endif; ?>
