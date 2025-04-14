@@ -206,7 +206,7 @@ body {
 
 
  p {
-  padding-bottom: 1.5em !important;
+  padding-bottom: 0.5em !important;
   padding-top: .5em !important;
   line-height: 1.6 !important;
   color:  !important;
@@ -219,7 +219,7 @@ body {
 
 /* General Form Styling */
 .wpcf7-form {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 30px;
   background-color: #FDF7EC; 
@@ -1048,6 +1048,9 @@ textarea:focus {
 
 
 
+
+/* Ticker styles */
+
 .ticker-wrapper {
   overflow: hidden;
   background: #E84C77;
@@ -1074,4 +1077,59 @@ textarea:focus {
   }
 }
 
-        
+
+/* FAQ Accordion styles */
+
+.faq-accordion {
+  border-top: 1px solid #ccc;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ccc;
+  overflow: hidden;
+}
+
+.faq-question {
+  background: #f9f9f9;
+  color: #333;
+  padding: 15px 20px;
+  width: 100%;
+  text-align: left;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-text {
+  flex-grow: 1;  /* Takes available space to push the icon to the right */
+}
+
+.faq-icon {
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 10px;
+  transition: transform 0.3s;
+}
+
+.faq-question.open .faq-icon {
+  transform: rotate(45deg); /* Turns + into × */
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  background: #fff;
+  color: #555;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+.faq-answer.open {
+  padding: 15px 20px;
+  max-height: 300px; /* Sufficient height for answer content */
+}

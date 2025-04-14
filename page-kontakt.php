@@ -9,8 +9,18 @@
     </div>
 </section>
 
+<div class="container mx-auto pb-5">
+   
+    <p>Før du sender din forespørgsel, opfordrer vi dig til at kigge i vores <a class="text-blue-400" href="<?php echo get_permalink( get_page_by_path( 'faq' ) ); ?>">Ofte Stillede Spørgsmål</a>
+    sektion. Du kan muligvis finde svar på dit spørgsmål med det samme!</p>
 
-<?php echo do_shortcode('[contact-form-7 id="b55075a" title="Contact"]'); ?>
+    <p>Hvis du ikke finder det, du leder efter, er du altid velkommen til at udfylde formularen nedenfor, og vi vil med glæde hjælpe dig videre.</p>
+
+</div>
+
+<div class="container mx-auto">
+    <?php echo do_shortcode('[contact-form-7 id="b55075a" title="Contact"]'); ?>
+</div>
 
 
 
