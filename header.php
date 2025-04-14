@@ -11,10 +11,28 @@
 
 <body <?php body_class(); ?> >
 
+
+
+<!-- News Ticker -->
+<?php
+$frontpage_id = get_option('page_on_front');
+if (have_rows('ticker_items', $frontpage_id)) : ?>
+  <div class="ticker-wrapper">
+    <div class="ticker">
+      <?php while (have_rows('ticker_items', $frontpage_id)) : the_row(); ?>
+        <span>🍪</span> <?php echo esc_html(get_sub_field('item_text')); ?>
+      <?php endwhile; ?>
+    </div>
+  </div>
+<?php endif; ?>
+
+
+
 <!-- Navigation -->
 <header id="header" class="orange sticky top-0 z-50">
   <div class="bg-slate-200 container mx-auto rounded-3xl px-4 lg:px-20 z-50 relative">
     <div class="container mx-auto flex justify-between items-center px-4">
+      
     
       <!-- Desktop Navigation -->
       <nav class="hidden lg:flex md:flex-row">
