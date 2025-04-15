@@ -305,6 +305,7 @@ body {
 
 
 .wpcf7-form {
+  font-family: 'Rowdies';
   border-left: 3px solid #37776E; /* Green accent on the left side of the form */
   background-size: cover;
   background-position: center;
@@ -317,7 +318,7 @@ body {
 }
 
 .wpcf7-form label:before {
-  content: "📚 "; /* Add a book icon before labels */
+  content: "🍪 "; /* Add a cookie icon before labels */
   font-size: 18px;
 }
 

@@ -227,3 +227,39 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   });
+
+
+
+// CF7 File upload button stubborn. Here I translated it to Danish
+  document.addEventListener('DOMContentLoaded', function () {
+    const fileInputs = document.querySelectorAll('.wpcf7 input[type="file"]');
+  
+    fileInputs.forEach(input => {
+      const wrapper = document.createElement('div');
+      wrapper.classList.add('file-upload-wrapper');
+  
+      const label = document.createElement('label');
+      label.textContent = 'Vælg en fil';
+      label.className = 'custom-upload-label';
+      label.style.display = 'inline-block';
+      label.style.padding = '8px 16px';
+      label.style.border = '1px solid #ccc';
+      label.style.cursor = 'pointer';
+      label.style.marginBottom = '8px';
+      label.style.backgroundColor = '#f0f0f0';
+  
+      input.parentNode.insertBefore(wrapper, input);
+      wrapper.appendChild(label);
+      wrapper.appendChild(input);
+  
+      input.style.display = 'none';
+  
+      label.addEventListener('click', () => input.click());
+  
+      input.addEventListener('change', () => {
+        if (input.files.length > 0) {
+          label.textContent = 'Valgt: ' + input.files[0].name;
+        }
+      });
+    });
+  });
