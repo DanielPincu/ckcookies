@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Related Products
  *
@@ -21,72 +22,39 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 if ( $related_products ) : ?>
 
-	<section class="hidden xl:block related products py-5">
+	<section class="container mx-auto px-4 py-12">
 		<?php
 		$heading = apply_filters( 'woocommerce_product_related_products_heading', __( 'Related products', 'woocommerce' ) );
 
-		if ( $heading ) :
-			?>
-			<h2 class="text-2xl font-bold mb-4 text-center"><?php echo esc_html( $heading ); ?></h2>
+		if ( $heading ) : ?>
+			<h2 class="text-center text-2xl lg:text-3xl text-slate-800 font-bold mb-10">
+				<?php echo esc_html( $heading ); ?>
+			</h2>
 		<?php endif; ?>
 
-		<div>
-			<?php woocommerce_product_loop_start(); ?>
-			
-				<?php foreach ( $related_products as $related_product ) : ?>
-					<?php
-					$post_object = get_post( $related_product->get_id() );
-
-					setup_postdata( $GLOBALS['post'] =& $post_object ); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited, Squiz.PHP.DisallowMultipleAssignments.Found
-					?>
-
-					<div class="flex flex-col bg-white md:h-[60vh] shadow-lg rounded-lg overflow-hidden">
-						<div class="md:h-[55vh] overflow-hidden flex justify-center items-center">
-							
-
-							<a href="<?php echo esc_url(get_permalink($related_product->get_id())); ?>" 
-								   class="md:hidden flex justify-center">
-								   <img
-								class="object-cover w-1/2"
-								src="<?php echo wp_get_attachment_url($related_product->get_image_id()); ?>" 
-								alt="<?php echo esc_attr($related_product->get_name()); ?>"
-							/>
-							</a>
-
-							
-
+		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+			<?php foreach ( $related_products as $related_product ) :
+				$product_id = $related_product->get_id();
+				$post_object = get_post( $product_id );
+				setup_postdata( $GLOBALS['post'] = $post_object );
+			?>
+				<div class="border-b-2 border-slate-700 overflow-hidden flex flex-col items-center">
+					<a href="<?php the_permalink(); ?>">
+						<?php woocommerce_show_product_sale_flash(); ?>
+						<div class="border-[8px] border-[#E84C77] rounded-3xl overflow-hidden">
+							<?php woocommerce_template_loop_product_thumbnail(); ?>
 						</div>
-						<div class="hidden md:flex flex-col items-center p-2">
-						<img
-								class="object-cover w-[70%]"
-								src="<?php echo wp_get_attachment_url($related_product->get_image_id()); ?>" 
-								alt="<?php echo esc_attr($related_product->get_name()); ?>"
-							/>
-							<div class='text-center'>
-								<span class="mt-2 font-bold text-lg line-clamp-2"><?php echo $related_product->get_name(); ?></span>
-								<span class="font-semibold text-slate-950">
-									<br>
-									<?php echo wc_price($related_product->get_price()); ?>
-								</span>
-								<br>
-								<span><?php echo get_field('type', $related_product->get_id()); ?></span>
-							</div>
-							<div>
-							<a href="<?php echo esc_url(get_permalink($related_product->get_id())); ?>" 
-							class="my-5 h-10 md:w-36 w-20 flex items-center bg-[#E84C77] hover:bg-[#D43F6A] text-slate-100 rounded-full justify-center">
-									Se produkt</span>
-							</a>
-							</div>
-						</div>
+					</a>
+					<div class="p-4 text-center">
+						<h2 class="text-lg font-bold h-10"><?php the_title(); ?></h2>
+						<div class="mt-2 font-semibold"><?php woocommerce_template_loop_price(); ?></div>
+						<div class="mt-4"><?php woocommerce_template_loop_add_to_cart(); ?></div>
 					</div>
-					
-				<?php endforeach; ?>
-			
-
-			<?php woocommerce_product_loop_end(); ?>
+				</div>
+			<?php endforeach; ?>
 		</div>
+
+		<?php wp_reset_postdata(); ?>
 	</section>
 
-<?php endif;
-
-wp_reset_postdata();
+<?php endif; ?>
