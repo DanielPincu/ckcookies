@@ -40,8 +40,6 @@
                                     <br>
                                     <?php echo wc_price($product->get_price()); ?>
                                 </span>
-                                <br>
-                                <span><?php echo get_field('type') ?></span>
                             </div>
                             <div>
                                 <a href="<?php echo esc_url(get_permalink($product->get_id())); ?>" 
