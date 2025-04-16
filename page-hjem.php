@@ -201,21 +201,11 @@
 
 
 
-<!-- Our shop gallery -->
-    <h3 class="hidden md:block text-center text-red-950 lg:pt-44 pt-20 lg:text-4xl text-2xl">Vores butiksgalleri</h3>
-    <?php
-    // Inject here the gallery template part
-    get_template_part('template-parts/gallery-loop');
-    ?>
 
-<!-- Our shop gallery ends -->
 
 
 
 <!-- Testimonial section -->
-
-   
-
 
 <div class="pt-32">
 <h3 class="text-center text-red-950 lg:text-4xl text-2xl">Hvad vores kunder synes om os</h3>
@@ -224,13 +214,10 @@
     ?>
 </div>
 
-
-
-
-
-
-
 <!-- Testimonial section ends  -->
+
+
+<!-- Testimonial form -->
 
     <section class="orange  relative mt-44 mb-20" id="anmeldelse">
         <div class="z-10 absolute -top-5 lg:-top-14 rotate-180">
@@ -250,6 +237,20 @@
         </div>
     </section>
     
+<!-- Testimonial form ends -->
+
+
+
+
+<!-- Our shop gallery -->
+ 
+    <h3 class="hidden md:block text-center text-red-950 lg:pt-44 pt-20 lg:text-4xl text-2xl">Vores butiksgalleri</h3>
+    <?php
+    // Inject here the gallery template part
+    get_template_part('template-parts/gallery-loop');
+    ?>
+
+<!-- Our shop gallery ends -->
     <?php endwhile; ?>
 <?php endif; ?>
 

@@ -111,15 +111,12 @@
 </section>
 
 
-<section class="orange  relative mt-44 mb-20" id="anmeldelse">
-        <div class="z-10 absolute -top-5 lg:-top-14 rotate-180">
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/wave.webp" 
-                 alt="bølge">
-        </div>
+<section class="relative mt-32 mb-20" id="anmeldelse">
         
-       <div class="py-10 container mx-auto px-2">
+        
+       <div class="container mx-auto px-2">
 
-       <h3 class="hidden md:block text-center text-slate-100 pt-5 pb-5 lg:text-4xl text-2xl">Vores butiksgalleri</h3>
+       <h3 class="hidden md:block text-center text-red-950 pt-5 pb-5 lg:text-4xl text-2xl">Vores butiksgalleri</h3>
     <?php
     // Inject here the gallery template part
     get_template_part('template-parts/gallery-loop');
@@ -127,14 +124,7 @@
 
        </div>
 
-
-
-        <div class="z-10 absolute -bottom-5 lg:-bottom-14">
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/wave.webp" 
-                 alt="bølge">
-        </div>
-
-    </section>
+</section>
 
     
    

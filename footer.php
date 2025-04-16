@@ -1,47 +1,95 @@
+<footer class="relative orange flex flex-col items-center justify-center mt-44">
+    <!-- Wave Image -->
+    <div class="z-10 absolute -top-5 lg:-top-14 rotate-180">
+        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/wave.webp" alt="bølge">
+    </div>
 
-
-<footer class="flex flex-col items-center justify-center">
+    <!-- Main Footer Grid -->
     <div class="w-full py-20">
-        <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4 text-center">
-            <div>
-                <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Company</h2>
-                <ul class="text-gray-500 dark:text-gray-400 font-medium">
-                    <li class="mb-4"><a href="#" class="hover:underline">About</a></li>
-                    <li class="mb-4"><a href="#" class="hover:underline">Careers</a></li>
-                    <li class="mb-4"><a href="#" class="hover:underline">Brand Center</a></li>
-                    <li class="mb-4"><a href="#" class="hover:underline">Blog</a></li>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 px-4 text-center">
+            
+            <!-- Logo + Slogan -->
+            <div class="flex flex-col items-center justify-center">
+                <div class="w-32 mb-4">
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/cklogo.webp" alt="om os"> 
+                </div>
+                <h3 class="text-xl text-slate-100 text-center mb-2">Drys, Smil & En Hel Del Sukker!</h3>
+                <div>
+                    <!-- Social icons can go here -->
+                    Here Social Links
+                </div>
+            </div>
+
+            <!-- Kontakt os -->
+            <div class="text-left mx-auto">
+                <h3 class="mb-6 text-xl font-semibold text-slate-100 uppercase text-center">Kontakt os</h3>
+                <ul class="text-slate-100 font-medium">
+                    <li class="mb-4 flex items-center">
+                        <i class="fas fa-map-marker-alt text-lg mr-2"></i>
+                        <a href="#" class="hover:underline">6740, Esbjerg</a>
+                    </li>
+                    <li class="mb-4 flex items-center">
+                        <i class="fas fa-phone-volume text-lg mr-2"></i>
+                        <a href="#" class="hover:underline">91 49 13 02 - Clarisa</a>
+                    </li>
+                    <li class="mb-4 flex items-center">
+                        <i class="fas fa-phone-volume text-lg mr-2"></i>
+                        <a href="#" class="hover:underline">91 66 55 69 - Kasia</a>
+                    </li>
+                    <li class="mb-4 flex items-center">
+                        <i class="fas fa-envelope text-lg mr-2"></i>
+                        <a href="mailto:admin@ckcookies.dk" class="hover:underline">admin@ckcookies.dk</a>
+                    </li>
                 </ul>
             </div>
-            <div>
-                <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Help Center</h2>
-                <ul class="text-gray-500 dark:text-gray-400 font-medium">
-                    <li class="mb-4"><a href="#" class="hover:underline">Discord Server</a></li>
-                    <li class="mb-4"><a href="#" class="hover:underline">Twitter</a></li>
-                    <li class="mb-4"><a href="#" class="hover:underline">Facebook</a></li>
-                    <li class="mb-4"><a href="#" class="hover:underline">Contact Us</a></li>
+
+            <!-- Shop -->
+            <div class="text-left mx-auto xl:pl-20">
+                <h3 class="mb-6 text-xl font-semibold text-slate-100 uppercase text-start">Shop</h3>
+
+                <ul class="text-slate-100 font-medium">
+                    <?php
+                    $categories = get_terms([
+                        'taxonomy'   => 'product_cat',
+                        'hide_empty' => true,
+                        'exclude'    => [
+                            get_term_by('slug', 'anbefalet', 'product_cat')->term_id ?? 0,
+                            get_term_by('slug', 'udvalgt', 'product_cat')->term_id ?? 0,
+                        ],
+                    ]);
+
+                    foreach ( $categories as $category ) {
+                        echo '<li class="mb-5">
+                            <a href="' . esc_url( get_term_link( $category ) ) . '" class="hover:underline">' . esc_html( $category->name ) . '</a>
+                        </li>';
+                    }
+                    ?>
                 </ul>
+
             </div>
-            <div>
-                <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
-                <ul class="text-gray-500 dark:text-gray-400 font-medium">
-                    <li class="mb-4"><a href="#" class="hover:underline">Privacy Policy</a></li>
-                    <li class="mb-4"><a href="#" class="hover:underline">Licensing</a></li>
-                    <li class="mb-4"><a href="#" class="hover:underline">Terms & Conditions</a></li>
-                </ul>
-            </div>
-            <div>
-                <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Download</h2>
-                <ul class="text-gray-500 dark:text-gray-400 font-medium">
-                    <li class="mb-4"><a href="#" class="hover:underline">iOS</a></li>
-                    <li class="mb-4"><a href="#" class="hover:underline">Android</a></li>
-                    <li class="mb-4"><a href="#" class="hover:underline">Windows</a></li>
-                    <li class="mb-4"><a href="#" class="hover:underline">MacOS</a></li>
+
+
+
+
+            <!-- Nyttige Links -->
+            <div class="text-left mx-auto">
+                <h3 class="mb-6 text-xl font-semibold text-slate-100 uppercase text-center">Nyttige links</h3>
+                <ul class="text-slate-100 font-medium">
+                    <li class="mb-5"><a href="#" class="hover:underline">Kontakt os</a></li>
+                    <li class="mb-5"><a href="#" class="hover:underline">Om os</a></li>
+                    <li class="mb-5"><a href="#" class="hover:underline">FAQ</a></li>
+                    <li class="mb-5"><a href="#" class="hover:underline">Levering og betaling</a></li>
                 </ul>
             </div>
         </div>
     </div>
-    <div class="w-full h-20 bg-pink-500"></div>
+
+    <!-- Bottom Bar -->
+    <div class="w-full flex justify-center h-10 bg-pink-500">
+        <p class="text-slate-100 text-center text-sm flex items-center">© 2025 CKCakes&Cookies. All Rights Reserved.</p>
+    </div>
 </footer>
+
 <?php wp_footer(); ?>
 </body>
 </html>
