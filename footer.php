@@ -11,14 +11,20 @@
             <!-- Logo + Slogan -->
             <div class="flex flex-col items-center justify-center">
                 <div class="w-32 mb-4">
-                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/cklogo.webp" alt="om os"> 
+                    <!-- Ensure correct URL generation -->
+                    <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/cklogo.webp'); ?>" alt="om os"> 
                 </div>
                 <h3 class="text-xl text-slate-100 text-center mb-2">Drys, Smil & En Hel Del Sukker!</h3>
-                <div>
-                    <!-- Social icons can go here -->
-                    Here Social Links
+                <div class="flex space-x-4">
+                    <a href="https://www.facebook.com/yourprofile" target="_blank" class="text-slate-100 hover:text-blue-500">
+                    <i class="fa-brands fa-facebook text-2xl"></i>
+                    </a>
+                    <a href="https://www.instagram.com/yourprofile" target="_blank" class="text-slate-100 hover:text-pink-500">
+                    <i class="fa-brands fa-instagram text-2xl"></i>
+                    </a>
                 </div>
             </div>
+
 
             <!-- Kontakt os -->
             <div class="text-left mx-auto">
