@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const header = document.getElementById('header');
     const logo = document.getElementById('logo');
     let isThrottling = false;
-    const thresholdPixels = 100; // Scroll threshold in pixels
+    const thresholdPixels = 130; // Scroll threshold in pixels
     const bufferPixels = 80; // Buffer zone in pixels (adjust as needed)
 
     window.addEventListener('scroll', function() {

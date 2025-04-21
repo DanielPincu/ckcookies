@@ -81,10 +81,10 @@
             <div class="text-left mx-auto">
                 <h3 class="mb-6 text-xl font-semibold text-slate-100 uppercase text-center">Nyttige links</h3>
                 <ul class="text-slate-100 font-medium">
-                    <li class="mb-5"><a href="#" class="hover:underline">Kontakt os</a></li>
-                    <li class="mb-5"><a href="#" class="hover:underline">Om os</a></li>
-                    <li class="mb-5"><a href="#" class="hover:underline">FAQ</a></li>
-                    <li class="mb-5"><a href="#" class="hover:underline">Levering og betaling</a></li>
+                    <li class="mb-5"><a href="<?php echo esc_url( get_permalink( get_page_by_path( 'kontakt' ) ) ); ?>" class="hover:underline">Kontakt os</a></li>
+                    <li class="mb-5"><a href="<?php echo esc_url( get_permalink( get_page_by_path( 'om-os' ) ) ); ?>" class="hover:underline">Om os</a></li>
+                    <li class="mb-5"><a href="<?php echo esc_url( get_permalink( get_page_by_path( 'faq' ) ) ); ?>" class="hover:underline">FAQ</a></li>
+                    <li class="mb-5"><a href="<?php echo home_url(); ?>" class="hover:underline">Tak for besoget</a></li>
                 </ul>
             </div>
         </div>

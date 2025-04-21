@@ -1073,18 +1073,19 @@ textarea:focus {
 
 /* FAQ Accordion styles */
 
-.faq-accordion {
+/* .faq-accordion {
   border-top: 1px solid #ccc;
-}
+} */
 
 .faq-item {
   border-bottom: 1px solid #ccc;
   overflow: hidden;
+  border-radius: 20px;
 }
 
 .faq-question {
-  background: #f9f9f9;
-  color: #333;
+  background: #F4A259;
+  color: #F1F5F9;
   padding: 15px 20px;
   width: 100%;
   text-align: left;
@@ -1104,21 +1105,22 @@ textarea:focus {
 
 .faq-icon {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 25px;
   margin-left: 10px;
   transition: transform 0.3s;
 }
 
 .faq-question.open .faq-icon {
   transform: rotate(45deg); /* Turns + into × */
+  color: black;
 }
 
 .faq-answer {
   max-height: 0;
   overflow: hidden;
   padding: 0 20px;
-  background: #fff;
-  color: #555;
+  background: #f7b57b;
+  color: #F1F5F9;
   transition: max-height 0.4s ease, padding 0.4s ease;
 }
 

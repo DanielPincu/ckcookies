@@ -30,7 +30,7 @@ if (have_rows('ticker_items', $frontpage_id)) : ?>
 
 <!-- Navigation -->
 <header id="header" class="orange sticky top-0 z-50">
-  <div class="bg-slate-200 container mx-auto rounded-3xl px-4 lg:px-20 z-50 relative">
+  <div class="bg-[#F7E4B6] container mx-auto rounded-3xl px-4 lg:px-20 z-50 relative">
     <div class="container mx-auto flex justify-between items-center px-4">
       
     
