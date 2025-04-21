@@ -361,6 +361,7 @@ textarea:focus {
 }
 
 
+
 .woocommerce a.button {
   background-color: #E84C77; 
   color: #fff;
@@ -399,12 +400,13 @@ textarea:focus {
 }
 
 :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce button.button {
-  background-color: #E84C77; 
+  background-color: #4CA397; 
   color: #fff;
+  border-radius: 30px;
 }
 
 :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce button.button:hover {
-  background-color: #D43F6A; 
+  background-color: #0F766E; 
   color: #fff;
 }
 
@@ -452,6 +454,15 @@ textarea:focus {
 
 .woocommerce-info {
     display: none;
+}
+
+
+.woocommerce form.checkout_coupon,.woocommerce form.login,.woocommerce form.register {
+  border: 1px solid #cfc8d8;
+  padding: 20px;
+  margin: 2em 0;
+  text-align: left;
+  border-radius: 30px;
 }
 
 
@@ -644,7 +655,7 @@ textarea:focus {
   text-align: center;
   margin-top: 10px;
   font-size: 14px;
-  color: #0073e6;
+  color: #0F766E;
   text-decoration: none;
 }
 
@@ -677,8 +688,9 @@ textarea:focus {
 
 
 .register-accordion {
+  padding: 15px 20px;
   cursor: pointer;  
-  width: 100%;
+  width: 40%;
   text-align: center;
   border: none;
   outline: none;
@@ -686,7 +698,7 @@ textarea:focus {
   background-color: #E84C77;
   color: white;
   font-weight: bold;
-  border-radius: 5px;
+  border-radius: 30px;
   margin-bottom: 10px;
   font-size: 16px;
 }
@@ -722,10 +734,10 @@ textarea:focus {
 .registration-section {
   color: white;
   background-color: #F4A259;
-  border-radius: 10px;
+  border-radius: 30px;
   padding: 30px;
   text-align: center;
-  max-width: 600px;
+  max-width: 100%;
   width: 100%;
   margin: 0px auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
