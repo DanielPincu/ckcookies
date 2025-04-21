@@ -54,7 +54,7 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
     <?php do_action( 'woocommerce_checkout_after_order_review' ); ?>
 
     <div class="mt-6">
-        <button type="submit" class="w-full bg-teal-400 text-white font-semibold py-3 rounded-lg hover:bg-teal-600 transition duration-200">
+        <button type="submit" class="w-full bg-[#E84C77] text-white font-semibold py-3 rounded-lg hover:bg-[#D43F6A] transition duration-200">
             <?php esc_html_e( 'Afgiv ordre', 'woocommerce' ); ?>
         </button>
     </div>
