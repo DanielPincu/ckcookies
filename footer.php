@@ -11,20 +11,18 @@
             <!-- Logo + Slogan -->
             <div class="flex flex-col items-center justify-center">
                 <div class="w-32 mb-4">
-                    <!-- Ensure correct URL generation -->
                     <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/cklogo.webp'); ?>" alt="om os"> 
                 </div>
                 <h3 class="text-xl text-slate-100 text-center mb-2">Drys, Smil & En Hel Del Sukker!</h3>
                 <div class="flex space-x-4">
                     <a href="https://www.facebook.com/yourprofile" target="_blank" class="text-slate-100 hover:text-blue-500">
-                    <i class="fa-brands fa-facebook text-2xl"></i>
+                        <i class="fa-brands fa-facebook text-2xl"></i>
                     </a>
                     <a href="https://www.instagram.com/yourprofile" target="_blank" class="text-slate-100 hover:text-pink-500">
-                    <i class="fa-brands fa-instagram text-2xl"></i>
+                        <i class="fa-brands fa-instagram text-2xl"></i>
                     </a>
                 </div>
             </div>
-
 
             <!-- Kontakt os -->
             <div class="text-left mx-auto">
@@ -65,26 +63,33 @@
                     ]);
 
                     foreach ( $categories as $category ) {
+                        $shop_page_url = get_permalink( wc_get_page_id( 'shop' ) );
+                        $link = add_query_arg('product_cat', $category->slug, $shop_page_url);
+
                         echo '<li class="mb-5">
-                            <a href="' . esc_url( get_term_link( $category ) ) . '" class="hover:underline">' . esc_html( $category->name ) . '</a>
+                            <a href="' . esc_url( $link ) . '" class="hover:underline">' . esc_html( $category->name ) . '</a>
                         </li>';
                     }
                     ?>
                 </ul>
-
             </div>
-
-
-
 
             <!-- Nyttige Links -->
             <div class="text-left mx-auto">
                 <h3 class="mb-6 text-xl font-semibold text-slate-100 uppercase text-center">Nyttige links</h3>
                 <ul class="text-slate-100 font-medium">
-                    <li class="mb-5"><a href="<?php echo esc_url( get_permalink( get_page_by_path( 'kontakt' ) ) ); ?>" class="hover:underline">Kontakt os</a></li>
-                    <li class="mb-5"><a href="<?php echo esc_url( get_permalink( get_page_by_path( 'om-os' ) ) ); ?>" class="hover:underline">Om os</a></li>
-                    <li class="mb-5"><a href="<?php echo esc_url( get_permalink( get_page_by_path( 'faq' ) ) ); ?>" class="hover:underline">FAQ</a></li>
-                    <li class="mb-5"><a href="<?php echo home_url(); ?>" class="hover:underline">Tak for besoget</a></li>
+                    <li class="mb-5">
+                        <a href="<?php echo esc_url( get_permalink( get_page_by_path( 'kontakt' ) ) ); ?>" class="hover:underline">Kontakt os</a>
+                    </li>
+                    <li class="mb-5">
+                        <a href="<?php echo esc_url( get_permalink( get_page_by_path( 'om-os' ) ) ); ?>" class="hover:underline">Om os</a>
+                    </li>
+                    <li class="mb-5">
+                        <a href="<?php echo esc_url( get_permalink( get_page_by_path( 'faq' ) ) ); ?>" class="hover:underline">FAQ</a>
+                    </li>
+                    <li class="mb-5">
+                        <a href="<?php echo home_url(); ?>" class="hover:underline">Tak for besøget</a>
+                    </li>
                 </ul>
             </div>
         </div>
