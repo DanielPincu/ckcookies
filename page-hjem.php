@@ -115,60 +115,40 @@
 
 
     <!-- About products -->
-    <section class="hidden container mx-auto lg:grid xl:grid-cols-3 pt-52 pb gap-10 px-10">
-        
-       <div class="col-span-2">
-        <div class="">
+<section class="container mx-auto lg:grid xl:grid-cols-3 pt-52 pb-10 gap-10 px-10">
+    <div class="col-span-2">
+        <div>
             <h4 class="text-2xl">Hver Bid Fyldt med Sødme</h4>
-            <p class="font-light">Hver cookie og kage er lavet med kærlighed og kreativitet, designet til at gøre dine særlige øjeblikke endnu sødere. Uanset om det er en fødselsdag, bryllup eller en anden fejring, laver vi skræddersyede lækkerier, der bringer glæde i hver bid.</p>
-        </div> 
-
-        <div class="flex flex-row gap-10">
-            <div class="flex flex-row gap-5">
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/trustico1.webp" 
-                 alt="om produkter" class="w-20 h-20">
-               <div>
-                    <span class="block text-pink-500">Søde Kreationer til Alle Anledninger</span>
-                    <span class="font-light">Fra fødselsdage til bryllupper, vores cookies og kager er skabt til at passe til enhver fejring.</span>
-               </div>
-            </div>
-            <div class="flex flex-row gap-5">
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/trustico2.webp" 
-                 alt="om produkter" class="w-20 h-20">
-               <div>
-                    <span class="block text-pink-500">Lavet med Kærlighed og Friske Ingredienser</span>
-                    <span class="font-light">Hver lækkerbit er håndlavet med omhu og kun de fineste ingredienser for en lækker oplevelse.</span>
-               </div>
-            </div>
+            <p class="font-light"><?php echo get_field('heading') ?> </p>
         </div>
 
-        <br>
+        <?php if( have_rows('about_product_repeater') ) : ?>
+            <?php $count = 0; ?>
+            <?php while( have_rows('about_product_repeater') ) : the_row(); ?>
+                <?php
+                    $icon_image = get_sub_field('icon');
+                    $title = get_sub_field('title');
+                    $description = get_sub_field('description');
+                ?>
+                <?php if($count % 2 == 0) echo '<div class="flex flex-row gap-10 mt-6">'; // new row every 2 items ?>
+                    <div class="flex flex-row gap-5">
+                        <img src="<?php echo esc_url($icon_image['url']); ?>" alt="<?php echo esc_attr($title); ?>" class="w-20 h-20">
+                        <div>
+                            <span class="block text-pink-500"><?php echo esc_html($title); ?></span>
+                            <span class="font-light"><?php echo esc_html($description); ?></span>
+                        </div>
+                    </div>
+                <?php if($count % 2 == 1) echo '</div>'; // close row every 2 items ?>
+                <?php $count++; ?>
+            <?php endwhile; ?>
+        <?php endif; ?>
 
-        <div class="flex flex-row gap-10">
-            <div class="flex flex-row gap-5">
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/trustico3.webp" 
-                 alt="om produkter" class="w-20 h-20">
-               <div>
-                    <span class="block text-pink-500">Skræddersyede Designs, Bare for Dig</span>
-                    <span class="font-light">Vi bringer dine idéer til live med personlige cookies og kager, der matcher din unikke stil.</span>
-               </div>
-            </div>
-            <div class="flex flex-row gap-5">
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/trustico4.webp" 
-                 alt="om produkter" class="w-20 h-20">
-               <div>
-                    <span class="block text-pink-500">En Bid af Lykke i Hvert Design</span>
-                    <span class="font-light">Vores skræddersyede kreationer bringer glæde og en smule sødme til hvert særligt øjeblik.</span>
-               </div>
-            </div>
-        </div>
-      </div>
-        
-        <div class="hidden xl:flex justify-end ">
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/trust.webp" alt="om produkter">
-        </div>
+    </div>
 
-     </section>
+    <div class="hidden xl:flex justify-end">
+        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/trust.webp" alt="om produkter">
+    </div>
+</section>
 
     <!-- About products ends -->
 
