@@ -115,7 +115,7 @@
 
 
     <!-- About products -->
-<section class="container mx-auto lg:grid xl:grid-cols-3 pt-52 pb-10 gap-10 px-10">
+<section class="hidden container mx-auto lg:grid xl:grid-cols-3 pt-52 pb-10 gap-10 px-10">
     <div class="col-span-2">
         <div>
             <h4 class="text-2xl">Hver Bid Fyldt med Sødme</h4>

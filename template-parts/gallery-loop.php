@@ -17,7 +17,7 @@ $all_gallery_posts = get_posts(array(
 
 // Only show the gallery if we have exactly 7 images
 if (count($gallery_posts) === 7) : ?>
-    <section class="hidden lg:block container mx-auto pb-20">
+    <section class="hidden md:block container mx-auto pb-20">
         
 
         <div class="hidden md:grid xl:grid-cols-11 h-[600px] gap-2 mt-10 px-10 xl:px-0">
