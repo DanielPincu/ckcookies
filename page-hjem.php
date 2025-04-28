@@ -199,19 +199,19 @@
 
 <!-- Testimonial form -->
 
-    <section class="orange  relative mt-44 mb-20" id="anmeldelse">
-        <div class="z-10 absolute -top-5 lg:-top-14 rotate-180">
+    <section class="md:bg-[#F4A259] relative md:mt-44 md:mb-20" id="anmeldelse">
+        <div class="hidden md:block z-10 absolute -top-5 lg:-top-14 rotate-180">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/wave.webp" 
                  alt="bølge">
         </div>
-        <h3 class="text-center text-slate-100 pt-20 lg:text-4xl text-2xl">Efterlad os en anmeldelse</h3>
+        <h3 class="text-center md:text-slate-100 text-red-950 pt-20 lg:text-4xl text-2xl">Efterlad os en anmeldelse</h3>
         
        <div class="py-20 container mx-auto px-2">
-           <p class="text-center text-slate-100">Vi elsker at høre fra vores kunder! Udfyld formularen nedenfor for at dele dine tanker og erfaringer med os. Din feedback betyder meget for os, og vi ser frem til at høre fra dig!</p>
+           <p class="text-center md:text-slate-100 text-red-950">Vi elsker at høre fra vores kunder! Udfyld formularen nedenfor for at dele dine tanker og erfaringer med os. Din feedback betyder meget for os, og vi ser frem til at høre fra dig!</p>
         <?php echo do_shortcode('[contact-form-7 id="5d554b3" title="Testimonial"]') ?>
        </div>
 
-        <div class="z-10 absolute -bottom-5 lg:-bottom-14">
+        <div class="hidden md:block z-10 absolute -bottom-5 lg:-bottom-14">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/wave.webp" 
                  alt="bølge">
         </div>
