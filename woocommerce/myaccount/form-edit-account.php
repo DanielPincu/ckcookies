@@ -19,7 +19,7 @@ defined( 'ABSPATH' ) || exit;
 
 do_action( 'woocommerce_before_edit_account_form' ); ?>
 
-<form class="woocommerce-EditAccountForm edit-account bg-blue-50 p-10 border-[1px] border-teal-500" action="" method="post" <?php do_action( 'woocommerce_edit_account_form_tag' ); ?> >
+<form class="woocommerce-EditAccountForm edit-account p-10 border-[1px] border-teal-500" action="" method="post" <?php do_action( 'woocommerce_edit_account_form_tag' ); ?> >
 
 	<?php do_action( 'woocommerce_edit_account_form_start' ); ?>
 

@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         var accordion = document.createElement('button');
         accordion.className = 'register-accordion';
-        accordion.innerHTML = 'Opret en kundekonto';
+        accordion.innerHTML = 'Opret ny konto';
 
         container.appendChild(heading);
         container.appendChild(accordion);
