@@ -1,10 +1,5 @@
-<?php get_header() ?>
-<?php if (have_posts()) : ?>
-    <?php while (have_posts()) : the_post() ?>
-    
-    <h1>Hello from index.php</h1>
-
-
-    <?php endwhile ?>
-<?php endif ?>
-<?php get_footer() ?>
+<?php
+// Redirect to the front page
+wp_redirect( home_url() );
+exit; // Make sure to stop further execution after the redirect
+?>

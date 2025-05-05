@@ -31,7 +31,7 @@
                     if ($hero_image) : ?>
                         <img src="<?php echo esc_url($hero_image['sizes']['large']); ?>" 
                              alt="<?php echo esc_attr($hero_image['alt']); ?>" 
-                             class="w-[80%]">
+                             class="w-[80%] 2xl:w-[60%]">
                     <?php endif; ?>
                 </div>
             </div>
