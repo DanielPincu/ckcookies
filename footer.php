@@ -1,4 +1,14 @@
 <footer class="relative orange flex flex-col items-center justify-center mt-44">
+
+<?php
+$frontpage_id = get_option('page_on_front');
+$address = get_field('address', $frontpage_id);
+$phone_1 = get_field('phone_1', $frontpage_id);
+$phone_2 = get_field('phone_2', $frontpage_id);
+$email = get_field('email', $frontpage_id);
+?>
+
+
     <!-- Wave Image -->
     <div class="z-10 absolute -top-5 lg:-top-14 rotate-180">
         <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/wave.webp" alt="bølge">
@@ -30,19 +40,19 @@
                 <ul class="text-slate-100 font-medium">
                     <li class="mb-4 flex items-center">
                         <i class="fas fa-map-marker-alt text-lg mr-2"></i>
-                        <a href="#" class="hover:underline">6740, Esbjerg</a>
+                        <span> <?php echo esc_html($address); ?></span>
                     </li>
                     <li class="mb-4 flex items-center">
                         <i class="fas fa-phone-volume text-lg mr-2"></i>
-                        <a href="#" class="hover:underline">91 49 13 02 - Clarisa</a>
+                        <span><?php echo esc_html($phone_1); ?></span>
                     </li>
                     <li class="mb-4 flex items-center">
                         <i class="fas fa-phone-volume text-lg mr-2"></i>
-                        <a href="#" class="hover:underline">91 66 55 69 - Kasia</a>
+                        <span><?php echo esc_html($phone_2); ?></span>
                     </li>
                     <li class="mb-4 flex items-center">
                         <i class="fas fa-envelope text-lg mr-2"></i>
-                        <a href="mailto:admin@ckcookies.dk" class="hover:underline">admin@ckcookies.dk</a>
+                        <a href="mailto:<?php echo esc_html($email); ?>" class="hover:underline"><?php echo esc_html($email); ?></a>
                     </li>
                 </ul>
             </div>
