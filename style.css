@@ -610,7 +610,9 @@ textarea:focus {
     word-wrap: break-word;
 }
 
-
+.cart_totals.calculated_shipping {
+  padding-top: 30px;
+}
 
 .woocommerce form {
   /* background: #F4A259; */
