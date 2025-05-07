@@ -3,6 +3,7 @@
     <div class="relative z-10 container mx-auto pt-20 xl:py-32 px-10">
         <h1 class="text-center lg:text-3xl text-2xl text-slate-100">
             <?php echo esc_html( get_field('headline') ); ?>
+           <br> Lille om os
         </h1>
     </div>
     <div class="z-10 absolute -bottom-5 lg:-bottom-14">

@@ -215,6 +215,13 @@ body {
 
 
 
+/* Only apply background color to page with ID 125 */
+body.page-id-125 .wpcf7-form {
+  background-color: #F4A259;
+}
+body.page-id-125 .wpcf7-form label{
+  
+}
 
 
 /* General Form Styling */
