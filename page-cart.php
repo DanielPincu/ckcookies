@@ -11,7 +11,7 @@
 </section>
 
 <div class="container mx-auto px-4 py-8">
-    <h1 class="text-3xl font-bold mb-6 text-center">Your Cart</h1>
+    <h1 class="text-3xl font-bold mb-6 text-center">Din kurv</h1>
 
     <?php echo do_shortcode('[woocommerce_cart]'); // WooCommerce cart shortcode ?>
 </div>
