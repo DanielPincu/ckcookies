@@ -243,10 +243,11 @@ document.addEventListener('DOMContentLoaded', function () {
       label.className = 'custom-upload-label';
       label.style.display = 'inline-block';
       label.style.padding = '8px 16px';
-      label.style.border = '1px solid #ccc';
+      label.style.border = '2px solid #ccc';
       label.style.cursor = 'pointer';
       label.style.marginBottom = '8px';
-      label.style.backgroundColor = '#f0f0f0';
+      label.style.backgroundColor = '#dd9933';
+      label.style.borderRadius = '12px';
   
       input.parentNode.insertBefore(wrapper, input);
       wrapper.appendChild(label);
