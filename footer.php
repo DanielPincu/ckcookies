@@ -106,8 +106,10 @@ $email = get_field('email', $frontpage_id);
     </div>
 
     <!-- Bottom Bar -->
-    <div class="w-full flex justify-center h-10 bg-pink-500">
+    <div class="w-full flex flex-col justify-center items-center py-2 bg-pink-500">
         <p class="text-slate-100 text-center text-sm flex items-center">© 2025 CKCakes&Cookies. All Rights Reserved.</p>
+        <p class="text-slate-100  text-sm">Crafted by <a class="text-orange-300 hover:text-orange-400" href="https://www.linkedin.com/in/catalinavrinceanu/">Catalina Vrinceanu</a> & <a class="text-orange-300 hover:text-orange-400" href="https://www.linkedin.com/in/danielpincu/">Daniel Pincu</a></p>
+        <!-- If you discover this by inspecting the code, you're awesome! Greetings from Kate & Daniel! -->
     </div>
 </footer>
 
