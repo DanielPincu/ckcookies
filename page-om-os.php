@@ -42,7 +42,7 @@
         </div>
 
         <!-- TEXT CONTENT SECOND -->
-        <div class="flex flex-col mx-auto items-center xl:items-start h-full px-10 xl:px-0">
+        <article class="flex flex-col mx-auto items-center xl:items-start h-full px-10 xl:px-0">
             <h2 class="z-10 pt-10 text-3xl md:text-4xl text-center lg:text-left text-slate-100 pb-5">
                 <?php echo esc_html( get_field('heading_2') ); ?>
             </h2>
@@ -58,7 +58,7 @@
                     Shop Nu
                 </button>
             </a>
-        </div>
+        </article>
 
         <!-- FLOATING HEARTS -->
         <div class="z-10">
@@ -87,7 +87,7 @@
 <section class="h-[500px] container mx-auto relative lg:mt-32 mt-10">
    
 
-    <div class="grid grid-cols-1 lg:grid-cols-2">
+    <article class="grid grid-cols-1 lg:grid-cols-2">
        
         <div class="flex flex-col mx-auto items-center xl:items-start h-full px-10">
             <h2 class="z-10 pt-10 text-3xl md:text-4xl text-center lg:text-left  pb-5">
@@ -113,7 +113,7 @@
             </div>
         </div>
 
-        </div>
+    </article>
     </div>
 
     

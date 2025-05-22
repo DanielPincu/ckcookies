@@ -3,7 +3,7 @@
     <?php while (have_posts()) : the_post() ?>
     
     <!-- Hero Section -->
-    <section class="orange h-60 md:h-80 lg:h-[500px] relative lg:pt-32">
+    <main class="orange h-60 md:h-80 lg:h-[500px] relative lg:pt-32">
         <div class="grid grid-cols-1 lg:grid-cols-2">
             <div class="flex flex-col mx-auto lg:items-start items-center h-full px-10 xl:px-0">
                 
@@ -57,7 +57,7 @@
         <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/wave.webp" 
              alt="bølger" 
              class="absolute -bottom-5 lg:-bottom-14">
-    </section>
+    </main>
     <!-- Hero section ends -->
 
 
